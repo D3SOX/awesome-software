@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://cryb.nyc3.cdn.digitaloceanspaces.com/landing-assets/img/stock/connect-0.png
+heroImage: https://opensource.org/files/osi_symbol_0.png
 tagline: Some recommendations regarding software for desktop and mobile 🔝
 actionText: Get started →
 actionLink: /introduction/
