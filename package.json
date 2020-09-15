@@ -1,0 +1,21 @@
+{
+  "name": "awesome-software",
+  "version": "0.0.1",
+  "description": "Some recommendations regarding software for desktop and mobile",
+  "main": "index.js",
+  "authors": {
+    "name": "D3SOX"
+  },
+  "repository": "https://github.com/D3SOX/awesome-software",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.4",
+    "vuepress": "^1.5.4",
+    "vuepress-plugin-smooth-scroll": "^0.0.10",
+    "vuepress-theme-yuu": "^2.3.0"
+  }
+}
