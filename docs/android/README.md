@@ -378,7 +378,7 @@ sidebarDepth: 0
 
 ## Instagram Client + Downloader
 ### Barinsta
-- Website: <https://instagrabber.austinhuang.me/>
+- Website: <https://barinsta.austinhuang.me/>
 - Source Code: <https://github.com/austinhuang0131/barinsta>
 - Download (F-Droid): <https://f-droid.org/packages/me.austinhuang.instagrabber/>
 - Download (APK): <https://github.com/austinhuang0131/barinsta/releases>
