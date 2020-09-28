@@ -193,6 +193,12 @@ sidebarDepth: 0
 - Source Code: <https://github.com/amirzaidi/Shade>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=amirz.shade>
 
+### posidon launcher
+- Website: <https://posidon.io/launcher>
+- Source Code: <https://github.com/lposidon/posidonLauncher>
+- Download (F-Droid): <https://www.f-droid.org/packages/posidon.launcher>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=posidon.launcher>
+
 ## Keyboard
 
 ### Simple Keyboard
