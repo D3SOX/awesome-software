@@ -75,12 +75,13 @@ sidebarDepth: 0
 ### Geometric Weather
 - Website: None
 - Source Code: <https://github.com/WangDaYeeeeee/GeometricWeather>
+- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/wangdaye.com.geometricweather>
 - Download (APK): <https://github.com/WangDaYeeeeee/GeometricWeather/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=wangdaye.com.geometricweather>
 
 #### Fork without proprietary blobs
 - Source Code: <https://github.com/mbestavros/GeometricWeather>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/repo?fingerprint=3BF0D6ABFEAE2F401707B6D966BE743BF0EEE49C2561B9BA39073711F628937A>
+- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/com.mbestavros.geometricweather>
 - Download (APK): <https://github.com/mbestavros/GeometricWeather/releases>
 
 ### Forecastie
@@ -100,7 +101,7 @@ sidebarDepth: 0
 ### QR & Barcode Scanner
 - Website: None
 - Source Code: <https://github.com/dmitriy-ilchenko/QrAndBarcodeScanner>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/repo?fingerprint=3BF0D6ABFEAE2F401707B6D966BE743BF0EEE49C2561B9BA39073711F628937A>
+- Download (F-Droid): <https://www.f-droid.org/en/packages/com.example.barcodescanner/>
 - Download (APK): <https://github.com/dmitriy-ilchenko/QrAndBarcodeScanner/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=org.barcodescanner>
 
@@ -139,14 +140,14 @@ sidebarDepth: 0
 
 #### Metro, fork with premium features and without google libraries
 - Source Code: <https://github.com/MuntashirAkon/Metro>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/repo?fingerprint=3BF0D6ABFEAE2F401707B6D966BE743BF0EEE49C2561B9BA39073711F628937A>
+- Download (F-Droid): <https://f-droid.org/en/packages/io.github.muntashirakon.Music/>
 - Download (APK): <https://github.com/MuntashirAkon/Metro/releases>
 
 ### Shuttle
 - Website: None
 - Source Code: <https://github.com/timusus/Shuttle>
 - Download (F-Droid): <https://f-droid.org/packages/com.simplecity.amp_pro/>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/repo?fingerprint=3BF0D6ABFEAE2F401707B6D966BE743BF0EEE49C2561B9BA39073711F628937A>
+- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/another.music.player>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=another.music.player>
 
 ### Vinyl
@@ -200,6 +201,13 @@ sidebarDepth: 0
 - Download (Play Store): <https://play.google.com/store/apps/details?id=posidon.launcher>
 
 ## Keyboard
+
+### FlorisBoard
+- Website: <https://patrickgold.dev/>
+- Source Code: <https://github.com/florisboard/florisboard>
+- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/dev.patrickgold.florisboard>
+- Download (APK): <https://github.com/florisboard/florisboard/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=dev.patrickgold.florisboard>
 
 ### Simple Keyboard
 - Website: None
