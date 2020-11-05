@@ -101,7 +101,7 @@ sidebarDepth: 0
 ### QR & Barcode Scanner
 - Website: None
 - Source Code: <https://github.com/dmitriy-ilchenko/QrAndBarcodeScanner>
-- Download (F-Droid): <https://www.f-droid.org/en/packages/com.example.barcodescanner/>
+- Download (F-Droid): <https://www.f-droid.org/packages/com.example.barcodescanner/>
 - Download (APK): <https://github.com/dmitriy-ilchenko/QrAndBarcodeScanner/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=org.barcodescanner>
 
@@ -140,7 +140,7 @@ sidebarDepth: 0
 
 #### Metro, fork with premium features and without google libraries
 - Source Code: <https://github.com/MuntashirAkon/Metro>
-- Download (F-Droid): <https://f-droid.org/en/packages/io.github.muntashirakon.Music/>
+- Download (F-Droid): <https://f-droid.org/packages/io.github.muntashirakon.Music/>
 - Download (APK): <https://github.com/MuntashirAkon/Metro/releases>
 
 ### Shuttle
@@ -325,6 +325,12 @@ sidebarDepth: 0
 - Download (APK): <https://gitlab.com/AuroraOSS/AuroraWallpapers/-/releases>
 
 ## RSS reader
+### Flym
+- Website: None
+- Source Code: <https://github.com/FredJul/Flym>
+- Download (F-Droid): <https://f-droid.org/packages/net.frju.flym/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=net.frju.flym>
+
 ### Feeder
 - Website: None
 - Source Code: <https://gitlab.com/spacecowboy/Feeder>

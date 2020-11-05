@@ -92,7 +92,6 @@ sidebarDepth: 0
 - Download: <https://obsproject.com/download>
 
 ## Media Player
-
 ### mpv
 - Website: <https://mpv.io/>
 - Source Code: <https://github.com/mpv-player/mpv/>
@@ -102,6 +101,12 @@ sidebarDepth: 0
 - Website: <https://www.videolan.org/vlc/>
 - Source Code: <https://github.com/videolan/vlc>
 - Download: <https://www.videolan.org/vlc/#download>
+
+## Image Viewer
+### nomacs
+- Website: <https://nomacs.org/>
+- Source Code: <https://github.com/nomacs/nomacs>
+- Download: <https://nomacs.org/download/>
 
 ## PDF Reader
 ### Okular
@@ -114,6 +119,11 @@ sidebarDepth: 0
 - Website: <https://www.libreoffice.org/>
 - Source Code: <https://cgit.freedesktop.org/libreoffice>
 - Download: <https://www.libreoffice.org/download/download/>
+
+### ONLYOFFICE
+- Website: <https://www.onlyoffice.com/>
+- Source Code: <https://github.com/ONLYOFFICE/DesktopEditors>
+- Download: <https://www.onlyoffice.com/download-desktop.aspx>
 
 ## Advanced Text Editor
 ### Kate
