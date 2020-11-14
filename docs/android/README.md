@@ -24,7 +24,7 @@ sidebarDepth: 0
 - Download (F-Droid): <https://f-droid.org/packages/com.duckduckgo.mobile.android/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android>
 
-## AdBlocker (root)
+## AdBlocker (non-root & root)
 ### AdAway
 - Website: <https://adaway.org/>
 - Source Code: <https://github.com/AdAway/AdAway>
