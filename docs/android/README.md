@@ -132,6 +132,12 @@ sidebarDepth: 0
 
 ## Music Player
 
+### Phonograph
+- Website: None
+- Source Code: <https://github.com/kabouzeid/Phonograph>
+- Download (F-Droid): <https://f-droid.org/packages/com.kabouzeid.gramophone/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.kabouzeid.gramophone>
+
 ### Retro Music
 - Website: <https://hemanths.dev/>
 - Source Code: <https://github.com/h4h13/RetroMusicPlayer>
@@ -161,12 +167,6 @@ sidebarDepth: 0
 - Source Code: <https://github.com/naman14/TimberX>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.naman14.timberx>
 - Download (APK): <https://github.com/naman14/TimberX/releases>
-
-### Phonograph
-- Website: None
-- Source Code: <https://github.com/kabouzeid/Phonograph>
-- Download (F-Droid): <https://f-droid.org/packages/com.kabouzeid.gramophone/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.kabouzeid.gramophone>
 
 ### Music
 - Website: None
