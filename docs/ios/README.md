@@ -68,6 +68,12 @@ sidebarDepth: 0
 - Source Code: <https://github.com/Ranchero-Software/NetNewsWire>
 - Download (App Store): <https://apps.apple.com/app/netnewswire-rss-reader/id1480640210>
 
+## Office
+### Collabora Office
+- Website: <https://www.collaboraoffice.com/solutions/collabora-office-android-ios/>
+- Source Code: <https://github.com/CollaboraOnline/online/tree/master/ios>
+- Download (App Store): <https://apps.apple.com/app/collabora-office/id1440482071>
+
 ## Maps and Navigation
 ### Magic Earth
 - Website: <https://www.magicearth.com/>
@@ -84,6 +90,12 @@ sidebarDepth: 0
 - Website: <https://mattrubin.me/authenticator/>
 - Source Code: <https://github.com/mattrubin/authenticator>
 - Download (App Store): <https://apps.apple.com/app/authenticator/id766157276>
+
+## Git Client
+### GitTouch
+- Website: None
+- Source Code: <https://github.com/git-touch/git-touch>
+- Download (App Store): <https://apps.apple.com/app/gittouch/id1452042346>
 
 ## Jailbreak Tweaks
 ### A-Shields

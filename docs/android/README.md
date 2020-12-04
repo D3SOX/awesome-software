@@ -209,6 +209,13 @@ sidebarDepth: 0
 - Download (APK): <https://github.com/florisboard/florisboard/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=dev.patrickgold.florisboard>
 
+### OpenBoard
+- Website: None
+- Source Code: <https://github.com/dslul/openboard>
+- Download (F-Droid): <https://f-droid.org/packages/org.dslul.openboard.inputmethod.latin/>
+- Download (APK): <https://github.com/dslul/openboard/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=org.dslul.openboard.inputmethod.latin>
+
 ### Simple Keyboard
 - Website: None
 - Source Code: <https://github.com/rkkr/simple-keyboard>
@@ -227,6 +234,13 @@ sidebarDepth: 0
 - Source Code: <https://github.com/laurent22/joplin>
 - Download (APK): <https://github.com/laurent22/joplin-android/releases/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=net.cozic.joplin>
+
+## To Do
+### Tasks.org
+- Website: <https://tasks.org/>
+- Source Code: <https://github.com/tasks/tasks>
+- Download (F-Droid): <https://f-droid.org/packages/org.tasks/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=org.tasks>
 
 ## File Manager
 ### Material Files
@@ -290,11 +304,24 @@ sidebarDepth: 0
 - Download (APK): <https://github.com/andOTP/andOTP/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=org.shadowice.flocke.andotp>
 
+## Office
+### Collabora Office
+- Website: <https://www.collaboraoffice.com/solutions/collabora-office-android-ios/>
+- Source Code: <https://github.com/CollaboraOnline/online/tree/master/android>
+- Download (F-Droid Repo): <https://www.collaboraoffice.com/releases-en/collabora-office-on-mobiles-supporting-password-protected-documents-and-available-on-f-droid/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.collabora.libreoffice>
+
 ## Screen Recorder
 ### MNML
 - Website: <https://af.codes/>
 - Source Code: <https://github.com/afollestad/mnml>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.afollestad.mnmlscreenrecord>
+
+### ScreenCam
+- Website: <https://orpheusdroid.com/>
+- Source Code: <https://gitlab.com/vijai/screenrecorder>
+- Download (F-Droid): <https://f-droid.org/packages/com.orpheusdroid.screenrecorder/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.orpheusdroid.screenrecorder>
 
 ## Podcasts
 ### AntennaPod
@@ -317,6 +344,13 @@ sidebarDepth: 0
 - Download (F-Droid): <https://f-droid.org/packages/eu.faircode.netguard/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=eu.faircode.netguard>
 
+## App Backups
+### OAndBackupX
+- Website: None
+- Source Code: <https://github.com/machiav3lli/oandbackupx>
+- Download (F-Droid): <https://f-droid.org/packages/com.machiav3lli.backup/>
+- Download (APK): <https://github.com/machiav3lli/oandbackupx/releases>
+
 ## Wallpapers
 ### Aurora Walls
 - Website: None
@@ -336,6 +370,13 @@ sidebarDepth: 0
 - Source Code: <https://gitlab.com/spacecowboy/Feeder>
 - Download (F-Droid): <https://f-droid.org/packages/com.nononsenseapps.feeder/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play>
+
+## Git Client
+### GitTouch
+- Website: None
+- Source Code: <https://github.com/git-touch/git-touch>
+- Download (APK): <https://github.com/pd4d10/git-touch/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=io.github.pd4d10.gittouch>
 
 ## File sharing
 ### TrebleShot
