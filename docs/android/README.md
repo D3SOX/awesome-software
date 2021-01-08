@@ -205,7 +205,7 @@ sidebarDepth: 0
 ### FlorisBoard
 - Website: <https://patrickgold.dev/>
 - Source Code: <https://github.com/florisboard/florisboard>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/dev.patrickgold.florisboard>
+- Download (F-Droid): <https://f-droid.org/packages/dev.patrickgold.florisboard>
 - Download (APK): <https://github.com/florisboard/florisboard/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=dev.patrickgold.florisboard>
 
