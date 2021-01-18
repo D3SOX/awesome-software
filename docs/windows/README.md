@@ -43,3 +43,9 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 - Website: <https://winscp.net/>
 - Source Code: <https://github.com/winscp/winscp>
 - Download: <https://winscp.net/download.php>
+
+## Disk Space Analyzer
+### WinDirStat
+- Website: <https://windirstat.net/>
+- Source Code: <https://sourceforge.net/p/windirstat/code/ci/default/tree/>
+- Download: <https://windirstat.net/download.html>

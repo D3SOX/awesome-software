@@ -49,3 +49,8 @@ sidebarDepth: 0
 ### UxPlay
 - Website: None
 - Source Code: <https://github.com/antimof/UxPlay>
+
+## Disk Space Analyzer
+### QDirStat
+- Website: None
+- Source Code: <https://github.com/shundhammer/qdirstat>
