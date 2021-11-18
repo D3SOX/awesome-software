@@ -5,6 +5,18 @@ sidebarDepth: 0
 
 # Windows
 
+## PDF Reader
+### Sumatra PDF
+- Website: <https://www.sumatrapdfreader.org>
+- Source Code: <https://github.com/sumatrapdfreader/sumatrapdf>
+- Download: <https://www.sumatrapdfreader.org/download-free-pdf-viewer>
+
+## Screenshot & Annotation Tool
+### ShareX
+- Website: <https://getsharex.com>
+- Source Code: <https://github.com/ShareX/ShareX>
+- Download: <https://github.com/ShareX/ShareX/releases/latest>
+
 ## Debloater
 ### Windows10Debloater
 - Website: None
