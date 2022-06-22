@@ -17,6 +17,11 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 - Download (Install script): <https://github.com/ekistece/vlmcsd-autokms/releases>
 
 ## Package Manager
+### Winget
+- Website: <https://docs.microsoft.com/windows/package-manager/winget/>
+- Source Code: <https://github.com/microsoft/winget-cli>
+- Download: <https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1>
+
 ### Chocolatey
 - Website: <https://chocolatey.org/>
 - Source Code: <https://github.com/chocolatey/choco>
