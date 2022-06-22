@@ -238,6 +238,12 @@
 - Download (APK): <https://github.com/laurent22/joplin-android/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=net.cozic.joplin>
 
+### Markor
+- Website: <https://gsantner.net/project/markor.html>
+- Source Code: <https://github.com/gsantner/markor>
+- Download (F-Droid): <https://f-droid.org/packages/net.gsantner.markor/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=net.gsantner.markor>
+
 ## To Do
 ### Tasks.org
 - Website: <https://tasks.org/>
