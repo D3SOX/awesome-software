@@ -45,6 +45,12 @@
 - Source Code: <https://github.com/laurent22/joplin>
 - Download (App Store): <https://apps.apple.com/app/joplin/id1315599797>
 
+## Sync to PC
+### KDE Connect
+- Website: <https://kdeconnect.kde.org/>
+- Source Code: <https://invent.kde.org/network/kdeconnect-ios>
+- Download (App Store): <https://apps.apple.com/app/kde-connect/id1580245991>
+
 ## Messenger
 ### Signal
 - Website: <https://signal.org/>
