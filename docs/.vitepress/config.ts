@@ -2,12 +2,12 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
     lang: 'en-US',
-    title: "Awesome Software",
+    title: 'Awesome Software',
     description: 'Some recommendations regarding software for desktop and mobile',
 
     head: [
         ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
-        ['script', { defer: '', 'data-domain': 'arch.d3sox.me', src: 'https://analytics.soundux.rocks/js/script.js' }]
+        ['script', { defer: '', 'data-domain': 'awesome-software.d3sox.me', src: 'https://analytics.soundux.rocks/js/script.js' }]
     ],
 
     lastUpdated: true,
