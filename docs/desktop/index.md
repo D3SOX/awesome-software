@@ -51,6 +51,11 @@
 - Source Code: <https://github.com/standardnotes/desktop>
 - Download: <https://standardnotes.org/download>
 
+### Simplenote
+- Website: <https://simplenote.com/>
+- Source Code: <https://github.com/Automattic/simplenote-electron>
+- Download: <https://simplenote.com/#available-on-all-your-devices>
+
 ### Joplin
 - Website: <https://joplinapp.org/>
 - Source Code: <https://github.com/laurent22/joplin>

@@ -232,6 +232,12 @@
 - Download (APK): <https://github.com/standardnotes/mobile/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.standardnotes>
 
+### Simplenote
+- Website: <https://simplenote.com/>
+- Source Code: <https://github.com/Automattic/simplenote-android>
+- Download (APK): <https://github.com/Automattic/simplenote-android/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.automattic.simplenote>
+
 ### Joplin
 - Website: <https://joplinapp.org/>
 - Source Code: <https://github.com/laurent22/joplin>

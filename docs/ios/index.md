@@ -40,6 +40,11 @@
 - Source Code: <https://github.com/standardnotes/mobile>
 - Download (App Store): <https://apps.apple.com/app/standard-notes/id1285392450>
 
+### Simplenote
+- Website: <https://simplenote.com/>
+- Source Code: <https://github.com/Automattic/simplenote-ios>
+- Download (App Store): <https://apps.apple.com/app/simplenote/id289429962>
+
 ### Joplin
 - Website: <https://joplinapp.org/>
 - Source Code: <https://github.com/laurent22/joplin>
