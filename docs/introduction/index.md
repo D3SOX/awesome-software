@@ -1,7 +1,3 @@
----
-sidebar: off
----
-
 # Introduction
 This site lists software I personally recommend. Some of them I use regularly. It's split up by platform and mostly [FOSS](https://www.gnu.org/philosophy/free-sw.html).
 
