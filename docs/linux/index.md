@@ -39,6 +39,10 @@
 - Website: None
 - Source Code: <https://github.com/libratbag/piper>
 
+### OpenRazer
+- Website: <https://openrazer.github.io/>
+- Source Code: <https://github.com/openrazer/openrazer>
+
 ## RGB lighting control
 ### OpenRGB
 - Website: <https://gitlab.com/CalcProgrammer1/OpenRGB/-/wikis/home>
