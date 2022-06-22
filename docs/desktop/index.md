@@ -45,7 +45,7 @@
 - Source Code: <https://github.com/signalapp/Signal-Desktop>
 - Download: <https://signal.org/download/>
 
-## Note taking
+## Note-taking
 ### Standard Notes
 - Website: <https://standardnotes.org/>
 - Source Code: <https://github.com/standardnotes/desktop>

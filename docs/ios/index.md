@@ -34,7 +34,7 @@
 - Source Code: <https://github.com/keepassium/KeePassium>
 - Download (App Store): <https://apps.apple.com/app/keepassium-password-manager/id1435127111>
 
-## Note taking
+## Note-taking
 ### Standard Notes
 - Website: <https://standardnotes.org/>
 - Source Code: <https://github.com/standardnotes/mobile>

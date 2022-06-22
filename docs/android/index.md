@@ -225,7 +225,7 @@
 - Download (F-Droid): <https://f-droid.org/packages/rkr.simplekeyboard.inputmethod/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod>
 
-## Note taking
+## Note-taking
 ### Standard Notes
 - Website: <https://standardnotes.org/>
 - Source Code: <https://github.com/standardnotes/mobile>
