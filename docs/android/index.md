@@ -107,6 +107,13 @@
 - Source Code: Not available
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.generalmagic.magicearth>
 
+### Organic Maps
+- Website: <https://organicmaps.app/>
+- Source Code: <https://github.com/organicmaps/organicmaps>
+- Download (F-Droid): <https://f-droid.org/packages/app.organicmaps/>
+- Download (APK): <https://github.com/organicmaps/organicmaps/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=app.organicmaps>
+
 ### OsmAnd
 - Website: <https://osmand.net/>
 - Source Code: <https://github.com/osmandapp/Osmand>

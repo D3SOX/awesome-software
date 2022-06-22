@@ -75,6 +75,11 @@
 - Source Code: Not available
 - Download (App Store): <https://apps.apple.com/us/app/magic-earth-gps-navigation/id1007331679>
 
+### Organic Maps
+- Website: <https://organicmaps.app/>
+- Source Code: <https://github.com/organicmaps/organicmaps>
+- Download (App Store): <https://apps.apple.com/app/organic-maps/id1567437057>
+
 ### OsmAnd
 - Website: <https://osmand.net/>
 - Source Code: <https://github.com/osmandapp/OsmAnd-iOS>
