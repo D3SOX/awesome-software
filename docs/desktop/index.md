@@ -108,6 +108,12 @@
 - Source Code: <https://github.com/nomacs/nomacs>
 - Download: <https://nomacs.org/download/>
 
+## Archive Manager
+### PeaZip
+- Website: <https://peazip.github.io/>
+- Source Code: <https://github.com/peazip/PeaZip>
+- Download: <https://peazip.github.io/>
+
 ## PDF Reader
 ### Okular
 - Website: <https://okular.kde.org/>
