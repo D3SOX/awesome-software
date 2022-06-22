@@ -26,6 +26,10 @@
 - Source Code: <https://github.com/teejee2008/timeshift>
 
 ## Data Backup and Restore
+### Pika Backup
+- Website: <https://apps.gnome.org/app/org.gnome.World.PikaBackup/>
+- Source Code: <https://gitlab.gnome.org/World/pika-backup/>
+
 ### Déjà Dup
 - Website: <https://wiki.gnome.org/Apps/DejaDup>
 - Source Code: <https://gitlab.gnome.org/World/deja-dup>
