@@ -404,6 +404,12 @@
 - Download (XDA Labs): <https://labs.xda-developers.com/store/app/com.tachibana.downloader>
 
 ## PDF Reader
+### GrapheneOS PDF viewer
+- Website: <https://grapheneos.org/>
+- Source Code: <https://github.com/GrapheneOS/PdfViewer>
+- Download (APK): <https://github.com/GrapheneOS/PdfViewer/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=app.grapheneos.pdfviewer.play>
+
 ### Pdf Viewer Plus
 - Website: None
 - Source Code: <https://github.com/JavaCafe01/PdfViewer>
