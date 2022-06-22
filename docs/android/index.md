@@ -417,6 +417,12 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.artifex.mupdf.viewer.app>
 
 ## YouTube Client
+### LibreTube
+- Website: None
+- Source Code: <https://github.com/libre-tube/LibreTube>
+- Download (F-Droid): <https://f-droid.org/packages/com.github.libretube/>
+- Download (APK): <https://github.com/libre-tube/LibreTube/releases>
+
 ### NewPipe
 - Website: <https://newpipe.schabi.org/>
 - Source Code: <https://github.com/TeamNewPipe/NewPipe>
