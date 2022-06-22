@@ -103,6 +103,11 @@
 - Download (App Store): <https://apps.apple.com/app/osmand-maps-travel-navigate/id934850257>
 
 ## 2FA app
+### Tofu
+- Website: <https://www.tofuauth.com/>
+- Source Code: <https://github.com/calleluks/Tofu>
+- Download (App Store): <https://itunes.apple.com/app/tofu-authenticator/id1082229305>
+
 ### Authenticator
 - Website: <https://mattrubin.me/authenticator/>
 - Source Code: <https://github.com/mattrubin/authenticator>
