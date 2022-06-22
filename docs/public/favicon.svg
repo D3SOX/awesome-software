@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="582.72339"
+   height="568.05786"
+   id="svg3290"
+   version="1.1"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="/home/rafael/workspace/logo-osi/5/png/logo396x412.png"
+   inkscape:export-xdpi="52.737835"
+   inkscape:export-ydpi="52.737835"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs3292" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="34.345186"
+     inkscape:cy="296.98485"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3879"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1054"
+     inkscape:window-x="0"
+     inkscape:window-y="109"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <sodipodi:guide
+       orientation="1,0"
+       position="298.77811,-160.90741"
+       id="guide3004"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3295">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-91.140769,-108.23442)">
+    <g
+       style="display:inline"
+       id="g3879"
+       transform="matrix(3.1607572,0,0,3.1607572,1289.8039,2829.9529)"
+       inkscape:export-filename="/home/paulormm/usp/softwarelivre/OSI/OSI_member_card_model_final-300dpi.png"
+       inkscape:export-xdpi="300.05554"
+       inkscape:export-ydpi="300.05554">
+      <path
+         inkscape:export-ydpi="48.18"
+         inkscape:export-xdpi="48.18"
+         inkscape:export-filename="/home/rafael/workspace/logo-osi/3/png/logo396x412.png"
+         id="path3773"
+         d="m -287.05192,-768.95371 m 11.01179,28.68474 a 30.724865,30.724865 0 1 0 -22.02358,0 l -20.69627,53.92828 a 88.487611,88.487611 0 1 1 63.41612,0 z"
+         inkscape:connector-curvature="0"
+         style="text-anchor:middle;fill:#3fa652;stroke:#21552a;stroke-width:7.37397;stroke-linejoin:round" />
+      <g
+         id="g3797"
+         transform="translate(-21.225811,-1.0146812)"
+         inkscape:export-filename="/home/rafael/workspace/logo-osi/3/png/logo396x412.png"
+         inkscape:export-xdpi="48.18"
+         inkscape:export-ydpi="48.18">
+        <ellipse
+           transform="matrix(0.33912491,0,0,0.33852655,-402.53969,-908.3754)"
+           id="path3015"
+           style="fill:none;stroke:#000000;stroke-width:6.66514;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           cx="645.71429"
+           cy="646.64789"
+           rx="23.571428"
+           ry="23.571411" />
+        <text
+           id="text3793"
+           y="-685.33014"
+           x="-188.29698"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:OpenSymbol;-inkscape-font-specification:'OpenSymbol Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+           xml:space="preserve"><tspan
+             y="-685.33014"
+             x="-188.29698"
+             id="tspan3795"
+             sodipodi:role="line"
+             style="font-size:12.6552px;line-height:1.25">R</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
