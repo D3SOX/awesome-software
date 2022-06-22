@@ -1,8 +1,3 @@
----
-sidebar: auto
-sidebarDepth: 0
----
-
 # Windows
 
 ## Debloater

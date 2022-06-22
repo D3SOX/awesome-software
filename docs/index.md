@@ -3,8 +3,6 @@ layout: home
 
 titleTemplate: Home
 
-heroImage: https://opensource.org/files/osi_symbol_0.png
-
 hero:
     name: Arch Linux Guide
     tagline: Some recommendations regarding software for desktop and mobile 🔝

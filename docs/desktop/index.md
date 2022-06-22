@@ -1,8 +1,3 @@
----
-sidebar: auto
-sidebarDepth: 0
----
-
 # Cross-platform desktop
 
 ## Browser
