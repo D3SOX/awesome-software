@@ -121,6 +121,12 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=net.osmand.plus>
 
 ## Camera
+### Secure Camera
+- Website: <https://grapheneos.org/>
+- Source Code: <https://github.com/GrapheneOS/Camera>
+- Download (APK): <https://github.com/GrapheneOS/Camera/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=app.grapheneos.camera.play>
+
 ### Open Camera
 - Website: <https://opencamera.org.uk/>
 - Source Code: <https://sourceforge.net/p/opencamera/code>
