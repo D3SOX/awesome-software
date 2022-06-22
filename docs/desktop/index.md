@@ -74,6 +74,11 @@
 - Source Code: <https://invent.kde.org/kde/kdenlive>
 - Download: <https://kdenlive.org/download/>
 
+### Olive
+- Website: <https://www.olivevideoeditor.org/>
+- Source Code: <https://github.com/olive-editor/olive>
+- Download: <https://olivevideoeditor.org/download.php>
+
 ## Audio Recorder and Editor
 ### Audacity
 - Website: <https://www.audacityteam.org/>
