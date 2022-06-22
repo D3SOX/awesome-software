@@ -1,0 +1,6 @@
+- Migrate to a JSON format as data source (DRY)
+  - Transform to a better looking format 
+  - Use "Get on XY" banners and optional logos 
+  - Add tags like "Discontinued"
+- Check for dead links (maybe also in a workflow?)
+- Use metascraper to fetch site titles
