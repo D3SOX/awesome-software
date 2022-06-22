@@ -30,10 +30,10 @@
 - Website: <https://wiki.gnome.org/Apps/DejaDup>
 - Source Code: <https://gitlab.gnome.org/World/deja-dup>
 
-## Gaming Mouse Config
+## Gaming Device Config
 ### Piper
 - Website: None
-- Source Code: <https://github.com/libratbag/piper/>
+- Source Code: <https://github.com/libratbag/piper>
 
 ## RGB lighting control
 ### OpenRGB
@@ -43,7 +43,7 @@
 ## AirPlay server
 ### UxPlay
 - Website: None
-- Source Code: <https://github.com/antimof/UxPlay>
+- Source Code: <https://github.com/FDH2/UxPlay>
 
 ## Disk Space Analyzer
 ### QDirStat

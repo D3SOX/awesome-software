@@ -1,20 +1,20 @@
 # Cross-platform desktop
 
 ## Browser
-### ungoogled-chromium
-- Website: None
-- Source Code: <https://github.com/Eloston/ungoogled-chromium>
-- Download: <https://ungoogled-software.github.io/ungoogled-chromium-binaries/>
+### Firefox
+- Website: <https://www.mozilla.org/firefox>
+- Source Code: <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Downloading_Source_Archives>
+- Download: <https://www.mozilla.org/firefox/new/>
 
 ### Brave
 - Website: <https://brave.com/>
 - Source Code: <https://github.com/brave/brave-browser>
 - Download: <https://brave.com/download/>
 
-### Firefox
-- Website: <https://www.mozilla.org/firefox>
-- Source Code: <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Downloading_Source_Archives>
-- Download: <https://www.mozilla.org/firefox/new/>
+### ungoogled-chromium
+- Website: None
+- Source Code: <https://github.com/Eloston/ungoogled-chromium>
+- Download: <https://ungoogled-software.github.io/ungoogled-chromium-binaries/>
 
 ## Control Android device
 ### scrcpy
@@ -25,7 +25,7 @@
 ## AdBlocker
 ### uBlock Origin
 - Website: None
-- Source Code: <https://github.com/gorhill/uBlock/>
+- Source Code: <https://github.com/gorhill/uBlock>
 - Download: <https://github.com/gorhill/uBlock/#installation>
 
 ## Password Manager
@@ -89,7 +89,7 @@
 ## Media Player
 ### mpv
 - Website: <https://mpv.io/>
-- Source Code: <https://github.com/mpv-player/mpv/>
+- Source Code: <https://github.com/mpv-player/mpv>
 - Download: <https://mpv.io/installation/>
 
 ### VLC

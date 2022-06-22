@@ -3,7 +3,7 @@
 ## Debloater
 ### Windows10Debloater
 - Website: None
-- Source Code: <https://github.com/Sycnex/Windows10Debloater/>
+- Source Code: <https://github.com/Sycnex/Windows10Debloater>
 - Download (PowerShell as admin):
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))

@@ -19,14 +19,14 @@
 - Download (F-Droid): <https://f-droid.org/packages/com.duckduckgo.mobile.android/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android>
 
-## AdBlocker (non-root & root)
+## AdBlocker root & non-root (VPN-based)
 ### AdAway
 - Website: <https://adaway.org/>
 - Source Code: <https://github.com/AdAway/AdAway>
 - Download (F-Droid): <https://f-droid.org/packages/org.adaway/>
 - Download (APK): <https://app.adaway.org/adaway.apk>
 
-## AdBlocker (non-root)
+## AdBlocker non-root, VPN-based
 ### DNS66
 - Website: <https://jak-linux.org/projects/dns66/>
 - Source Code: <https://github.com/julian-klode/dns66>
@@ -70,14 +70,9 @@
 ### Geometric Weather
 - Website: None
 - Source Code: <https://github.com/WangDaYeeeeee/GeometricWeather>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/wangdaye.com.geometricweather>
+- Download (F-Droid): <https://f-droid.org/packages/wangdaye.com.geometricweather/>
 - Download (APK): <https://github.com/WangDaYeeeeee/GeometricWeather/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=wangdaye.com.geometricweather>
-
-#### Fork without proprietary blobs
-- Source Code: <https://github.com/mbestavros/GeometricWeather>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/com.mbestavros.geometricweather>
-- Download (APK): <https://github.com/mbestavros/GeometricWeather/releases>
 
 ### Forecastie
 - Website: None
@@ -134,8 +129,8 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.kabouzeid.gramophone>
 
 ### Retro Music
-- Website: <https://hemanths.dev/>
-- Source Code: <https://github.com/h4h13/RetroMusicPlayer>
+- Website: <https://retromusic.app/>
+- Source Code: <https://github.com/RetroMusicPlayer/RetroMusicPlayer>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=code.name.monkey.retromusic>
 - Download (APK): <https://github.com/h4h13/RetroMusicPlayer/releases>
 
@@ -221,13 +216,13 @@
 ### Standard Notes
 - Website: <https://standardnotes.org/>
 - Source Code: <https://github.com/standardnotes/mobile>
-- Download (APK): <https://github.com/standardnotes/mobile/releases/>
+- Download (APK): <https://github.com/standardnotes/mobile/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.standardnotes>
 
 ### Joplin
 - Website: <https://joplinapp.org/>
 - Source Code: <https://github.com/laurent22/joplin>
-- Download (APK): <https://github.com/laurent22/joplin-android/releases/>
+- Download (APK): <https://github.com/laurent22/joplin-android/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=net.cozic.joplin>
 
 ## To Do
@@ -280,7 +275,7 @@
 
 ### KeePassDX
 - Website: <https://www.keepassdx.com/>
-- Source Code: <https://github.com/Kunzisoft/KeePassDX/>
+- Source Code: <https://github.com/Kunzisoft/KeePassDX>
 - Download (F-Droid): <https://www.f-droid.org/packages/com.kunzisoft.keepass.libre/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free>
 
@@ -340,11 +335,11 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=eu.faircode.netguard>
 
 ## App Backups
-### OAndBackupX
+### Neo Backup
 - Website: None
-- Source Code: <https://github.com/machiav3lli/oandbackupx>
+- Source Code: <https://github.com/NeoApplications/Neo-Backup>
 - Download (F-Droid): <https://f-droid.org/packages/com.machiav3lli.backup/>
-- Download (APK): <https://github.com/machiav3lli/oandbackupx/releases>
+- Download (APK): <https://github.com/NeoApplications/Neo-Backup/releases>
 
 ## Wallpapers
 ### Aurora Walls
@@ -412,14 +407,15 @@
 ## YouTube Client
 ### NewPipe
 - Website: <https://newpipe.schabi.org/>
-- Source Code: <https://github.com/TeamNewPipe/NewPipe/>
+- Source Code: <https://github.com/TeamNewPipe/NewPipe>
 - Download (F-Droid): <https://f-droid.org/packages/org.schabi.newpipe/>
 
 ## Twitch Client
 ### Twire
 - Website: None
-- Source Code: <https://github.com/Perflyst/Twire>
+- Source Code: <https://github.com/twireapp/Twire>
 - Download (F-Droid): <https://f-droid.org/packages/com.perflyst.twire/>
+- Download (APK): <https://github.com/twireapp/Twire/releases>
 
 ## Twitter Client
 ### Talon
@@ -435,9 +431,8 @@
 ## Instagram Client + Downloader
 ### Barinsta
 - Website: <https://barinsta.austinhuang.me/>
-- Source Code: <https://github.com/austinhuang0131/barinsta>
+- Source Code: <https://codeberg.org/avalos/barinsta>
 - Download (F-Droid): <https://f-droid.org/packages/me.austinhuang.instagrabber/>
-- Download (APK): <https://github.com/austinhuang0131/barinsta/releases>
 
 ## Reddit Client
 ### Slide

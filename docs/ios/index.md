@@ -135,7 +135,7 @@
 
 ### Axon
 - Purpose: Notifications Priority Hub
-- Source Code: <https://github.com/Baw-Appie/Axon/>
+- Source Code: <https://github.com/Baw-Appie/Axon>
 - Repo: <https://repo.co.kr/package/me.nepeta.axon>
 
 ### PreferenceOrganizer2
