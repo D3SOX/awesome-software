@@ -32,6 +32,12 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 - Source Code: <https://github.com/lukesampson/scoop>
 - Download: <https://scoop.sh/#installs-in-seconds>
 
+## Screenshot Tool
+### ShareX
+- Website: <https://getsharex.com/>
+- Source Code: <https://github.com/ShareX/ShareX>
+- Download: <https://getsharex.com/downloads/>
+
 ## Archive Manager
 ### 7-Zip
 - Website: <https://www.7-zip.org/>
