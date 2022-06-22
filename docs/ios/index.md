@@ -69,6 +69,12 @@
 - Source Code: <https://github.com/Ranchero-Software/NetNewsWire>
 - Download (App Store): <https://apps.apple.com/app/netnewswire-rss-reader/id1480640210>
 
+## YouTube Client
+### Yattee
+- Website: None
+- Source Code: <https://github.com/yattee/yattee>
+- Installation (Not yet on the App Store): <https://github.com/yattee/yattee/wiki/Installation-Instructions>
+
 ## Office
 ### OnlyOffice
 - Website: <https://www.onlyoffice.com/office-for-android.aspx>
