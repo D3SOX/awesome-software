@@ -5,11 +5,6 @@
 - Website: <https://lutris.net/>
 - Source Code: <https://github.com/lutris/lutris>
 
-## Screenshot Tool
-### Flameshot
-- Website: <https://flameshot.js.org/>
-- Source Code: <https://github.com/lupoDharkael/flameshot>
-
 ## GIF Recorder
 ### Peek
 - Website: None

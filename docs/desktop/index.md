@@ -85,6 +85,12 @@
 - Source Code: <https://github.com/audacity/audacity>
 - Download: <https://www.audacityteam.org/download/>
 
+## Screenshot Tool
+### Flameshot
+- Website: <https://flameshot.org/>
+- Source Code: <https://github.com/flameshot-org/flameshot>
+- Download <https://flameshot.org/#download>
+
 ## Screen Recorder
 ### OBS Studio
 - Website: <https://obsproject.com/>
