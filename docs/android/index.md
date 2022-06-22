@@ -404,7 +404,7 @@
 - Download (XDA Labs): <https://labs.xda-developers.com/store/app/com.tachibana.downloader>
 
 ## PDF Reader
-### GrapheneOS PDF viewer
+### Secure PDF Viewer
 - Website: <https://grapheneos.org/>
 - Source Code: <https://github.com/GrapheneOS/PdfViewer>
 - Download (APK): <https://github.com/GrapheneOS/PdfViewer/releases>
