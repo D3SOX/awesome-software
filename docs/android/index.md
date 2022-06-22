@@ -302,6 +302,11 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=org.shadowice.flocke.andotp>
 
 ## Office
+### OnlyOffice
+- Website: <https://www.onlyoffice.com/office-for-android.aspx>
+- Source Code: <https://github.com/ONLYOFFICE/documents-app-android>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.onlyoffice.documents>
+
 ### Collabora Office
 - Website: <https://www.collaboraoffice.com/solutions/collabora-office-android-ios/>
 - Source Code: <https://github.com/CollaboraOnline/online/tree/master/android>
