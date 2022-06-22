@@ -32,6 +32,12 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 - Source Code: <https://github.com/lukesampson/scoop>
 - Download: <https://scoop.sh/#installs-in-seconds>
 
+## PDF Reader
+### Sumatra PDF
+- Website: <https://www.sumatrapdfreader.org>
+- Source Code: <https://github.com/sumatrapdfreader/sumatrapdf>
+- Download: <https://www.sumatrapdfreader.org/download-free-pdf-viewer>
+
 ## Screenshot Tool
 ### ShareX
 - Website: <https://getsharex.com/>
