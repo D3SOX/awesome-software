@@ -4,7 +4,7 @@ layout: home
 titleTemplate: Home
 
 hero:
-    name: Arch Linux Guide
+    name: Awesome Software
     tagline: Some recommendations regarding software for desktop and mobile 🔝
     actions:
         - theme: brand
