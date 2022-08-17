@@ -6,6 +6,9 @@ titleTemplate: Home
 hero:
     name: Awesome Software
     tagline: Some recommendations regarding software for desktop and mobile 🔝
+    image:
+        src: https://cdn.freebiesupply.com/logos/large/2x/open-source-logo-png-transparent.png
+        alt: Logo
     actions:
         - theme: brand
           text: Get started →
