@@ -428,11 +428,11 @@
 - Download (APK): <https://github.com/GrapheneOS/PdfViewer/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=app.grapheneos.pdfviewer.play>
 
-### Pdf Viewer Plus
+### MJ PDF Reader
 - Website: None
-- Source Code: <https://github.com/JavaCafe01/PdfViewer>
-- Download (F-Droid): <https://f-droid.org/packages/com.gsnathan.pdfviewer>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.gsnathan.pdfviewer>
+- Source Code: <https://gitlab.com/mudlej_android/mj_pdf_reader>
+- Download (F-Droid): <https://apt.izzysoft.de/fdroid/index/apk/com.gitlab.mudlej.MjPdfReader>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.gitlab.mudlej.MjPdfReader>
 
 ### MuPDF
 - Website: <https://mupdf.com/>
