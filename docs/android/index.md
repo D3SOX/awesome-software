@@ -431,7 +431,7 @@
 ### MJ PDF Reader
 - Website: None
 - Source Code: <https://gitlab.com/mudlej_android/mj_pdf_reader>
-- Download (F-Droid): <https://apt.izzysoft.de/fdroid/index/apk/com.gitlab.mudlej.MjPdfReader>
+- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/com.gitlab.mudlej.MjPdfReader>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.gitlab.mudlej.MjPdfReader>
 
 ### MuPDF
