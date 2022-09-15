@@ -103,6 +103,11 @@
 - Download: <https://obsproject.com/download>
 
 ## Media Player
+### SMPlayer
+- Website: <https://www.smplayer.info>
+- Source Code: <https://github.com/smplayer-dev/smplayer>
+- Download: <https://www.smplayer.info/downloads>
+
 ### mpv
 - Website: <https://mpv.io/>
 - Source Code: <https://github.com/mpv-player/mpv>
