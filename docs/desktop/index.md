@@ -153,6 +153,11 @@
 - Source Code: <https://invent.kde.org/kde/kate>
 - Download: <https://kate-editor.org/get-it/>
 
+### Geany
+- Website: <https://www.geany.org>
+- Source Code: <https://github.com/geany/geany>
+- Download: <https://www.geany.org/download/releases/>
+
 ### VSCodium
 - Website: <https://vscodium.com/>
 - Source Code: <https://github.com/VSCodium/vscodium>
