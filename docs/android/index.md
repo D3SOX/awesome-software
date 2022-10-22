@@ -195,6 +195,7 @@
 ### Shade
 - Website: None
 - Source Code: <https://github.com/amirzaidi/Shade>
+- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/amirz.shade>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=amirz.shade>
 
 ### posidon launcher
