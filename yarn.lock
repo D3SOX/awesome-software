@@ -543,11 +543,6 @@ rollup@~2.78.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-shiki-processor@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/shiki-processor/-/shiki-processor-0.1.0.tgz#ebc76e6ba2f1516d0e7afab32a2be879ca6232a5"
-  integrity sha512-7ty3VouP7AQMlERKeiobVeyhjUW6rPMM1b+xFcFF/XwhkN4//Fg9Ju6hPfIOvO4ztylkbLqYufbJmLJmw7SfQA==
-
 shiki@^0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/shiki/-/shiki-0.11.1.tgz#df0f719e7ab592c484d8b73ec10e215a503ab8cc"
@@ -589,10 +584,10 @@ vite@^3.1.8:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitepress@^1.0.0-alpha.26:
-  version "1.0.0-alpha.26"
-  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-alpha.26.tgz#2754c7247381f4c64983804bec36d35f6cadcc6c"
-  integrity sha512-XpDpflrdmyBmUQrg06q29Mhez144NvoZ48pRvNhANy/wV7E7XJ1zenQROOSADnOsAlhV1gzcNjqiFNObCk7l8A==
+vitepress@^1.0.0-alpha.27:
+  version "1.0.0-alpha.27"
+  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-alpha.27.tgz#052c8be58b15da79bc9481fe5d8d41668d328116"
+  integrity sha512-7/PwlIRZANvB2uyi8oi4oMXuH84g2/pAaoymb+ObBCs60m0oVxKMPO28w7R/svqSnnE+bNDOuLzTCXt7gn513g==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
@@ -601,7 +596,6 @@ vitepress@^1.0.0-alpha.26:
     "@vueuse/core" "^9.4.0"
     body-scroll-lock "4.0.0-beta.0"
     shiki "^0.11.1"
-    shiki-processor "^0.1.0"
     vite "^3.1.8"
     vue "^3.2.41"
 
