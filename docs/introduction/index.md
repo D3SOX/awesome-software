@@ -3,6 +3,13 @@ This site lists software I personally recommend. Some of them I use regularly. I
 
 I'm open for additions so if you want something to be added feel free to open an [Issue](https://github.com/D3SOX/awesome-software/issues) or a [Pull request](https://github.com/D3SOX/awesome-software/pulls) 
 
-::: tip Let's go
-Navigate the site using the *top bar* or *sidebar* if you are on mobile
+::: tip Choose your platform
+- [Android](/android/)
+- [iOS](/ios/)
+- [Cross-platform desktop](/desktop/)
+- [Linux](/linux/)
+- [Windows](/windows/)
+
+Change using the *top bar*
 :::
+
