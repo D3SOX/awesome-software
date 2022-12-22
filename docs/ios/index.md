@@ -108,10 +108,15 @@
 - Download (App Store): <https://apps.apple.com/app/osmand-maps-travel-navigate/id934850257>
 
 ## 2FA app
+### Ravio
+- Website: <https://raivo-otp.com/>
+- Source Code: <https://github.com/raivo-otp/ios-application>
+- Download (App Store): <https://apps.apple.com/app/raivo-otp/id1459042137>
+
 ### Tofu
 - Website: <https://www.tofuauth.com/>
 - Source Code: <https://github.com/calleluks/Tofu>
-- Download (App Store): <https://itunes.apple.com/app/tofu-authenticator/id1082229305>
+- Download (App Store): <https://apps.apple.com/app/tofu-authenticator/id1082229305>
 
 ### Authenticator
 - Website: <https://mattrubin.me/authenticator/>
