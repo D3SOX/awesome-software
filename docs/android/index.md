@@ -88,6 +88,12 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=me.jfenn.alarmio>
 
 ## QR/Barcode Scanner
+### Barcode Scanner
+- Website: None
+- Source Code: <https://gitlab.com/Atharok/BarcodeScanner>
+- Download (F-Droid): <https://f-droid.org/packages/com.atharok.barcodescanner/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.atharok.barcodescanner>
+
 ### QR & Barcode Scanner
 - Website: None
 - Source Code: <https://github.com/dmitriy-ilchenko/QrAndBarcodeScanner>
