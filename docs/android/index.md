@@ -141,22 +141,21 @@
 
 ## Music Player
 
-### Phonograph
-- Website: None
-- Source Code: <https://github.com/kabouzeid/Phonograph>
-- Download (F-Droid): <https://f-droid.org/packages/com.kabouzeid.gramophone/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.kabouzeid.gramophone>
-
 ### Retro Music
 - Website: <https://retromusic.app/>
 - Source Code: <https://github.com/RetroMusicPlayer/RetroMusicPlayer>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=code.name.monkey.retromusic>
 - Download (APK): <https://github.com/h4h13/RetroMusicPlayer/releases>
 
-#### Metro, fork with premium features and without google libraries
+#### Metro, fork with premium features and without Google libraries
 - Source Code: <https://github.com/MuntashirAkon/Metro>
 - Download (F-Droid): <https://f-droid.org/packages/io.github.muntashirakon.Music/>
 - Download (APK): <https://github.com/MuntashirAkon/Metro/releases>
+
+### Phonograph Plus
+- Website: None
+- Source Code: <https://github.com/chr56/Phonograph_Plus>
+- Download (APK): <https://github.com/chr56/Phonograph_Plus/releases>
 
 ### Shuttle
 - Website: None
