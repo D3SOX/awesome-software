@@ -292,6 +292,13 @@
 - Download (F-Droid): <https://f-droid.org/packages/eu.faircode.email/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=eu.faircode.email>
 
+### K-9 Mail
+- Website: <https://k9mail.app/>
+- Source Code: <https://github.com/thundernest/k-9>
+- Download (F-Droid): <https://f-droid.org/packages/com.fsck.k9/>
+- Download (APK): <https://github.com/thundernest/k-9/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.fsck.k9>
+
 ### Tutanota
 - Website: <https://www.tutanota.com/>
 - Source Code: <https://github.com/tutao/tutanota>
