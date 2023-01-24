@@ -1,1 +1,0 @@
-import{_ as e,c as t,o,a as r}from"./app.415c6aad.js";const _=JSON.parse('{"title":"Introduction","description":"","frontmatter":{},"headers":[],"relativePath":"introduction/index.md","lastUpdated":1674461118000}'),a={name:"introduction/index.md"},s=r("",4),i=[s];function n(l,d,p,c,h,f){return o(),t("div",null,i)}const m=e(a,[["render",n]]);export{_ as __pageData,m as default};
