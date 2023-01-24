@@ -155,6 +155,7 @@
 ### Phonograph Plus
 - Website: None
 - Source Code: <https://github.com/chr56/Phonograph_Plus>
+- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/player.phonograph.plus>
 - Download (APK): <https://github.com/chr56/Phonograph_Plus/releases>
 
 ### Shuttle
