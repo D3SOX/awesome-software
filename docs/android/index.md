@@ -141,6 +141,12 @@
 
 ## Music Player
 
+### Auxio
+- Website: None
+- Source Code: <https://github.com/OxygenCobalt/Auxio>
+- Download (F-Droid): <https://f-droid.org/packages/org.oxycblt.auxio/>
+- Download (APK): <https://github.com/OxygenCobalt/Auxio/releases>
+
 ### Retro Music
 - Website: <https://retromusic.app/>
 - Source Code: <https://github.com/RetroMusicPlayer/RetroMusicPlayer>
