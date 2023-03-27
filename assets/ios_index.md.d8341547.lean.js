@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as r,N as t}from"./chunks/framework.cd9250a1.js";const f=JSON.parse('{"title":"iOS","description":"","frontmatter":{},"headers":[],"relativePath":"ios/index.md","lastUpdated":1679387151000}'),o={name:"ios/index.md"},i=t("",100),l=[i];function n(p,h,s,c,d,u){return r(),a("div",null,l)}const m=e(o,[["render",n]]);export{f as __pageData,m as default};
