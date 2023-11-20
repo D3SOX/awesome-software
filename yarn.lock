@@ -592,6 +592,11 @@ minisearch@^6.2.0:
   resolved "https://registry.yarnpkg.com/minisearch/-/minisearch-6.2.0.tgz#310b50508551f22e10815f5baedeeeded03a6b5d"
   integrity sha512-BECkorDF1TY2rGKt9XHdSeP9TP29yUbrAaCh/C03wpyf1vx3uYcP/+8XlMcpTkgoU0rBVnHMAOaP83Rc9Tm+TQ==
 
+mrmime@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mrmime/-/mrmime-1.0.1.tgz#5f90c825fad4bdd41dc914eff5d1a8cfdaf24f27"
+  integrity sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==
+
 nanoid@^3.3.6:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
@@ -666,10 +671,10 @@ vite@^5.0.0:
   optionalDependencies:
     fsevents "~2.3.3"
 
-vitepress@^1.0.0-rc.26:
-  version "1.0.0-rc.26"
-  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-rc.26.tgz#7add094b00c665a9eb07f0a50369aab5201913d9"
-  integrity sha512-bAeph87NheD7bM/+E1AsJx8N6bGnP+5k0gZmtXbSgKAzNSFZBgAPcl7CoWzETST5pPpH/ZGRPhWSefcBX9Yfjg==
+vitepress@^1.0.0-rc.29:
+  version "1.0.0-rc.29"
+  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-rc.29.tgz#35b15148acf3bdbd8ad00b7a240885de9ece725c"
+  integrity sha512-6sKmyEvH16SgMqkHzRwwadt9Uju13AOIqouzOVEg3Rk6X9mds6jLsq2GxnAJvg0s6bl/0Qs/cw+f8SNki82ltw==
   dependencies:
     "@docsearch/css" "^3.5.2"
     "@docsearch/js" "^3.5.2"
@@ -681,6 +686,7 @@ vitepress@^1.0.0-rc.26:
     focus-trap "^7.5.4"
     mark.js "8.11.1"
     minisearch "^6.2.0"
+    mrmime "^1.0.1"
     shiki "^0.14.5"
     vite "^5.0.0"
     vue "^3.3.8"
