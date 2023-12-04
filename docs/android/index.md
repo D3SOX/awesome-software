@@ -1,10 +1,11 @@
 # Android
 
 ## Browser
-### Bromite
-- Website: <https://www.bromite.org/>
-- Source Code: <https://github.com/bromite/bromite>
-- Download (F-Droid): <https://www.bromite.org/fdroid>
+### Cromite
+- Website: <https://www.cromite.org/>
+- Source Code: <https://github.com/uazo/cromite>
+- Download (F-Droid): <https://www.cromite.org/fdroid/repo/>
+- Download (APK): <https://github.com/uazo/cromite/releases>
 
 ### Firefox
 - Website: <http://www.mozilla.com/mobile/>
