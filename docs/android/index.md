@@ -68,12 +68,11 @@
 
 ## Weather
 
-### Geometric Weather
+### Breezy Weather
 - Website: None
-- Source Code: <https://github.com/WangDaYeeeeee/GeometricWeather>
-- Download (F-Droid): <https://f-droid.org/packages/wangdaye.com.geometricweather/>
-- Download (APK): <https://github.com/WangDaYeeeeee/GeometricWeather/releases>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=wangdaye.com.geometricweather>
+- Source Code: <https://github.com/breezy-weather/breezy-weather>
+- Download (F-Droid): <https://github.com/breezy-weather/fdroid-repo/blob/main/README.md>
+- Download (APK): <https://github.com/breezy-weather/breezy-weather/releases>
 
 ### Forecastie
 - Website: None
