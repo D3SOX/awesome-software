@@ -285,11 +285,12 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=org.kde.kdeconnect_tp>
 
 ## Gallery
-### Simple Gallery Pro
-- Website: <https://www.simplemobiletools.com/gallery>
-- Source Code: <https://github.com/SimpleMobileTools/Simple-Gallery>
-- Download (F-Droid): <https://f-droid.org/packages/com.simplemobiletools.gallery.pro/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.simplemobiletools.gallery.pro>
+### Aves
+- Website: None
+- Source Code: <https://github.com/deckerst/aves>
+- Download (F-Droid): <https://f-droid.org/packages/deckers.thibault.aves.libre/>
+- Download (APK): <https://github.com/deckerst/aves/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=deckers.thibault.aves>
 
 ## Email Client
 ### FairEmail
