@@ -491,12 +491,6 @@
 - Source Code: <https://github.com/TwidereProject/Twidere-Android>
 - Download (F-Droid): <https://f-droid.org/packages/org.mariotaku.twidere/>
 
-## Instagram Client + Downloader
-### Barinsta
-- Website: <https://barinsta.austinhuang.me/>
-- Source Code: <https://codeberg.org/avalos/barinsta>
-- Download (F-Droid): <https://f-droid.org/packages/me.austinhuang.instagrabber/>
-
 ## Reddit Client
 ### Slide
 - Website: <https://www.reddit.com/r/slideforreddit/>
