@@ -10,6 +10,14 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 ```
 
 ## Activator
+### Microsoft Activation Scripts
+- Website: <https://massgrave.dev/>
+- Source Code: <https://github.com/massgravel/Microsoft-Activation-Scripts>
+- Download (PowerShell as admin):
+```powershell
+irm https://get.activated.win | iex
+```
+
 ### vlmcsd
 - Website: None
 - Source Code: <https://github.com/Wind4/vlmcsd>
