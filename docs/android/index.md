@@ -160,11 +160,12 @@
 
 ## SMS
 
-### QKSMS
+### Fossify Messages
 - Website: <https://qklabs.com/>
-- Source Code: <https://github.com/moezbhatti/qksms>
-- Download (F-Droid): <https://f-droid.org/packages/com.moez.QKSMS/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.moez.QKSMS>
+- Source Code: <https://github.com/FossifyOrg/Messages>
+- Download (F-Droid): <https://f-droid.org/packages/org.fossify.messages/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=org.fossify.messages>
+- Download (APK): <https://github.com/FossifyOrg/Messages/releases>
 
 ## Launcher
 
