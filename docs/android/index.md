@@ -172,8 +172,7 @@
 ### Lawnchair
 - Website: <https://lawnchair.app/>
 - Source Code: <https://github.com/LawnchairLauncher/Lawnchair>
-- Download (F-Droid): <https://f-droid.org/packages/ch.deletescape.lawnchair.plah/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=ch.deletescape.lawnchair.plah>
+- Download (APK): <https://github.com/LawnchairLauncher/lawnchair/releases/tag/nightly>
 
 ### Shade
 - Website: None
