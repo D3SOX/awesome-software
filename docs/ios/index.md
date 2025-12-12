@@ -35,6 +35,11 @@
 - Download (App Store): <https://apps.apple.com/app/keepassium-password-manager/id1435127111>
 
 ## Note-taking
+### Notesnook
+- Website: <https://notesnook.com/>
+- Source Code: <https://github.com/streetwriters/notesnook>
+- Download (App Store): <https://apps.apple.com/us/app/notesnook-take-private-notes/id1544027013>
+
 ### Standard Notes
 - Website: <https://standardnotes.org/>
 - Source Code: <https://github.com/standardnotes/mobile>

@@ -203,6 +203,13 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod>
 
 ## Note-taking
+### Notesnook
+- Website: <https://notesnook.com/>
+- Source Code: <https://github.com/streetwriters/notesnook>
+- Download (F-Droid): <https://f-droid.org/en/packages/com.streetwriters.notesnook/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=com.streetwriters.notesnook&hl=de>
+
+
 ### Standard Notes
 - Website: <https://standardnotes.org/>
 - Source Code: <https://github.com/standardnotes/mobile>
