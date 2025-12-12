@@ -256,6 +256,13 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=org.kde.kdeconnect_tp>
 
 ## Gallery
+### Fossify Gallery
+- Website: <https://qklabs.com/>
+- Source Code: <https://github.com/FossifyOrg/Gallery>
+- Download (F-Droid): <https://f-droid.org/packages/org.fossify.gallery/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=org.fossify.gallery>
+- Download (APK): <https://github.com/FossifyOrg/Gallery/releases>
+
 ### Aves
 - Website: None
 - Source Code: <https://github.com/deckerst/aves>
@@ -270,12 +277,12 @@
 - Download (F-Droid): <https://f-droid.org/packages/eu.faircode.email/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=eu.faircode.email>
 
-### K-9 Mail
-- Website: <https://k9mail.app/>
-- Source Code: <https://github.com/thundernest/k-9>
-- Download (F-Droid): <https://f-droid.org/packages/com.fsck.k9/>
-- Download (APK): <https://github.com/thundernest/k-9/releases>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.fsck.k9>
+### Thunderbird
+- Website: <https://www.thunderbird.net/mobile/>
+- Source Code: <https://github.com/thunderbird/thunderbird-android/>
+- Download (F-Droid): <https://f-droid.org/packages/net.thunderbird.android>
+- Download (APK): <https://github.com/thunderbird/thunderbird-android/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=net.thunderbird.android>
 
 ### Tutanota
 - Website: <https://www.tutanota.com/>
