@@ -447,24 +447,6 @@
 - Download (F-Droid): <https://f-droid.org/packages/com.perflyst.twire/>
 - Download (APK): <https://github.com/twireapp/Twire/releases>
 
-## Twitter Client
-### Talon
-- Website: <https://klinkerapps.com/talon-overview/>
-- Source Code: <https://github.com/klinker-apps/talon-for-twitter-android>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.klinker.android.twitter_l>
-
-### Twidere
-- Website: <https://twidere.mariotaku.org/>
-- Source Code: <https://github.com/TwidereProject/Twidere-Android>
-- Download (F-Droid): <https://f-droid.org/packages/org.mariotaku.twidere/>
-
-## Reddit Client
-### Slide
-- Website: <https://www.reddit.com/r/slideforreddit/>
-- Source Code: <https://github.com/ccrama/Slide>
-- Download (F-Droid): <https://f-droid.org/packages/me.ccrama.redditslide/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=me.ccrama.redditslide>
-
 ## Terminal
 ### Termux
 - Website: <https://termux.com/>
