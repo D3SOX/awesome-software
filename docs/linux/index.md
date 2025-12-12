@@ -1,12 +1,24 @@
 # Linux
 
 ## Gaming
+### Faugus Launcher
+- Website: None
+- Source Code: <https://github.com/Faugus/faugus-launcher>
+
+### Heroic Games Launcher
+- Website: <https://heroicgameslauncher.com/>
+- Source Code: <https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher>
+
 ### Lutris
 - Website: <https://lutris.net/>
 - Source Code: <https://github.com/lutris/lutris>
 
 ## GIF Recorder
-### Peek
+### Spectacle
+- Website: <https://apps.kde.org/spectacle/>
+- Source Code: <https://invent.kde.org/plasma/spectacle>
+
+### Peek (X11)
 - Website: None
 - Source Code: <https://github.com/phw/peek>
 
