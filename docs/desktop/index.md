@@ -6,15 +6,23 @@
 - Source Code: <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Downloading_Source_Archives>
 - Download: <https://www.mozilla.org/firefox/new/>
 
-### Brave
-- Website: <https://brave.com/>
-- Source Code: <https://github.com/brave/brave-browser>
-- Download: <https://brave.com/download/>
+### Helium
+- Website: <https://helium.computer/>
+- Source Code: <https://github.com/imputnet/helium>
+- Download: <https://github.com/imputnet/helium#downloads>
+
+
+
 
 ### ungoogled-chromium
 - Website: None
 - Source Code: <https://github.com/Eloston/ungoogled-chromium>
 - Download: <https://ungoogled-software.github.io/ungoogled-chromium-binaries/>
+
+### Brave
+- Website: <https://brave.com/>
+- Source Code: <https://github.com/brave/brave-browser>
+- Download: <https://brave.com/download/>
 
 ## Control Android device
 ### scrcpy
