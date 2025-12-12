@@ -8,17 +8,17 @@ Some recommendations regarding software for desktop and mobile 🔝
 
 Install dependencies
 ```bash
-yarn
+bun install
 ```
 
 Run development server
 ```bash
-yarn dev
+bun dev
 ```
 
 Build for production
 ```bash
-yarn build
+bun run build
 ```
 
 For more details, please head VitePress's [documentation](https://vitepress.vuejs.org/).
