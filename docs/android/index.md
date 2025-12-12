@@ -173,20 +173,14 @@
 - Website: <https://lawnchair.app/>
 - Source Code: <https://github.com/LawnchairLauncher/Lawnchair>
 - Download (APK): <https://github.com/LawnchairLauncher/lawnchair/releases/tag/nightly>
-
-### Shade
-- Website: None
-- Source Code: <https://github.com/amirzaidi/Shade>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/amirz.shade>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=amirz.shade>
-
-### posidon launcher
-- Website: <https://posidon.io/launcher>
-- Source Code: <https://github.com/lposidon/posidonLauncher>
-- Download (F-Droid): <https://www.f-droid.org/packages/posidon.launcher>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=posidon.launcher>
-
 ## Keyboard
+
+### FUTO Keyboard
+- Website: <https://keyboard.futo.org/>
+- Source Code: <https://gitlab.futo.org/keyboard/latinime>
+- Download (F-Droid Repo): <https://app.futo.org/fdroid/repo/>
+- Download (APK): <https://keyboard.futo.org/keyboard.apk>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=org.futo.inputmethod.latin.playstore>
 
 ### FlorisBoard
 - Website: <https://patrickgold.dev/>
