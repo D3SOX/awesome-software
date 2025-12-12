@@ -46,6 +46,11 @@
 - Download: <https://signal.org/download/>
 
 ## Note-taking
+### Notesnook
+- Website: <https://notesnook.com/>
+- Source Code: <https://github.com/streetwriters/notesnook>
+- Download: <https://notesnook.com/downloads/>
+
 ### Standard Notes
 - Website: <https://standardnotes.org/>
 - Source Code: <https://github.com/standardnotes/desktop>
