@@ -80,13 +80,6 @@
 - Download (F-Droid): <https://f-droid.org/packages/cz.martykan.forecastie/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.casticalabs.forecastie>
 
-## Alarm, Timer, Stopwatch
-### Alarmio
-- Website: None
-- Source Code: <https://github.com/fennifith/Alarmio>
-- Download (F-Droid): <https://f-droid.org/packages/me.jfenn.alarmio/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=me.jfenn.alarmio>
-
 ## QR/Barcode Scanner
 ### Barcode Scanner
 - Website: None
@@ -136,6 +129,12 @@
 
 ## Music Player
 
+### Booming Music
+- Website: None
+- Source Code: <https://github.com/mardous/BoomingMusic>
+- Download (F-Droid): <https://f-droid.org/packages/com.mardous.booming/>
+- Download (APK): <https://github.com/mardous/BoomingMusic/releases>
+
 ### Auxio
 - Website: None
 - Source Code: <https://github.com/OxygenCobalt/Auxio>
@@ -158,30 +157,6 @@
 - Source Code: <https://github.com/chr56/Phonograph_Plus>
 - Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/player.phonograph.plus>
 - Download (APK): <https://github.com/chr56/Phonograph_Plus/releases>
-
-### Shuttle
-- Website: None
-- Source Code: <https://github.com/timusus/Shuttle>
-- Download (F-Droid): <https://f-droid.org/packages/com.simplecity.amp_pro/>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/another.music.player>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=another.music.player>
-
-### Vinyl
-- Website: None
-- Source Code: <https://github.com/AdrienPoupa/VinylMusicPlayer>
-- Download (F-Droid): <https://f-droid.org/packages/com.poupa.vinylmusicplayer/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.poupa.vinylmusicplayer>
-
-### TimberX
-- Website: <https://namand.in/>
-- Source Code: <https://github.com/naman14/TimberX>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.naman14.timberx>
-- Download (APK): <https://github.com/naman14/TimberX/releases>
-
-### Music
-- Website: None
-- Source Code: <https://github.com/MaxFour/Music-Player>
-- Download (F-Droid): <https://f-droid.org/packages/com.maxfour.music/>
 
 ## SMS
 
