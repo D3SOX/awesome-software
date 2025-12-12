@@ -386,11 +386,12 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=io.github.pd4d10.gittouch>
 
 ## File sharing
-### TrebleShot
-- Website: <https://genonbeta.github.io/>
-- Source Code: <https://github.com/genonbeta/TrebleShot>
-- Download (F-Droid): <https://f-droid.org/packages/com.genonbeta.TrebleShot/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.genonbeta.TrebleShot>
+### LocalSend
+- Website: <https://localsend.org/>
+- Source Code: <https://github.com/localsend/localsend/>
+- Download (F-Droid): <https://f-droid.org/packages/org.localsend.localsend_app/>
+- Download (APK): <https://github.com/localsend/localsend/releases/>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=org.localsend.localsend_app>
 
 ## Network screen sharing
 ### ScreenStream
