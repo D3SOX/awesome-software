@@ -108,17 +108,12 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=de.markusfisch.android.binaryeye>
 
 ## Maps and Navigation
-### Magic Earth
-- Website: <https://www.magicearth.com/>
-- Source Code: Not available
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.generalmagic.magicearth>
-
-### Organic Maps
-- Website: <https://organicmaps.app/>
-- Source Code: <https://github.com/organicmaps/organicmaps>
-- Download (F-Droid): <https://f-droid.org/packages/app.organicmaps/>
-- Download (APK): <https://github.com/organicmaps/organicmaps/releases>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=app.organicmaps>
+### CoMaps
+- Website: <https://www.comaps.app/>
+- Source Code: <https://codeberg.org/comaps/comaps>
+- Download (F-Droid): <https://f-droid.org/packages/app.comaps.fdroid/>
+- Download (APK): <https://codeberg.org/comaps/comaps/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=app.comaps.google>
 
 ### OsmAnd
 - Website: <https://osmand.net/>

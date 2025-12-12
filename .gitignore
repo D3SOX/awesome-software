@@ -16,3 +16,5 @@ logs
 *.njsproj
 *.sln
 *.sw?
+
+docs/.vitepress/cache
