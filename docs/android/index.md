@@ -330,18 +330,6 @@
 - Download (F-Droid Repo): <https://www.collaboraoffice.com/releases-en/collabora-office-on-mobiles-supporting-password-protected-documents-and-available-on-f-droid/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.collabora.libreoffice>
 
-## Screen Recorder
-### MNML
-- Website: <https://af.codes/>
-- Source Code: <https://github.com/afollestad/mnml>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.afollestad.mnmlscreenrecord>
-
-### ScreenCam
-- Website: <https://orpheusdroid.com/>
-- Source Code: <https://gitlab.com/vijai/screenrecorder>
-- Download (F-Droid): <https://f-droid.org/packages/com.orpheusdroid.screenrecorder/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.orpheusdroid.screenrecorder>
-
 ## Podcasts
 ### AntennaPod
 - Website: <https://antennapod.org/>
