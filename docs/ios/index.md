@@ -67,12 +67,6 @@
 - Source Code: <https://github.com/signalapp/Signal-iOS>
 - Download (App Store): <https://apps.apple.com/app/signal-private-messenger/id874139669>
 
-## Reddit Client
-### Slide
-- Website: <https://www.reddit.com/r/slideforreddit/>
-- Source Code: <https://github.com/ccrama/Slide-iOS>
-- Download (App Store): <https://apps.apple.com/app/slide-for-reddit/id1260626828>
-
 ## RSS reader
 ### NetNewsWire
 - Website: <https://ranchero.com/netnewswire/>
