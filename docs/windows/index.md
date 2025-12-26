@@ -21,8 +21,8 @@ irm https://get.activated.win | iex
 ### vlmcsd
 - Website: None
 - Source Code: <https://github.com/Wind4/vlmcsd>
-- Source Code (Install script): <https://github.com/ekistece/vlmcsd-autokms>
-- Download (Install script): <https://github.com/ekistece/vlmcsd-autokms/releases>
+- Source Code (Install script): <https://github.com/Airr/vlmcsd-autokms>
+- Download (Install script): <https://github.com/Airr/vlmcsd-autokms/archive/refs/heads/master.zip>
 
 ## Package Manager
 ### Winget
