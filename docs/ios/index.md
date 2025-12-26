@@ -91,15 +91,11 @@
 - Download (App Store): <https://apps.apple.com/app/collabora-office/id1440482071>
 
 ## Maps and Navigation
-### Magic Earth
-- Website: <https://www.magicearth.com/>
-- Source Code: Not available
-- Download (App Store): <https://apps.apple.com/us/app/magic-earth-gps-navigation/id1007331679>
 
-### Organic Maps
-- Website: <https://organicmaps.app/>
-- Source Code: <https://github.com/organicmaps/organicmaps>
-- Download (App Store): <https://apps.apple.com/app/organic-maps/id1567437057>
+### CoMaps
+- Website: <https://comaps.app/>
+- Source Code: <https://codeberg.org/comaps/comaps>
+- Download (App Store): <https://apps.apple.com/app/comaps/id6747180809>
 
 ### OsmAnd
 - Website: <https://osmand.net/>
