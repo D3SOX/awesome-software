@@ -67,5 +67,11 @@ irm https://get.activated.win | iex
 ## Disk Space Analyzer
 ### WinDirStat
 - Website: <https://windirstat.net/>
+
+## Business Intelligence
+### ReportBurster
+- Website: <https://www.reportburster.com>
+- Source Code: <https://github.com/flowkraft/reportburster>
+- Download: <https://www.reportburster.com/download>
 - Source Code: <https://sourceforge.net/p/windirstat/code/ci/default/tree/>
 - Download: <https://windirstat.net/download.html>
