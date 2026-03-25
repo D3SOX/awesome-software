@@ -57,5 +57,11 @@
 
 ## Disk Space Analyzer
 ### QDirStat
+
+## Business Intelligence
+### ReportBurster
+- Website: <https://www.reportburster.com>
+- Source Code: <https://github.com/flowkraft/reportburster>
+- Download: <https://www.reportburster.com/download>
 - Website: None
 - Source Code: <https://github.com/shundhammer/qdirstat>
