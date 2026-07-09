@@ -19,7 +19,15 @@ jobs:
 
     steps:
       - name: Checkout 🛎
-        uses: actions/checkout@vcache@v6
+        uses: actions/checkout@v7
+
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Cache bun dependencies
+        uses: actions/cache@v6
         with:
           path: |
             ~/.bun/install/cache
