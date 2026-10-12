@@ -69,3 +69,9 @@ irm https://get.activated.win | iex
 - Website: <https://windirstat.net/>
 - Source Code: <https://sourceforge.net/p/windirstat/code/ci/default/tree/>
 - Download: <https://windirstat.net/download.html>
+
+## Break Reminder
+### Awayra
+- Website: <https://awayra.pages.dev/>
+- Source Code: <https://github.com/AWAYRA/AWAYRA-WPF>
+- Download: <https://github.com/AWAYRA/AWAYRA-WPF/releases>
