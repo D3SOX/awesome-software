@@ -8,6 +8,7 @@ I'm open for additions so if you want something to be added feel free to open an
 - [iOS](/ios/)
 - [Cross-platform desktop](/desktop/)
 - [Linux](/linux/)
+- [macOS](/macos/)
 - [Windows](/windows/)
 
 Change using the *top bar*

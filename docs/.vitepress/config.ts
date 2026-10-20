@@ -31,10 +31,10 @@ export default defineConfig({
                 text: 'Linux',
                 link: '/linux/',
             },
-            /*{
-              text: 'macOS',
-              link: '/macos/',
-            },*/
+            {
+                text: 'macOS',
+                link: '/macos/',
+            },
             {
                 text: 'Windows',
                 link: '/windows/',
