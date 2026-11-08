@@ -69,3 +69,11 @@ irm https://get.activated.win | iex
 - Website: <https://windirstat.net/>
 - Source Code: <https://sourceforge.net/p/windirstat/code/ci/default/tree/>
 - Download: <https://windirstat.net/download.html>
+
+## Workspace Launcher
+### LatchLayout
+- Description: Windows 11 workspace launcher with configurable hold shortcuts, browser profiles, URLs, and per-window display layouts (preview).
+- Source Code: <https://github.com/stanczykwyatt/latchlayout>
+- License: MIT
+- Download: <https://github.com/stanczykwyatt/latchlayout/releases/tag/v0.2.0>
+- Status: Unsigned early preview; see the project's verification record and limitations before use.
