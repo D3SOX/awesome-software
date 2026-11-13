@@ -18,10 +18,10 @@
 - Download (App Store): <https://apps.apple.com/app/adblock-fast/id1032930802>
 
 ## Email Client
-### Tutanota
-- Website: <https://www.tutanota.com/>
+### Tuta Mail
+- Website: <https://tuta.com/>
 - Source Code: <https://github.com/tutao/tutanota>
-- Download (App Store): <https://apps.apple.com/app/tutanota/id922429609>
+- Download (App Store): <https://apps.apple.com/app/tuta-mail/id922429609>
 
 ## Password Manager
 ### Bitwarden

@@ -283,8 +283,8 @@
 - Download (APK): <https://github.com/thunderbird/thunderbird-android/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=net.thunderbird.android>
 
-### Tutanota
-- Website: <https://www.tutanota.com/>
+### Tuta Mail
+- Website: <https://tuta.com/>
 - Source Code: <https://github.com/tutao/tutanota>
 - Download (F-Droid): <https://f-droid.org/packages/de.tutao.tutanota/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=de.tutao.tutanota>
