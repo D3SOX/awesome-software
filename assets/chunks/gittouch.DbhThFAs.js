@@ -1,1 +1,0 @@
-const o="/icons/duckduckgo-privacy-browser.webp",s="/icons/comaps.webp",c="/icons/osmand.webp",t="/icons/tutanota.webp",i="/icons/collabora-office.webp",p="/icons/gittouch.webp";export{o as _,s as a,c as b,t as c,i as d,p as e};
