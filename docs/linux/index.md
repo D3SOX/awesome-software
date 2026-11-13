@@ -60,3 +60,8 @@
 ### QDirStat
 - Website: None
 - Source Code: <https://github.com/shundhammer/qdirstat>
+
+## Music Player
+### Nevumi
+- Website: <https://nevumi.app/>
+- Source Code: <https://github.com/D3SOX/Nevumi>

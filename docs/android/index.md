@@ -129,6 +129,12 @@
 
 ## Music Player
 
+### Nevumi
+- Website: <https://nevumi.app/>
+- Source Code: <https://github.com/D3SOX/Nevumi>
+- Download (F-Droid Repo): <https://nevumi.app/fdroid/repo>
+- Download (APK): <https://github.com/D3SOX/Nevumi/releases>
+
 ### Booming Music
 - Website: None
 - Source Code: <https://github.com/mardous/BoomingMusic>
