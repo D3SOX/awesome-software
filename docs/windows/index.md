@@ -4,7 +4,7 @@
 ### Winutil
 - Website: <https://winutil.christitus.com/>
 - Source Code: <https://github.com/ChrisTitusTech/winutil>
-- Download (PowerShell as admin):
+- Install: Run in PowerShell as admin
 ```powershell
 irm "https://christitus.com/win" | iex
 ```
@@ -13,12 +13,13 @@ irm "https://christitus.com/win" | iex
 ### Microsoft Activation Scripts
 - Website: <https://massgrave.dev/>
 - Source Code: <https://github.com/massgravel/Microsoft-Activation-Scripts>
-- Download (PowerShell as admin):
+- Install: Run in PowerShell as admin
 ```powershell
 irm https://get.activated.win | iex
 ```
 
 ### vlmcsd
+- Tags: Discontinued
 - Website: None
 - Source Code: <https://github.com/Wind4/vlmcsd>
 - Source Code (Install script): <https://github.com/Airr/vlmcsd-autokms>
@@ -50,7 +51,7 @@ irm https://get.activated.win | iex
 ### ShareX
 - Website: <https://getsharex.com/>
 - Source Code: <https://github.com/ShareX/ShareX>
-- Download: <https://getsharex.com/downloads/>
+- Download: <https://getsharex.com/downloads>
 
 ## Archive Manager
 ### 7-Zip
@@ -67,11 +68,11 @@ irm https://get.activated.win | iex
 ## Disk Space Analyzer
 ### WinDirStat
 - Website: <https://windirstat.net/>
-- Source Code: <https://sourceforge.net/p/windirstat/code/ci/default/tree/>
+- Source Code: <https://github.com/windirstat/windirstat>
 - Download: <https://windirstat.net/download.html>
 
 ## Media Player
 ### QMPlay2
 - Website: None
 - Source Code: <https://github.com/zaps166/QMPlay2>
-- Download: <https://github.com/zaps166/QMPlay2/releases/latest>
+- Download: <https://github.com/zaps166/QMPlay2/releases>

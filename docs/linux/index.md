@@ -18,7 +18,8 @@
 - Website: <https://apps.kde.org/spectacle/>
 - Source Code: <https://invent.kde.org/plasma/spectacle>
 
-### Peek (X11)
+### Peek
+- Tags: X11, Discontinued
 - Website: None
 - Source Code: <https://github.com/phw/peek>
 
@@ -30,7 +31,7 @@
 ## System Snapshots
 ### Timeshift
 - Website: None
-- Source Code: <https://github.com/teejee2008/timeshift>
+- Source Code: <https://github.com/linuxmint/timeshift>
 
 ## Data Backup and Restore
 ### Pika Backup

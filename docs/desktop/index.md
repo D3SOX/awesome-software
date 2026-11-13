@@ -36,7 +36,7 @@
 ## Password Manager
 ### Bitwarden
 - Website: <https://bitwarden.com/>
-- Source Code: <https://github.com/bitwarden/desktop>
+- Source Code: <https://github.com/bitwarden/clients>
 - Download: <https://bitwarden.com/#download>
 
 ### KeePassXC
@@ -57,9 +57,9 @@
 - Download: <https://notesnook.com/downloads/>
 
 ### Standard Notes
-- Website: <https://standardnotes.org/>
-- Source Code: <https://github.com/standardnotes/desktop>
-- Download: <https://standardnotes.org/download>
+- Website: <https://standardnotes.com/>
+- Source Code: <https://github.com/standardnotes/app>
+- Download: <https://standardnotes.com/download>
 
 ### Simplenote
 - Website: <https://simplenote.com/>
@@ -81,7 +81,7 @@
 ### qBittorrent
 - Website: <https://www.qbittorrent.org/>
 - Source Code: <https://github.com/qbittorrent/qBittorrent>
-- Download: <https://www.qbittorrent.org/download.php>
+- Download: <https://www.qbittorrent.org/download>
 
 ## Video Editor
 ### Kdenlive
@@ -111,7 +111,7 @@
 ### Flameshot
 - Website: <https://flameshot.org/>
 - Source Code: <https://github.com/flameshot-org/flameshot>
-- Download <https://flameshot.org/#download>
+- Download: <https://flameshot.org/#download>
 
 ## Screen Recorder
 ### OBS Studio
@@ -135,11 +135,17 @@
 - Source Code: <https://github.com/videolan/vlc>
 - Download: <https://www.videolan.org/vlc/#download>
 
+## YouTube Client
+### OpenTubeX
+- Website: <https://opentubex.org/>
+- Source Code: <https://github.com/OpenTubeX/OpenTubeX>
+- Download: <https://opentubex.org/downloads/>
+
 ## Image Viewer
 ### nomacs
 - Website: <https://nomacs.org/>
 - Source Code: <https://github.com/nomacs/nomacs>
-- Download: <https://nomacs.org/download/>
+- Download: <https://github.com/nomacs/nomacs/releases>
 
 ## Archive Manager
 ### PeaZip
@@ -156,8 +162,8 @@
 ## Office Suite
 ### LibreOffice
 - Website: <https://www.libreoffice.org/>
-- Source Code: <https://cgit.freedesktop.org/libreoffice>
-- Download: <https://www.libreoffice.org/download/download/>
+- Source Code: <https://git.libreoffice.org/core>
+- Download: <https://www.libreoffice.org/download/>
 
 ### ONLYOFFICE
 - Website: <https://www.onlyoffice.com/>

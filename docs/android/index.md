@@ -4,12 +4,11 @@
 ### Cromite
 - Website: <https://www.cromite.org/>
 - Source Code: <https://github.com/uazo/cromite>
-- Download (F-Droid): <https://www.cromite.org/fdroid/repo/>
 - Download (APK): <https://github.com/uazo/cromite/releases>
 
 ### Firefox
 - Website: <http://www.mozilla.com/mobile/>
-- Source Code: <https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Downloading_Source_Archives>
+- Source Code: <https://github.com/mozilla-firefox/firefox>
 - Download (F-Droid): <https://f-droid.org/packages/org.mozilla.fennec_fdroid/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=org.mozilla.firefox>
 - Download (APK): <https://download.mozilla.org/?product=fennec-latest&os=android&lang=multi>
@@ -29,14 +28,13 @@
 
 ## AdBlocker non-root, VPN-based
 ### DNS66
+- Tags: Discontinued
 - Website: <https://jak-linux.org/projects/dns66/>
 - Source Code: <https://github.com/julian-klode/dns66>
-- Download (F-Droid): <https://f-droid.org/packages/org.jak_linux.dns66/>
 
 ### Blokada
 - Website: <https://blokada.org/>
 - Source Code: <https://github.com/blokadaorg/blokada>
-- Download (F-Droid): <https://f-droid.org/packages/org.blokada.alarm/>
 - Download (APK): <https://go.blokada.org/apk4>
 
 ## Messenger
@@ -63,7 +61,6 @@
 ## Duplicate Contacts Remover
 ### Duplicate Contacts Remover
 - Website: None
-- Source Code: <https://github.com/rasheedsulayman/DuplicateContactsRemover>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.r4sh33d.duplicatecontactsremover>
 
 ## Weather
@@ -78,7 +75,6 @@
 - Website: None
 - Source Code: <https://github.com/martykan/forecastie>
 - Download (F-Droid): <https://f-droid.org/packages/cz.martykan.forecastie/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.casticalabs.forecastie>
 
 ## QR/Barcode Scanner
 ### Barcode Scanner
@@ -92,7 +88,6 @@
 - Source Code: <https://github.com/dmitriy-ilchenko/QrAndBarcodeScanner>
 - Download (F-Droid): <https://www.f-droid.org/packages/com.example.barcodescanner/>
 - Download (APK): <https://github.com/dmitriy-ilchenko/QrAndBarcodeScanner/releases>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=org.barcodescanner>
 
 ### Binary Eye
 - Website: None
@@ -113,6 +108,11 @@
 - Source Code: <https://github.com/osmandapp/Osmand>
 - Download (F-Droid): <https://f-droid.org/packages/net.osmand.plus/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=net.osmand.plus>
+
+### Vela Maps
+- Website: <https://velamaps.org/>
+- Source Code: <https://github.com/PimpinPumpkin/Vela>
+- Download (APK): <https://github.com/PimpinPumpkin/Vela/releases>
 
 ## Camera
 ### Secure Camera
@@ -147,7 +147,8 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=code.name.monkey.retromusic>
 - Download (APK): <https://github.com/h4h13/RetroMusicPlayer/releases>
 
-#### Metro, fork with premium features and without Google libraries
+#### Metro
+- Purpose: Fork with premium features and without Google libraries
 - Source Code: <https://github.com/MuntashirAkon/Metro>
 - Download (F-Droid): <https://f-droid.org/packages/io.github.muntashirakon.Music/>
 - Download (APK): <https://github.com/MuntashirAkon/Metro/releases>
@@ -155,7 +156,7 @@
 ### Phonograph Plus
 - Website: None
 - Source Code: <https://github.com/chr56/Phonograph_Plus>
-- Download (F-Droid Repo): <https://apt.izzysoft.de/fdroid/index/apk/player.phonograph.plus>
+- Download (F-Droid): <https://f-droid.org/packages/player.phonograph.plus/>
 - Download (APK): <https://github.com/chr56/Phonograph_Plus/releases>
 
 ## SMS
@@ -187,14 +188,6 @@
 - Source Code: <https://github.com/florisboard/florisboard>
 - Download (F-Droid): <https://f-droid.org/packages/dev.patrickgold.florisboard>
 - Download (APK): <https://github.com/florisboard/florisboard/releases>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=dev.patrickgold.florisboard>
-
-### OpenBoard
-- Website: None
-- Source Code: <https://github.com/dslul/openboard>
-- Download (F-Droid): <https://f-droid.org/packages/org.dslul.openboard.inputmethod.latin/>
-- Download (APK): <https://github.com/dslul/openboard/releases>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=org.dslul.openboard.inputmethod.latin>
 
 ### Simple Keyboard
 - Website: None
@@ -211,9 +204,9 @@
 
 
 ### Standard Notes
-- Website: <https://standardnotes.org/>
-- Source Code: <https://github.com/standardnotes/mobile>
-- Download (APK): <https://github.com/standardnotes/mobile/releases>
+- Website: <https://standardnotes.com/>
+- Source Code: <https://github.com/standardnotes/app>
+- Download (APK): <https://github.com/standardnotes/app/releases>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.standardnotes>
 
 ### Simplenote
@@ -229,7 +222,7 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=net.cozic.joplin>
 
 ### Markor
-- Website: <https://gsantner.net/project/markor.html>
+- Website: None
 - Source Code: <https://github.com/gsantner/markor>
 - Download (F-Droid): <https://f-droid.org/packages/net.gsantner.markor/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=net.gsantner.markor>
@@ -293,8 +286,8 @@
 ## Password Manager
 ### Bitwarden
 - Website: <https://bitwarden.com/>
-- Source Code: <https://github.com/bitwarden/mobile>
-- Download (F-Droid): <https://mobileapp.bitwarden.com/fdroid/>
+- Source Code: <https://github.com/bitwarden/android>
+- Download (F-Droid Repo): <https://mobileapp.bitwarden.com/fdroid/repo/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.x8bit.bitwarden>
 
 ### KeePassDX
@@ -312,21 +305,19 @@
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis>
 
 ### andOTP
+- Tags: Discontinued
 - Website: None
 - Source Code: <https://github.com/andOTP/andOTP>
-- Download (F-Droid): <https://f-droid.org/packages/org.shadowice.flocke.andotp/>
 - Download (APK): <https://github.com/andOTP/andOTP/releases>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=org.shadowice.flocke.andotp>
 
 ## Office
 ### OnlyOffice
 - Website: <https://www.onlyoffice.com/office-for-android.aspx>
-- Source Code: <https://github.com/ONLYOFFICE/documents-app-android>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.onlyoffice.documents>
 
 ### Collabora Office
 - Website: <https://www.collaboraoffice.com/solutions/collabora-office-android-ios/>
-- Source Code: <https://github.com/CollaboraOnline/online/tree/master/android>
+- Source Code: <https://github.com/CollaboraOnline/online.mirror/tree/main/android>
 - Download (F-Droid Repo): <https://www.collaboraoffice.com/releases-en/collabora-office-on-mobiles-supporting-password-protected-documents-and-available-on-f-droid/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.collabora.libreoffice>
 
@@ -367,10 +358,9 @@
 
 ## RSS reader
 ### Flym
+- Tags: Discontinued
 - Website: None
 - Source Code: <https://github.com/FredJul/Flym>
-- Download (F-Droid): <https://f-droid.org/packages/net.frju.flym/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=net.frju.flym>
 
 ### Feeder
 - Website: None
@@ -380,10 +370,10 @@
 
 ## Git Client
 ### GitTouch
+- Tags: Discontinued
 - Website: None
 - Source Code: <https://github.com/git-touch/git-touch>
 - Download (APK): <https://github.com/pd4d10/git-touch/releases>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=io.github.pd4d10.gittouch>
 
 ## File sharing
 ### LocalSend
@@ -405,9 +395,7 @@
 - Website: None
 - Source Code: <https://github.com/TachibanaGeneralLaboratories/download-navi>
 - Download (F-Droid): <https://f-droid.org/packages/com.tachibana.downloader/>
-- Download (Play Store): <https://play.google.com/store/apps/details?id=com.tachibana.downloader>
 - Download (APK): <https://github.com/TachibanaGeneralLaboratories/download-navi/releases>
-- Download (XDA Labs): <https://labs.xda-developers.com/store/app/com.tachibana.downloader>
 
 ## PDF Reader
 ### Secure PDF Viewer
@@ -424,11 +412,17 @@
 
 ### MuPDF
 - Website: <https://mupdf.com/>
-- Source Code: <https://git.ghostscript.com/?p=mupdf-android-viewer.git;a=summary>
+- Source Code: <https://github.com/ArtifexSoftware/mupdf-android-viewer>
 - Download (F-Droid): <https://f-droid.org/packages/com.artifex.mupdf.viewer.app/>
 - Download (Play Store): <https://play.google.com/store/apps/details?id=com.artifex.mupdf.viewer.app>
 
 ## YouTube Client
+### OpenTubeX
+- Website: <https://opentubex.org/>
+- Source Code: <https://github.com/OpenTubeX/OpenTubeX>
+- Download (F-Droid Repo): <https://fdroid.opentubex.org/>
+- Download (APK): <https://github.com/OpenTubeX/OpenTubeX/releases>
+
 ### LibreTube
 - Website: None
 - Source Code: <https://github.com/libre-tube/LibreTube>
@@ -436,7 +430,7 @@
 - Download (APK): <https://github.com/libre-tube/LibreTube/releases>
 
 ### NewPipe
-- Website: <https://newpipe.schabi.org/>
+- Website: <https://newpipe.net/>
 - Source Code: <https://github.com/TeamNewPipe/NewPipe>
 - Download (F-Droid): <https://f-droid.org/packages/org.schabi.newpipe/>
 

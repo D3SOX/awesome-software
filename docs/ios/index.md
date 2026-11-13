@@ -8,12 +8,12 @@
 
 ### DuckDuckGo Privacy Browser
 - Website: <https://duckduckgo.com/app>
-- Source Code: <https://github.com/duckduckgo/iOS>
+- Source Code: <https://github.com/duckduckgo/apple-browsers>
 - Download (App Store): <https://apps.apple.com/app/duckduckgo-privacy-browser/id663592361>
 
 ## AdBlocker
 ### Adblock Fast
-- Website: <https://adblockfast.com/>
+- Website: None
 - Source Code: <https://github.com/rocketshipapps/adblockfast>
 - Download (App Store): <https://apps.apple.com/app/adblock-fast/id1032930802>
 
@@ -26,7 +26,7 @@
 ## Password Manager
 ### Bitwarden
 - Website: <https://bitwarden.com/>
-- Source Code: <https://github.com/bitwarden/mobile>
+- Source Code: <https://github.com/bitwarden/ios>
 - Download (App Store): <https://apps.apple.com/app/bitwarden-free-password-manager/id1137397744>
 
 ### KeePassium
@@ -41,8 +41,8 @@
 - Download (App Store): <https://apps.apple.com/us/app/notesnook-take-private-notes/id1544027013>
 
 ### Standard Notes
-- Website: <https://standardnotes.org/>
-- Source Code: <https://github.com/standardnotes/mobile>
+- Website: <https://standardnotes.com/>
+- Source Code: <https://github.com/standardnotes/app>
 - Download (App Store): <https://apps.apple.com/app/standard-notes/id1285392450>
 
 ### Simplenote
@@ -74,6 +74,11 @@
 - Download (App Store): <https://apps.apple.com/app/netnewswire-rss-reader/id1480640210>
 
 ## YouTube Client
+### OpenTubeX
+- Website: <https://opentubex.org/>
+- Source Code: <https://github.com/OpenTubeX/OpenTubeX>
+- Download (SideStore): <https://sidestore.opentubex.org/>
+
 ### Yattee
 - Website: None
 - Source Code: <https://github.com/yattee/yattee>
@@ -82,12 +87,11 @@
 ## Office
 ### OnlyOffice
 - Website: <https://www.onlyoffice.com/office-for-android.aspx>
-- Source Code: <https://github.com/ONLYOFFICE/documents-app-ios>
 - Download (App Store): <https://apps.apple.com/app/onlyoffice-documents/id944896972>
 
 ### Collabora Office
 - Website: <https://www.collaboraoffice.com/solutions/collabora-office-android-ios/>
-- Source Code: <https://github.com/CollaboraOnline/online/tree/master/ios>
+- Source Code: <https://github.com/CollaboraOnline/online.mirror/tree/main/ios>
 - Download (App Store): <https://apps.apple.com/app/collabora-office/id1440482071>
 
 ## Maps and Navigation
@@ -120,9 +124,9 @@
 
 ## Git Client
 ### GitTouch
+- Tags: Discontinued
 - Website: None
 - Source Code: <https://github.com/git-touch/git-touch>
-- Download (App Store): <https://apps.apple.com/app/gittouch/id1452042346>
 
 ## Jailbreak Tweaks
 ### A-Shields
@@ -146,9 +150,9 @@
 - Repo: BigBoss
 
 ### Dragspring
+- Tags: Discontinued
 - Purpose: Respring device from settings
-- Source code: <https://github.com/cbyrne/Dragspring> (No longer available)
-- Repo: <https://repo.packix.com/package/com.conorthedev.dragspring>
+- Source Code: <https://github.com/conorthedev/Dragspring>
 
 ### AppSync Unified
 - Purpose: Install unsigned iOS apps
@@ -181,24 +185,24 @@
 - Repo: <https://repo.packix.com/package/com.muirey03.cr4shed>
 
 ### PanCake
+- Tags: Discontinued
 - Purpose: Interactive dismiss gesture on the whole screen in all apps
 - Source Code: <https://github.com/AnthoPakPak/PanCake>
-- Repo: <https://repo.packix.com/package/com.anthopak.pancake>
 
 ### No3DLines
+- Tags: Discontinued
 - Purpose: Remove separator lines from 3D Touch menus
 - Source Code: <https://github.com/MTACS/No3DLines>
-- Repo: <https://repo.packix.com/package/com.mtac.no3dlines>
 
 ### Evil Scheme
+- Tags: Discontinued
 - Purpose: Change default browser, package manager, navigator, and more!
 - Source Code: <https://github.com/LorenzoPane/EvilScheme>
-- Repo: <https://repo.dynastic.co/package/EvilScheme>
 
 ### ReProvision
+- Tags: Discontinued
 - Purpose: On-device signing utility for iOS
 - Source Code: <https://github.com/Matchstic/ReProvision>
-- Repo: <https://repo.incendo.ws/>
 
 ### RealCC
 - Purpose: Actually disable wifi from CC in iOS 11
