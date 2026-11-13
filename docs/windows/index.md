@@ -69,3 +69,9 @@ irm https://get.activated.win | iex
 - Website: <https://windirstat.net/>
 - Source Code: <https://sourceforge.net/p/windirstat/code/ci/default/tree/>
 - Download: <https://windirstat.net/download.html>
+
+## Media Player
+### QMPlay2
+- Website: None
+- Source Code: <https://github.com/zaps166/QMPlay2>
+- Download: <https://github.com/zaps166/QMPlay2/releases/latest>
