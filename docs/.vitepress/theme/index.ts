@@ -7,6 +7,7 @@ import HeroStickers from './HeroStickers.vue';
 import PlatformShelf from './PlatformShelf.vue';
 import StickerPile from './StickerPile.vue';
 import { useMasonry } from './masonry';
+import { useMotion } from './motion';
 import './custom.css';
 import 'virtual:category-icons.css';
 
@@ -59,6 +60,7 @@ export default {
     Layout: defineComponent({
         setup() {
             useMasonry();
+            useMotion();
             return () => h(DefaultTheme.Layout, null, {
                 'home-hero-image': () => h(HeroStickers),
             });

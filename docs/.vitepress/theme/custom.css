@@ -42,6 +42,10 @@
     --vp-home-hero-name-color: var(--vp-c-text-1);
     --vp-button-alt-bg: var(--panel);
     --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+
+    /* Settles with a small overshoot, like a sticker pressed down */
+    --spring: cubic-bezier(0.3, 1.4, 0.5, 1);
+    --soft-spring: cubic-bezier(0.34, 1.2, 0.64, 1);
 }
 
 .dark {
@@ -168,6 +172,8 @@
 }
 
 .VPNavBarMenu.menu {
+    position: relative;
+    isolation: isolate;
     gap: 2px;
     margin-left: 16px;
     padding: 4px;
@@ -194,6 +200,33 @@
     background: var(--accent-tint);
     box-shadow: var(--raised-shadow), inset 0 0 0 1.5px var(--accent);
     color: var(--vp-c-text-1);
+}
+
+/* motion.ts places a pill under the active link, which slides when switching platforms.
+   Until then (and without scripting) the link carries the highlight itself. */
+.VPNavBarMenu.menu::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    /* left, not translate: Firefox runs translate transitions on the compositor,
+       where this one jumped to the end while the width still eased */
+    left: var(--pill-x);
+    z-index: -1;
+    width: var(--pill-w);
+    border-radius: 999px;
+    background: var(--accent-tint);
+    box-shadow: var(--raised-shadow), inset 0 0 0 1.5px var(--accent);
+    visibility: hidden;
+}
+
+.VPNavBarMenu.has-pill::after {
+    visibility: visible;
+}
+
+.VPNavBarMenu.has-pill .VPNavBarMenuLink.active {
+    background: transparent;
+    box-shadow: none;
 }
 
 .VPNavBarMenuLink > span,
@@ -1140,13 +1173,16 @@
 
 .sticker {
     --edge: 3px;
+    --size: var(--s);
     position: absolute;
     top: var(--y);
     left: var(--x);
-    width: var(--s);
-    height: var(--s);
+    width: var(--size);
+    height: var(--size);
+    /* Centered with margins, so transforms pivot around the sticker's middle */
+    margin: calc(var(--size) / -2);
     object-fit: contain;
-    transform: translate(-50%, -50%) rotate(var(--r));
+    transform: rotate(var(--r));
 }
 
 @media (max-width: 959px) {
@@ -1165,22 +1201,21 @@
     }
 
     .sticker {
-        width: calc(var(--s) * 0.75);
-        height: calc(var(--s) * 0.75);
+        --size: calc(var(--s) * 0.75);
     }
 }
 
 /* The one orchestrated moment: stickers slapped onto the lid */
 @media (prefers-reduced-motion: no-preference) {
     .sticker {
-        animation: slap 0.4s calc(var(--i) * 45ms) cubic-bezier(0.3, 1.4, 0.5, 1) backwards;
+        animation: slap 0.4s calc(var(--i) * 45ms) var(--spring) backwards;
     }
 }
 
 @keyframes slap {
     from {
         opacity: 0;
-        transform: translate(-50%, -50%) rotate(calc(var(--r) - 12deg)) scale(1.35);
+        transform: rotate(calc(var(--r) - 12deg)) scale(1.35);
     }
 }
 
@@ -1249,6 +1284,8 @@
 .shelf-peek {
     grid-area: peek;
     display: flex;
+    /* The fan-out spreads only as far as the card has room (see Motion) */
+    container-type: inline-size;
     margin-top: 18px;
 }
 
@@ -1258,30 +1295,43 @@
     object-fit: contain;
 }
 
+/* A small pile that fans out when the card is hovered (see Motion) */
+.shelf-peek img {
+    position: relative;
+    z-index: var(--i);
+}
+
 .shelf-peek img + img {
-    margin-left: 6px;
+    margin-left: -12px;
 }
 
-@media (max-width: 959px) {
-    .shelf-peek {
-        display: none;
-    }
-}
+.shelf-peek img:nth-child(1) { rotate: -8deg; }
+.shelf-peek img:nth-child(2) { rotate: 5deg; }
+.shelf-peek img:nth-child(3) { rotate: -3deg; }
+.shelf-peek img:nth-child(4) { rotate: 9deg; }
 
-@media (max-width: 639px) {
+/* Below this, five columns are too narrow for the names; the cards become rows */
+@media (max-width: 859px) {
     .shelf {
         grid-template-columns: 1fr;
         gap: 8px;
     }
 
     .shelf-item {
-        grid-template-areas: 'icon name' 'icon count';
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 'icon name peek' 'icon count peek';
         column-gap: 16px;
         align-items: center;
         padding: 14px 16px;
     }
 
     .shelf-name {
+        margin-top: 0;
+    }
+
+    /* The resting pile's width: four 28px icons overlapping by 12px */
+    .shelf-peek {
+        width: 76px;
         margin-top: 0;
     }
 }
@@ -1339,8 +1389,8 @@
     translate: calc(-50% + var(--x)) calc(-50% + var(--y));
     rotate: var(--r);
     transition:
-        translate 0.45s calc(var(--i) * 25ms) cubic-bezier(0.3, 1.4, 0.5, 1),
-        rotate 0.45s calc(var(--i) * 25ms) cubic-bezier(0.3, 1.4, 0.5, 1),
+        translate 0.45s calc(var(--i) * 25ms) var(--spring),
+        rotate 0.45s calc(var(--i) * 25ms) var(--spring),
         scale 0.2s;
 }
 
@@ -1360,7 +1410,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .pile-sticker {
-        animation: pile-slap 0.4s calc(200ms + var(--i) * 70ms) cubic-bezier(0.3, 1.4, 0.5, 1) backwards;
+        animation: pile-slap 0.4s calc(200ms + var(--i) * 70ms) var(--spring) backwards;
     }
 }
 
@@ -1438,6 +1488,52 @@
 .NotFound .link.link:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
+}
+
+/* Motion: small, springy responses to pointing and switching. Nothing moves on its own.
+ * -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+    .VPNavBarMenu.has-pill::after {
+        transition: left 0.45s var(--soft-spring), width 0.45s var(--soft-spring);
+    }
+
+    /* Home: a card's sticker pile fans out like the one on the introduction page */
+    .shelf-peek img {
+        transition:
+            translate 0.45s calc(var(--i) * 25ms) var(--spring),
+            rotate 0.45s calc(var(--i) * 25ms) var(--spring);
+    }
+
+    .shelf-item:hover .shelf-peek img {
+        translate:
+            calc(var(--i) * clamp(0px, (100cqi - 76px) / 3, 18px))
+            calc(var(--k) * var(--k) * 2.5px - 4px);
+        rotate: calc(var(--k) * 8deg);
+    }
+
+    /* Hero stickers lift and straighten a little under the pointer */
+    .sticker {
+        transition: rotate 0.3s var(--spring), scale 0.3s var(--spring);
+    }
+
+    .sticker:hover {
+        z-index: 1;
+        rotate: calc(var(--r) * -0.6);
+        scale: 1.12;
+    }
+
+    /* Copy confirmations pop in */
+    .vp-doc .app-card div[class*='language-'] > button.copy.copied::after,
+    .vp-doc .app-group .header-anchor.copied::before {
+        animation: pop 0.35s var(--spring);
+    }
+}
+
+@keyframes pop {
+    from {
+        scale: 0.4;
+    }
 }
 
 /* Misc
