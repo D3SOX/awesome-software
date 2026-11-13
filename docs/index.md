@@ -5,18 +5,11 @@ titleTemplate: Home
 
 hero:
     name: Awesome Software
-    tagline: Some recommendations regarding software for desktop and mobile 🔝
-    image:
-        src: https://cdn.freebiesupply.com/logos/large/2x/open-source-logo-png-transparent.png
-        alt: Logo
+    tagline: Apps I personally recommend for desktop and mobile. Mostly free, open source, and privacy-friendly.
     actions:
-        - theme: brand
-          text: Get started →
+        - theme: alt
+          text: About this list
           link: /introduction/
 ---
 
-<div style="margin: 3rem 1rem 0 1rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-    <img src="https://img.shields.io/github/last-commit/D3S0X/awesome-software.svg?style=for-the-badge&label=Last%20update" alt="Last Update" />
-    <img src="https://img.shields.io/github/stars/D3S0X/awesome-software?style=for-the-badge" alt="Stars">
-    <img src="https://img.shields.io/github/license/D3S0X/awesome-software?style=for-the-badge" alt="License">
-</div>
+<PlatformShelf />

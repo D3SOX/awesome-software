@@ -1,0 +1,33 @@
+<svg width="128px" height="128px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+ <linearGradient id="a" x1="18" x2="110" y1="76" y2="76" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#e66100" offset="0"/>
+  <stop stop-color="#ff7800" offset=".5"/>
+  <stop stop-color="#e66100" offset="1"/>
+ </linearGradient>
+ <linearGradient id="b" x1="18" x2="110" y1="68" y2="68" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#e5a50a" offset="0"/>
+  <stop stop-color="#f5c211" offset=".5"/>
+  <stop stop-color="#e5a50a" offset="1"/>
+ </linearGradient>
+ <linearGradient id="c" x1="18" x2="110" y1="60" y2="60" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#9848b7" offset="0"/>
+  <stop stop-color="#bb56c8" offset=".5"/>
+  <stop stop-color="#9848b7" offset="1"/>
+ </linearGradient>
+ <path d="m18 52h92v8h-92z" fill="#9141ac"/>
+ <path d="m110 76c0 25.406-20.594 46-46 46s-46-20.594-46-46 20.594-46 46-46 46 20.594 46 46z" fill="url(#a)"/>
+ <path d="m110 69c0 25.406-20.594 46-46 46s-46-20.594-46-46 20.594-46 46-46 46 20.594 46 46z" fill="#c64600"/>
+ <path d="m18 68h92v8h-92z" fill="#e66100"/>
+ <path d="m110 68c0 25.406-20.594 46-46 46s-46-20.594-46-46 20.594-46 46-46 46 20.594 46 46z" fill="url(#b)"/>
+ <path d="m18 60h92v8h-92z" fill="#e5a50a"/>
+ <path d="m110 60c0 25.406-20.594 46-46 46s-46-20.594-46-46 20.594-46 46-46 46 20.594 46 46z" fill="url(#c)"/>
+ <path d="m110 52c0 25.406-20.594 46-46 46s-46-20.594-46-46 20.594-46 46-46 46 20.594 46 46z" fill="#c061cb"/>
+ <g stroke-linecap="round">
+  <path d="m45.613 35.613c8.3242-8.3203 21.195-10.016 31.387-4.1289 10.191 5.8828 15.16 17.879 12.113 29.246-3.0469 11.367-13.344 19.27-25.113 19.27s-22.066-7.9023-25.113-19.27" fill="none" stroke="#9141ac" stroke-width="4"/>
+  <path d="m49 41h-9v-9z" fill="#fff" stroke="#9141ac" stroke-linejoin="round" stroke-width="4"/>
+  <path d="m74 62-10-6v-16" fill="none" stroke="#9141ac" stroke-width="4"/>
+  <path d="m45.613 32.613c8.3242-8.3203 21.195-10.016 31.387-4.1289 10.191 5.8828 15.16 17.879 12.113 29.246-3.0469 11.367-13.344 19.27-25.113 19.27s-22.066-7.9023-25.113-19.27" fill="none" stroke="#f6d1f6" stroke-width="4"/>
+  <path d="m49 38h-9v-9z" fill="#f6d1f6" stroke="#f6d1f6" stroke-linejoin="round" stroke-width="4"/>
+  <path d="m74 59-10-6v-16" fill="none" stroke="#f6d1f6" stroke-width="4"/>
+ </g>
+</svg>

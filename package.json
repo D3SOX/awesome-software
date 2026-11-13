@@ -11,6 +11,9 @@
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "@fontsource-variable/archivo": "5.3.0",
+    "lucide-static": "1.71.0",
+    "simple-icons": "16.37.0",
     "vitepress": "^1.6.4",
     "vue": "^3.5.45"
   }

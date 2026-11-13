@@ -1,120 +1,1337 @@
 /**
- * Customize default theme styling by overriding CSS variables:
- * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ * "Laptop lid": neutral aluminium surfaces; the app icons, as die-cut stickers, bring the color.
+ * A slight green marks links and states. States change surfaces and borders only, never icon or text color.
+ * Default variables: https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
 
-/**
- * Colors
+/* Tokens
  * -------------------------------------------------------------------------- */
 
 :root {
-    --vp-c-brand: #3fa652;
-    --vp-c-brand-light: #338b44;
-    --vp-c-brand-lighter: #3a9f4d;
-    --vp-c-brand-lightest: #4eda69;
-    --vp-c-brand-dark: #3fa652;
-    --vp-c-brand-darker: #368c45;
-    --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
-}
+    --vp-font-family-base: 'Archivo Variable', ui-sans-serif, system-ui, sans-serif;
 
-/**
- * Component: Button
- * -------------------------------------------------------------------------- */
+    --sticker-edge: #ffffff;
+    --raised: #fbfbfc;
+    --raised-shadow: 0 1px 2px rgb(0 0 0 / 0.14), 0 0 0 1px rgb(0 0 0 / 0.06);
+    --accent: #2f9445;
+    --hover-border: var(--accent);
+    --accent-tint: color-mix(in srgb, var(--accent) 14%, var(--panel));
 
-:root {
-    --vp-button-brand-border: var(--vp-c-brand-light);
-    --vp-button-brand-text: var(--vp-c-white);
-    --vp-button-brand-bg: var(--vp-c-brand);
-    --vp-button-brand-hover-border: var(--vp-c-brand-light);
-    --vp-button-brand-hover-text: var(--vp-c-white);
-    --vp-button-brand-hover-bg: var(--vp-c-brand-light);
-    --vp-button-brand-active-border: var(--vp-c-brand-light);
-    --vp-button-brand-active-text: var(--vp-c-white);
-    --vp-button-brand-active-bg: var(--vp-button-brand-bg);
-}
+    --vp-c-brand-1: #237a37;
+    --vp-c-brand-2: #2f9445;
+    --vp-c-brand-3: #3fa652;
+    --vp-c-brand-soft: rgb(63 166 82 / 0.14);
 
-/**
- * Component: Home
- * -------------------------------------------------------------------------- */
+    --vp-c-text-1: #1c1e22;
+    --vp-c-text-2: #4d525a;
+    --vp-c-text-3: #6b7079;
 
-:root {
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(
-            120deg,
-            var(--vp-c-brand) 30%,
-            var(--vp-c-brand-lighter)
-    );
+    --vp-c-bg: #d9dce0;
+    --vp-c-bg-alt: #d1d5da;
+    --vp-c-bg-elv: #eef0f2;
+    --vp-c-bg-soft: #e4e7ea;
+    --vp-c-divider: #c4c9cf;
+    --vp-c-gutter: #c4c9cf;
+    --vp-c-default-soft: #dde0e4;
 
-    --vp-home-hero-image-background-image: linear-gradient(
-            -45deg,
-            var(--vp-c-brand) 50%,
-            #00f62f 50%
-    );
-    --vp-home-hero-image-filter: blur(40px);
-}
+    --panel: #eef0f2;
+    --panel-border: #c9cdd3;
+    --vp-nav-bg-color: rgb(217 220 224 / 0.88);
+    --vp-local-nav-bg-color: var(--vp-nav-bg-color);
 
-@media (min-width: 640px) {
-    :root {
-        --vp-home-hero-image-filter: blur(56px);
-    }
-}
-
-@media (min-width: 960px) {
-    :root {
-        --vp-home-hero-image-filter: blur(72px);
-    }
-}
-
-/**
- * Component: Custom Block
- * -------------------------------------------------------------------------- */
-
-:root {
-    --vp-custom-block-tip-border: var(--vp-c-brand);
-    --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+    --vp-home-hero-name-color: var(--vp-c-text-1);
+    --vp-button-alt-bg: var(--panel);
+    --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
 }
 
 .dark {
-    --vp-custom-block-tip-border: var(--vp-c-brand);
-    --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
+    --sticker-edge: #f1f1ef;
+    --raised: #2f3338;
+    --raised-shadow: 0 1px 2px rgb(0 0 0 / 0.5), 0 0 0 1px rgb(255 255 255 / 0.06);
+    --accent: #4fbf68;
+    --hover-border: var(--accent);
+    --accent-tint: color-mix(in srgb, var(--accent) 14%, var(--panel));
+
+    --vp-c-brand-1: #6dd88a;
+    --vp-c-brand-2: #4fbf68;
+    --vp-c-brand-3: #3fa652;
+    --vp-c-brand-soft: rgb(79 191 104 / 0.16);
+
+    --vp-c-text-1: #e8eaed;
+    --vp-c-text-2: #a3a9b1;
+    --vp-c-text-3: #7d838c;
+
+    --vp-c-bg: #131517;
+    --vp-c-bg-alt: #0f1113;
+    --vp-c-bg-elv: #1b1e21;
+    --vp-c-bg-soft: #1b1e21;
+    --vp-c-divider: #272a2f;
+    --vp-c-gutter: #0f1113;
+    --vp-c-default-soft: #25292d;
+
+    --panel: #1b1e21;
+    --panel-border: #2a2e33;
+    --vp-nav-bg-color: rgb(19 21 23 / 0.88);
+    --vp-button-alt-bg: var(--panel);
 }
 
-/**
- * Component: Algolia
+/* Type: one family, the extra-wide cut for headings
  * -------------------------------------------------------------------------- */
 
-.DocSearch {
-    --docsearch-primary-color: var(--vp-c-brand) !important;
+.vp-doc h1,
+.vp-doc h2,
+.VPHero .name,
+.VPNavBarTitle .title,
+.shelf-name {
+    font-stretch: 125%;
 }
 
-/**
- * VitePress: Custom fix
+.vp-doc h1 {
+    font-size: clamp(2.25rem, 1.6rem + 2.4vw, 3.25rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}
+
+.vp-doc h2 {
+    margin-top: 3.5rem;
+    padding-top: 0;
+    border-top: 0;
+    font-size: 1.375rem;
+    font-weight: 750;
+    letter-spacing: -0.01em;
+}
+
+.vp-doc .platform-meta {
+    margin-top: 0.5rem;
+    color: var(--vp-c-text-2);
+    font-size: 1.0625rem;
+}
+
+/* Stickers: a white die-cut edge that follows the icon's shape
  * -------------------------------------------------------------------------- */
+
+.app-icon,
+.sticker,
+.shelf-peek img {
+    --edge: 2px;
+    border-radius: 22%;
+    filter:
+        drop-shadow(var(--edge) 0 0 var(--sticker-edge))
+        drop-shadow(calc(var(--edge) * -1) 0 0 var(--sticker-edge))
+        drop-shadow(0 var(--edge) 0 var(--sticker-edge))
+        drop-shadow(0 calc(var(--edge) * -1) 0 var(--sticker-edge))
+        drop-shadow(0 2px 3px rgb(0 0 0 / 0.25));
+}
+
+/* Navigation
+ * -------------------------------------------------------------------------- */
+
+.VPNavBarTitle .title {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.VPNavBarTitle .logo.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: rotate 0.2s, scale 0.2s;
+}
+
+/* Home link: the name turns green and the sticker logo tilts a little */
+.VPNavBarTitle .title.title {
+    transition: color 0.2s;
+}
+
+.VPNavBarTitle .title.title:hover {
+    color: var(--vp-c-brand-1);
+}
+
+.VPNavBarTitle .title:hover .logo.logo {
+    rotate: -8deg;
+    scale: 1.08;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .VPNavBarTitle .title:hover .logo.logo {
+        rotate: none;
+        scale: none;
+    }
+}
+
+.VPNavBarMenu.menu {
+    gap: 2px;
+    margin-left: 16px;
+    padding: 4px;
+    border: 1px solid var(--panel-border);
+    border-radius: 999px;
+    background: var(--panel);
+}
+
+.VPNavBarMenuLink.VPNavBarMenuLink {
+    padding: 0 12px;
+    border-radius: 999px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 36px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.VPNavBarMenuLink.VPNavBarMenuLink:hover {
+    background: var(--accent-tint);
+    color: var(--vp-c-text-1);
+}
+
+.VPNavBarMenuLink.VPNavBarMenuLink.active {
+    background: var(--accent-tint);
+    box-shadow: var(--raised-shadow), inset 0 0 0 1.5px var(--accent);
+    color: var(--vp-c-text-1);
+}
+
+.VPNavBarMenuLink > span,
+.VPNavScreenMenuLink > span {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.VPNavBarMenuLink svg,
+.VPNavScreenMenuLink svg {
+    flex: none;
+    width: 17px;
+    height: 17px;
+}
+
+/* Tight widths: icons only, keep the label for screen readers */
+@media (max-width: 1199px) {
+    .VPNavBarMenuLink > span {
+        gap: 0;
+    }
+
+    .VPNavBarMenuLink > span > span {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1200px) {
+    .VPNavBar .container {
+        position: relative;
+    }
+
+    /* VitePress positions this on doc pages, which would center the menu off-axis
+       (its `:not(.home.top)` selector counts as two classes) */
+    .VPNavBar.VPNavBar.VPNavBar .content-body.content-body.content-body {
+        position: static;
+    }
+
+    /* Search joins the right-hand group so the centered menu has room */
+    .VPNavBarSearch.search {
+        flex-grow: 0;
+    }
+
+    .VPNavBarMenu.menu {
+        position: absolute;
+        left: 50%;
+        margin-left: 0;
+        transform: translateX(-50%);
+    }
+}
+
+/* Search and appearance switch: same pill surface as the menu, with raised keys
+ * -------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .DocSearch-Button.DocSearch-Button {
+        gap: 10px;
+        height: 46px;
+        padding: 0 6px 0 16px;
+        border: 1px solid var(--panel-border);
+        border-radius: 999px;
+        background: var(--panel);
+        transition: border-color 0.2s, background-color 0.2s;
+    }
+
+    .DocSearch-Button.DocSearch-Button:hover {
+        border-color: var(--hover-border);
+        background: var(--accent-tint);
+    }
+
+    .DocSearch-Button .DocSearch-Button-Placeholder.DocSearch-Button-Placeholder {
+        padding: 0 24px 0 0;
+        color: var(--vp-c-text-2);
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    /* "Ctrl K" as a single key cap */
+    .DocSearch-Button .DocSearch-Button-Keys {
+        height: 32px;
+        padding: 0 10px;
+        border-radius: 999px;
+        background: var(--raised);
+        box-shadow: var(--raised-shadow);
+    }
+
+    .DocSearch-Button .DocSearch-Button-Key.DocSearch-Button-Key {
+        height: 32px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: var(--vp-c-text-1);
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    .DocSearch-Button .DocSearch-Button-Key.DocSearch-Button-Key + .DocSearch-Button-Key {
+        padding-left: 3px;
+    }
+
+    .DocSearch-Button .DocSearch-Button-Key:first-child::after {
+        color: var(--vp-c-text-1);
+    }
+}
+
+.DocSearch-Button .DocSearch-Search-Icon.DocSearch-Search-Icon {
+    color: var(--vp-c-text-2);
+}
+
+.VPSwitchAppearance.VPSwitchAppearance {
+    width: 60px;
+    height: 32px;
+    border: 1px solid var(--panel-border);
+    border-radius: 999px;
+    background: var(--panel);
+    transition: border-color 0.2s, background-color 0.2s !important;
+}
+
+.VPSwitchAppearance.VPSwitchAppearance:hover {
+    border-color: var(--hover-border);
+    background: var(--accent-tint);
+}
+
+.VPSwitchAppearance .check.check {
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background: var(--raised);
+    box-shadow: var(--raised-shadow);
+}
+
+.dark .VPSwitchAppearance.VPSwitchAppearance .check.check {
+    transform: translateX(28px);
+}
+
+.VPSwitchAppearance .icon.icon {
+    width: 26px;
+    height: 26px;
+}
+
+.VPSwitchAppearance .icon.icon [class^='vpi-'] {
+    top: 6px;
+    left: 6px;
+    width: 14px;
+    height: 14px;
+    color: var(--vp-c-text-1);
+}
+
+/* Search dialog: a panel with a pill input; rows use the same green tint as hovers
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-backdrop-bg-color: rgb(0 0 0 / 0.45);
+    --vp-local-search-bg: var(--panel);
+    --vp-local-search-result-bg: transparent;
+    --vp-local-search-result-border: transparent;
+    --vp-local-search-result-selected-bg: var(--accent-tint);
+    --vp-local-search-result-selected-border: var(--accent);
+    --vp-local-search-highlight-bg: color-mix(in srgb, var(--accent) 32%, transparent);
+    --vp-local-search-highlight-text: var(--vp-c-text-1);
+}
+
+::selection {
+    background: color-mix(in srgb, var(--accent) 32%, transparent);
+}
+
+.VPLocalSearchBox .backdrop.backdrop {
+    backdrop-filter: blur(6px);
+}
+
+@media (min-width: 768px) {
+    .VPLocalSearchBox .shell.shell {
+        gap: 12px;
+        padding: 14px;
+        border: 1px solid var(--panel-border);
+        border-radius: 20px;
+        box-shadow: 0 24px 64px rgb(0 0 0 / 0.35);
+    }
+}
+
+.VPLocalSearchBox .search-bar.search-bar {
+    min-height: 46px;
+    padding: 0 8px 0 16px;
+    border: 1px solid var(--panel-border);
+    border-radius: 999px;
+    background: var(--vp-c-bg);
+}
+
+.VPLocalSearchBox .search-bar.search-bar:focus-within {
+    border-color: var(--accent);
+}
+
+/* VitePress has its own clear button; drop the browser's duplicate */
+.VPLocalSearchBox .search-input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.VPLocalSearchBox .search-actions.search-actions button:not([disabled]):hover,
+.VPLocalSearchBox .toggle-layout-button.toggle-layout-button.detailed-list {
+    color: var(--vp-c-text-1);
+}
+
+.VPLocalSearchBox .toggle-layout-button.toggle-layout-button {
+    display: none;
+}
+
+/* VitePress's fade strips show as bars on short excerpts; fade only what reaches the 140px cutoff */
+.VPLocalSearchBox .excerpt-gradient-top.excerpt-gradient-top,
+.VPLocalSearchBox .excerpt-gradient-bottom.excerpt-gradient-bottom {
+    display: none;
+}
+
+.VPLocalSearchBox .excerpt.excerpt {
+    mask-image: linear-gradient(to bottom, #000 110px, transparent 140px);
+}
+
+.VPLocalSearchBox .results.results {
+    gap: 2px;
+}
+
+.VPLocalSearchBox .result.result {
+    border-width: 1px;
+    border-radius: 12px;
+}
+
+.VPLocalSearchBox .title-icon.title-icon {
+    display: none;
+}
+
+.VPLocalSearchBox .title.title.main {
+    font-weight: 650;
+}
+
+/* VitePress recolors the selected row's text; keep it, only the surface changes */
+.VPLocalSearchBox .result.selected .titles.titles {
+    color: var(--vp-c-text-1) !important;
+}
+
+.VPLocalSearchBox .titles mark,
+.VPLocalSearchBox .excerpt mark {
+    padding: 0 2px;
+    border-radius: 4px;
+}
+
+.VPLocalSearchBox .search-keyboard-shortcuts.search-keyboard-shortcuts {
+    padding: 0 4px;
+    opacity: 1;
+    color: var(--vp-c-text-2);
+}
+
+.VPLocalSearchBox .search-keyboard-shortcuts.search-keyboard-shortcuts kbd {
+    border: 0;
+    border-radius: 7px;
+    background: var(--raised);
+    box-shadow: var(--raised-shadow);
+    color: var(--vp-c-text-1);
+}
+
+/* Mobile: "On this page" dropdown and the site menu
+ * -------------------------------------------------------------------------- */
+
+.VPLocalNavOutlineDropdown .items.items {
+    gap: 0;
+    padding: 6px;
+    border: 1px solid var(--panel-border);
+    border-radius: 16px;
+    background: var(--panel);
+    box-shadow: 0 16px 40px rgb(0 0 0 / 0.3);
+}
+
+.VPLocalNavOutlineDropdown .header.header,
+.VPLocalNavOutlineDropdown .outline.outline {
+    padding: 0;
+    background: none;
+}
+
+.VPLocalNavOutlineDropdown .header.header {
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--panel-border);
+}
+
+.VPLocalNavOutlineDropdown .top-link.top-link,
+.VPLocalNavOutlineDropdown .outline-link.outline-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--vp-c-text-1);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.35;
+    white-space: normal;
+    transition: background-color 0.15s;
+}
+
+.VPLocalNavOutlineDropdown .top-link.top-link::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: currentColor;
+    mask: var(--icon-arrow-up) center / contain no-repeat;
+}
+
+.VPLocalNavOutlineDropdown .top-link.top-link:hover,
+.VPLocalNavOutlineDropdown .outline-link.outline-link:hover {
+    background: var(--accent-tint);
+}
+
+/* Icons come from the generated category-icons CSS (matched by title) */
+.VPLocalNavOutlineDropdown .outline-link::before {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    background: currentColor;
+    mask: center / contain no-repeat;
+}
+
+.VPNavScreenMenu .VPNavScreenMenuLink.VPNavScreenMenuLink {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding: 0 14px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 48px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.VPNavScreenMenu .VPNavScreenMenuLink.VPNavScreenMenuLink:hover {
+    border-color: var(--hover-border);
+    background: var(--accent-tint);
+    color: var(--vp-c-text-1);
+}
+
+.VPNavScreenMenuLink > span {
+    gap: 12px;
+}
+
+.VPNavScreenMenuLink svg {
+    width: 20px;
+    height: 20px;
+}
+
+.VPNavScreen .VPNavScreenAppearance.VPNavScreenAppearance {
+    margin-top: 20px;
+    padding: 10px 10px 10px 16px;
+    border: 1px solid var(--panel-border);
+    border-radius: 14px;
+    background: var(--panel);
+}
+
+.VPNavScreenAppearance .text.text {
+    color: var(--vp-c-text-1);
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+/* Platform pages: categories as panels flowing in columns
+ * -------------------------------------------------------------------------- */
+
+/* Doubled classes beat the theme's scoped width rules */
+@media (min-width: 960px) {
+    .VPDoc.VPDoc:has(.app-groups) .container.container {
+        max-width: 1376px;
+    }
+
+    .VPDoc.VPDoc:has(.app-groups) .content.content,
+    .VPDoc.VPDoc:has(.app-groups) .content-container.content-container {
+        max-width: none;
+    }
+}
 
 /*
-  Use lighter colors for links in dark mode for a11y.
-  Also specify some classes twice to have higher specificity
-  over scoped class data attribute.
-*/
-.dark .vp-doc a,
-.dark .vp-doc a > code,
-.dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
-.dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
-.dark .link.link:hover,
-.dark .link.link.active,
-.dark .edit-link-button.edit-link-button,
-.dark .pager-link .title {
-    color: var(--vp-c-brand-lighter);
+ * A scroll-spy outline can't follow panels laid out in columns, so wide screens
+ * get the category index under the title instead. Narrower screens keep the
+ * "On this page" dropdown, which has no scroll-spy.
+ */
+.app-index {
+    display: none;
 }
 
-.dark .vp-doc a:hover,
-.dark .vp-doc a > code:hover {
-    color: var(--vp-c-brand-lightest);
+@media (min-width: 1280px) {
+    .VPDoc.VPDoc:has(.app-groups) .aside {
+        display: none;
+    }
+
+    .app-index {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 1.5rem;
+    }
+}
+
+.vp-doc a.app-index-link {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    padding: 4px 12px 4px 10px;
+    border: 1px solid var(--panel-border);
+    border-radius: 999px;
+    background: var(--panel);
+    color: var(--vp-c-text-1);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.vp-doc a.app-index-link:hover {
+    border-color: var(--hover-border);
+    background: var(--accent-tint);
+}
+
+.app-index-link svg {
+    flex: none;
+    width: 15px;
+    height: 15px;
+}
+
+.app-index-link span {
+    color: var(--vp-c-text-3);
+    font-weight: 500;
+}
+
+.app-groups {
+    columns: 19rem;
+    column-gap: 16px;
+    margin-top: 2.5rem;
+}
+
+/* Set up by masonry.ts; the CSS columns above remain the no-JS fallback */
+.app-groups.is-masonry {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    columns: auto;
+}
+
+.app-masonry {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.app-masonry-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+
+.app-groups.is-masonry .app-group.app-group {
+    margin: 0;
+}
+
+.app-group {
+    break-inside: avoid;
+    margin-bottom: 16px;
+    padding: 4px 20px 8px;
+    border: 1px solid var(--panel-border);
+    border-radius: 16px;
+    background: var(--panel);
+}
+
+.app-group-wide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    column-gap: 32px;
+    column-span: all;
+    /* Margins collapse away at column breaks, so space it from the panels above */
+    margin-top: 16px;
+}
+
+.app-group-wide:first-child {
+    margin-top: 0;
+}
+
+.app-group-wide .app-card {
+    border-top: 1px solid var(--panel-border);
+}
+
+.vp-doc .app-group > h2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 16px 0 4px;
+}
+
+.vp-doc .app-group-wide > h2 {
+    grid-column: 1 / -1;
+}
+
+.app-group-icon {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--vp-c-default-soft);
+    color: var(--vp-c-text-1);
+}
+
+.app-group-icon svg {
+    width: 17px;
+    height: 17px;
+}
+
+.vp-doc .app-group h2 {
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.3;
+}
+
+/* Matches VitePress's anchor offset (header + 24px), so the browser's own #fragment
+   scrolling and masonry's re-scroll land in the same place */
+.vp-doc .app-group :is(h2, h3, h4) {
+    scroll-margin-top: calc(var(--vp-nav-height) + 24px);
+}
+
+/* Below 1280px the "On this page" bar sits under the header too */
+@media (max-width: 1279px) {
+    .vp-doc .app-group :is(h2, h3, h4) {
+        scroll-margin-top: calc(var(--vp-nav-height) + 48px + 24px);
+    }
+}
+
+/* Below 960px the header scrolls away and only that bar stays pinned */
+@media (max-width: 959px) {
+    .vp-doc .app-group :is(h2, h3, h4) {
+        scroll-margin-top: calc(48px + 24px);
+    }
+}
+
+.app-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 14px 0;
+}
+
+.app-card + .app-card {
+    border-top: 1px solid var(--panel-border);
+}
+
+.app-icon {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    margin: 2px 0 0 2px;
+    object-fit: contain;
+    rotate: var(--tilt, 0deg);
+}
+
+.app-icon-mono {
+    display: grid;
+    place-items: center;
+    background: hsl(var(--hue) 70% 62%);
+    color: #1c1e22;
+    font-size: 1.375rem;
+    font-weight: 800;
+    font-stretch: 125%;
+}
+
+/* Name and tags share the first row; everything else spans the full width */
+.app-body,
+.app-sub {
+    display: grid;
+    grid-template-columns: minmax(0, max-content) 1fr;
+    gap: 6px 8px;
+    align-items: center;
+}
+
+.app-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.app-body > :not(h3, .app-tags),
+.app-sub > :not(h4, .app-tags) {
+    grid-column: 1 / -1;
+}
+
+
+
+.vp-doc .app-card h3 {
+    margin: 0;
+    font-size: 1.0625rem;
+    font-weight: 650;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+}
+
+.app-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.app-tag {
+    padding: 0 7px;
+    border-radius: 4px;
+    background: var(--vp-c-default-soft);
+    color: var(--vp-c-text-2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.app-tag[data-tag='discontinued'] {
+    background: #ffd84d;
+    color: #1c1e22;
+}
+
+.vp-doc .app-purpose,
+.vp-doc .app-note {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.45;
+}
+
+.vp-doc .app-purpose {
+    color: var(--vp-c-text-1);
+}
+
+.vp-doc .app-note {
+    color: var(--vp-c-text-2);
+}
+
+.app-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.vp-doc a.app-link {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    color: var(--vp-c-text-2);
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.vp-doc a.app-link:hover,
+.vp-doc a.app-link:focus-visible {
+    border-color: var(--hover-border);
+    background: var(--accent-tint);
+}
+
+.vp-doc a.app-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.app-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.app-link::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    z-index: 10;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: var(--vp-c-text-1);
+    color: var(--vp-c-bg);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.4;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, 2px);
+    transition: opacity 0.15s, transform 0.15s;
+}
+
+.app-link:hover::after,
+.app-link:focus-visible::after {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/*
+ * Install commands: an inset well with the command and a copy button side by side.
+ * The button matches the link buttons; copying swaps its icon for a check
+ * instead of VitePress's floating "Copied" badge.
+ */
+.vp-doc .app-card div[class*='language-'] {
+    display: flex;
+    flex-basis: 100%;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+    padding: 8px 8px 8px 14px;
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    background: var(--vp-c-bg);
+}
+
+.vp-doc .app-card div[class*='language-'] > span.lang {
+    display: none;
+}
+
+.vp-doc .app-card div[class*='language-'] pre {
+    flex: 1;
+    order: 1;
+    min-width: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+/* Wrap long one-liners evenly instead of scrolling them sideways */
+.vp-doc .app-card div[class*='language-'] code {
+    width: auto;
+    padding: 0;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.vp-doc .app-card div[class*='language-'] > button.copy.copy {
+    position: static;
+    display: grid;
+    flex: none;
+    order: 2;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    background: var(--panel);
+    color: var(--vp-c-text-2);
+    opacity: 1;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.vp-doc .app-card div[class*='language-'] > button.copy.copy::before {
+    display: none;
+}
+
+.vp-doc .app-card div[class*='language-'] > button.copy.copy::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: currentColor;
+    mask: var(--vp-icon-copy) center / contain no-repeat;
+}
+
+.vp-doc .app-card div[class*='language-'] > button.copy.copy:hover,
+.vp-doc .app-card div[class*='language-'] > button.copy.copied {
+    border-color: var(--hover-border);
+    background: var(--accent-tint);
+}
+
+.vp-doc .app-card div[class*='language-'] > button.copy.copied::after {
+    mask-image: var(--vp-icon-copied);
+}
+
+/* Sub-entries such as forks hang off the parent app like a branch */
+.app-sub {
+    margin-top: 6px;
+    padding: 2px 0 2px 14px;
+    border-left: 2px solid var(--panel-border);
+}
+
+.vp-doc .app-sub h4 {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 650;
+    line-height: 1.3;
+}
+
+
+/* Copy-link buttons next to category and app names (VitePress's header anchors)
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --icon-link: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/svg%3E");
+    --icon-arrow-up: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 7-7 7 7'/%3E%3Cpath d='M12 19V5'/%3E%3C/svg%3E");
+    --icon-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+/* Balanced wrapping keeps long names from leaving one word on its own line */
+.vp-doc .app-group :is(h2, h3, h4) {
+    text-wrap: balance;
+}
+
+/* The last word and the button form one unit: it never wraps alone, and flex centering
+   is consistent across browsers (unlike vertical-align on inline boxes) */
+.vp-doc .app-group .anchor-tail {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.vp-doc .app-group .header-anchor {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    /* Don't let the button make the line taller */
+    margin: -4px 0;
+    border-radius: 7px;
+    color: var(--vp-c-text-3);
+    opacity: 0;
+    transition: opacity 0.15s, background-color 0.15s;
+}
+
+.vp-doc .app-group .header-anchor::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: currentColor;
+    mask: var(--icon-link) center / contain no-repeat;
+}
+
+.vp-doc .app-group .header-anchor.copied::before {
+    mask-image: var(--icon-check);
+}
+
+.vp-doc .app-group > h2:hover .header-anchor,
+.vp-doc .app-card:hover > .app-body > h3 .header-anchor,
+.vp-doc .app-sub:hover .header-anchor,
+.vp-doc .app-group .header-anchor:focus-visible,
+.vp-doc .app-group .header-anchor.copied {
     opacity: 1;
 }
 
-/* Transition by color instead of opacity */
-.dark .vp-doc .custom-block a {
-    transition: color 0.25s;
+@media (hover: none) {
+    .vp-doc .app-group .header-anchor {
+        opacity: 0.6;
+    }
 }
 
+.vp-doc .app-group .header-anchor:hover {
+    background: var(--accent-tint);
+}
+
+.vp-doc .app-group .header-anchor::after {
+    content: 'Copy link';
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    z-index: 10;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: var(--vp-c-text-1);
+    color: var(--vp-c-bg);
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-stretch: 100%;
+    letter-spacing: normal;
+    line-height: 1.4;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, 2px);
+    transition: opacity 0.15s, transform 0.15s;
+}
+
+.vp-doc .app-group .header-anchor.copied::after {
+    content: 'Link copied';
+}
+
+.vp-doc .app-group .header-anchor:hover::after,
+.vp-doc .app-group .header-anchor:focus-visible::after,
+.vp-doc .app-group .header-anchor.copied::after {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* Home
+ * -------------------------------------------------------------------------- */
+
+/* Engraved into the lid, like a hardware logo */
+.VPHero .name {
+    font-size: clamp(2.5rem, 1.25rem + 4vw, 4.125rem);
+    font-weight: 850;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgb(255 255 255 / 0.55);
+}
+
+.dark .VPHero .name {
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 0.6);
+}
+
+.VPHero .tagline {
+    max-width: 30ch;
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.VPHero .image-bg {
+    display: none;
+}
+
+.lid {
+    position: absolute;
+    inset: 0;
+}
+
+.sticker {
+    --edge: 3px;
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: var(--s);
+    height: var(--s);
+    object-fit: contain;
+    transform: translate(-50%, -50%) rotate(var(--r));
+}
+
+@media (max-width: 959px) {
+    .VPHero.VPHero .image {
+        margin: -32px -24px 16px;
+    }
+
+    .VPHero.VPHero .image-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 639px) {
+    .VPHero.VPHero .image-container {
+        height: 240px;
+    }
+
+    .sticker {
+        width: calc(var(--s) * 0.75);
+        height: calc(var(--s) * 0.75);
+    }
+}
+
+/* The one orchestrated moment: stickers slapped onto the lid */
+@media (prefers-reduced-motion: no-preference) {
+    .sticker {
+        animation: slap 0.4s calc(var(--i) * 45ms) cubic-bezier(0.3, 1.4, 0.5, 1) backwards;
+    }
+}
+
+@keyframes slap {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(calc(var(--r) - 12deg)) scale(1.35);
+    }
+}
+
+.shelf {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.vp-doc a.shelf-item {
+    color: var(--vp-c-text-1);
+    text-decoration: none;
+}
+
+.shelf-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        'icon icon'
+        'name name'
+        'count count'
+        'peek peek';
+    padding: 20px;
+    border: 1px solid var(--panel-border);
+    border-radius: 16px;
+    background: var(--panel);
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.shelf-item:hover {
+    border-color: var(--hover-border);
+    background: var(--accent-tint);
+}
+
+.shelf-item:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.shelf-icon {
+    grid-area: icon;
+    color: var(--vp-c-text-1);
+}
+
+.shelf-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.shelf-name {
+    grid-area: name;
+    margin-top: 16px;
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.shelf-count {
+    grid-area: count;
+    color: var(--vp-c-text-2);
+    font-size: 0.875rem;
+}
+
+.shelf-peek {
+    grid-area: peek;
+    display: flex;
+    margin-top: 18px;
+}
+
+.shelf-peek img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.shelf-peek img + img {
+    margin-left: 6px;
+}
+
+@media (max-width: 959px) {
+    .shelf-peek {
+        display: none;
+    }
+}
+
+@media (max-width: 639px) {
+    .shelf {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .shelf-item {
+        grid-template-areas: 'icon name' 'icon count';
+        column-gap: 16px;
+        align-items: center;
+        padding: 14px 16px;
+    }
+
+    .shelf-name {
+        margin-top: 0;
+    }
+}
+
+/* 404
+ * -------------------------------------------------------------------------- */
+
+.NotFound .code.code {
+    font-size: clamp(4.5rem, 3rem + 6vw, 7rem);
+    font-weight: 850;
+    font-stretch: 125%;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-shadow: 0 1px 0 rgb(255 255 255 / 0.55);
+}
+
+.dark .NotFound .code.code {
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 0.6);
+}
+
+.NotFound .title.title {
+    padding-top: 20px;
+    font-size: 1.375rem;
+    font-weight: 750;
+    font-stretch: 125%;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.NotFound .divider.divider {
+    display: none;
+}
+
+.NotFound .quote.quote {
+    max-width: 34ch;
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.NotFound .action.action {
+    padding-top: 28px;
+}
+
+.NotFound .link.link {
+    padding: 10px 20px;
+    border: 1px solid var(--panel-border);
+    border-radius: 999px;
+    background: var(--panel);
+    color: var(--vp-c-text-1);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.NotFound .link.link:hover {
+    border-color: var(--hover-border);
+    background: var(--accent-tint);
+}
+
+.NotFound .link.link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Misc
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+    --docsearch-primary-color: var(--accent) !important;
+}
