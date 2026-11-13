@@ -1,0 +1,1 @@
+const s="/icons/firefox.webp",o="/icons/signal.webp",n="/icons/notesnook.svg",t="/icons/standard-notes.webp",i="/icons/simplenote.webp",c="/icons/joplin.svg",p="/icons/kde-connect.svg",_="/icons/bitwarden.webp",e="/icons/onlyoffice.webp",a="/icons/opentubex.webp";export{s as _,o as a,n as b,t as c,i as d,c as e,p as f,_ as g,e as h,a as i};

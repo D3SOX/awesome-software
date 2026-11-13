@@ -1,0 +1,22 @@
+<svg width="128" height="128" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="b" x1="91.128" x2="181.44" y1="154.33" y2="105.88" gradientTransform="matrix(.61325 0 0 .75661 -26.743 -27.615)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+   <stop stop-color="#5ead52" offset="0"/>
+   <stop stop-color="#00ff86" offset=".5"/>
+   <stop stop-color="#00a77b" offset="1"/>
+  </linearGradient>
+  <radialGradient id="a" cx="63.997" cy="64.105" r="63.876" gradientTransform="matrix(1 0 0 1 6 -8.0008)" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+   <stop stop-color="#657fe2" stop-opacity=".94558" offset="0"/>
+   <stop stop-color="#290976" stop-opacity=".8549" offset=".5"/>
+   <stop stop-color="#380045" stop-opacity=".8254" offset="1"/>
+  </radialGradient>
+  <filter id="c" color-interpolation-filters="sRGB">
+   <feFlood flood-color="rgb(0,0,0)" flood-opacity=".49804" result="flood"/>
+   <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur" stdDeviation="2.5"/>
+   <feOffset dx="3" dy="3" result="offset"/>
+   <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+  </filter>
+ </defs>
+ <path transform="matrix(.88806 0 0 .88806 -.096834 14.212)" d="m11.044-2.9469c8.3088 40.604 8.7753 71.996-0.09913 118.1l101.92-50.894 16.181-8.08-117.96-59.11" fill="url(#b)" fill-rule="evenodd" filter="url(#c)" stroke="url(#a)" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.649"/>
+</svg>
