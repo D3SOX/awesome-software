@@ -20,11 +20,13 @@ const layout = Array.from({ length: 16 }, (_, i) => ({
 }));
 
 const icons = useRandomStickers(layout.length);
-const stickers = computed(() => icons.value.map((src, i) => ({ src, style: layout[i] })));
+const stickers = computed(() => icons.value.map((s, i) => ({ ...s, style: layout[i] })));
 </script>
 
 <template>
-    <div class="lid" aria-hidden="true">
-        <img v-for="s in stickers" :key="s.src" class="sticker" :src="withBase(s.src)" :style="s.style" alt="" />
-    </div>
+    <nav class="lid" aria-label="Featured apps">
+        <a v-for="s in stickers" :key="s.src" class="sticker" :href="withBase(s.href)" :title="s.name" :style="s.style">
+            <img :src="withBase(s.src)" :alt="s.name" />
+        </a>
+    </nav>
 </template>

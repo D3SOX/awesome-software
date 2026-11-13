@@ -17,6 +17,18 @@ export const slugify = (name: string) =>
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '');
 
+/** VitePress's heading-id slugify (not exported) */
+const anchorSlug = (name: string) =>
+    name
+        .normalize('NFKD')
+        .replace(/[\u0300-\u036F]/g, '')
+        .replace(/[\u0000-\u001f]/g, '')
+        .replace(/[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’<>,.?/]+/g, '-')
+        .replace(/-{2,}/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .replace(/^(\d)/, '_$1')
+        .toLowerCase();
+
 export function iconFile(slug: string) {
     for (const ext of ['svg', 'webp']) {
         if (existsSync(`${iconDir}${slug}.${ext}`)) return `/icons/${slug}.${ext}`;
@@ -108,6 +120,31 @@ function parseApp(name: string, raw: unknown, where: string): App {
         }
     }
     return app;
+}
+
+/**
+ * The ids VitePress gives an app's `<h3>`, so other pages can link to it. Repeated names are numbered
+ * in page order: the page title, then each category, its apps, and their forks.
+ */
+export function appAnchors(title: string, categories: Category[]) {
+    const seen = new Set<string>();
+    const unique = (name: string) => {
+        const slug = anchorSlug(name);
+        let id = slug;
+        for (let i = 1; seen.has(id); i++) id = `${slug}-${i}`;
+        seen.add(id);
+        return id;
+    };
+    unique(title);
+    const ids = new Map<App, string>();
+    for (const category of categories) {
+        unique(category.name);
+        for (const app of category.apps) {
+            ids.set(app, unique(app.name));
+            app.forks.forEach((fork) => unique(fork.name));
+        }
+    }
+    return ids;
 }
 
 /** Reads the `apps` frontmatter of a platform page: categories of apps, both in file order */

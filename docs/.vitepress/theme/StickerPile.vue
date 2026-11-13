@@ -22,7 +22,7 @@ const layout = Array.from({ length: count }, (_, i) => ({
 }));
 
 const icons = useRandomStickers(count);
-const stickers = computed(() => icons.value.map((src, i) => ({ src, style: layout[i] })));
+const stickers = computed(() => icons.value.map(({ src }, i) => ({ src, style: layout[i] })));
 </script>
 
 <template>

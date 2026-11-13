@@ -1228,8 +1228,20 @@
     height: var(--size);
     /* Centered with margins, so transforms pivot around the sticker's middle */
     margin: calc(var(--size) / -2);
-    object-fit: contain;
     transform: rotate(var(--r));
+}
+
+.sticker img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: contain;
+}
+
+.sticker:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
 }
 
 @media (max-width: 959px) {
