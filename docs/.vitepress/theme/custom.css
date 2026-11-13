@@ -629,12 +629,28 @@
     margin-top: 2.5rem;
 }
 
-/* Set up by masonry.ts; the CSS columns above remain the no-JS fallback */
-.app-groups.is-masonry {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    columns: auto;
+/*
+ * With scripting, masonry.ts takes over and the CSS columns above remain the no-JS fallback.
+ * Panels start out as grid items, where their heights are measured,
+ * and are then stacked into the columns of an .app-masonry row.
+ */
+@media (scripting: enabled) {
+    .app-groups {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr));
+        gap: 16px;
+        align-items: start;
+    }
+
+    .app-masonry,
+    .app-group-wide {
+        grid-column: 1 / -1;
+    }
+
+    .app-groups .app-group.app-group {
+        min-width: 0;
+        margin: 0;
+    }
 }
 
 .app-masonry {
@@ -649,10 +665,6 @@
     flex-direction: column;
     gap: 16px;
     min-width: 0;
-}
-
-.app-groups.is-masonry .app-group.app-group {
-    margin: 0;
 }
 
 .app-group {

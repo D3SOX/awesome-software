@@ -16,6 +16,13 @@ export default defineConfig({
     markdown: {
         config: (md) => md.use(appCards),
     },
+    vue: {
+        template: {
+            // App icons are public files. Left as plain URLs they stay out of the module graph; as imports,
+            // the ones shared between pages end up in tiny chunks that every navigation has to fetch first
+            transformAssetUrls: { includeAbsolute: false },
+        },
+    },
     vite: {
         plugins: [{
             name: 'category-icons',
