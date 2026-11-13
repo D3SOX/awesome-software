@@ -72,6 +72,6 @@ irm https://get.activated.win | iex
 
 ## Media Player
 ### QMPlay2
-- Website: <https://github.com/zaps166/QMPlay2>
-- Source Code: <[http](https://github.com/zaps166/QMPlay2)>
-- Download: <https://www.softpedia.com/get/Multimedia/Video/Video-Players/QMPlay2.shtml>
+- Website: None
+- Source Code: <https://github.com/zaps166/QMPlay2>
+- Download: <https://github.com/zaps166/QMPlay2/releases/latest>
