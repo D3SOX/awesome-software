@@ -1,0 +1,47 @@
+name: Check links
+
+on:
+  schedule:
+    - cron: '23 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          # Many download sites block bots with 403/429, so those don't count as broken
+          args: >-
+            --no-progress
+            --max-concurrency 8
+            --accept '200..=299,403,429'
+            --user-agent 'Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0'
+            'docs/**/*.md'
+          output: lychee/out.md
+          fail: false
+
+      - name: Find open report
+        id: issue
+        if: steps.lychee.outputs.exit_code != 0
+        run: echo "number=$(gh issue list --label broken-links --state open --json number --jq '.[0].number')" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+
+      - name: Open or update report
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
+        with:
+          title: Broken links
+          content-filepath: lychee/out.md
+          issue-number: ${{ steps.issue.outputs.number }}
+          labels: broken-links
