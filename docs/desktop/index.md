@@ -89,10 +89,10 @@
 - Source Code: <https://invent.kde.org/kde/kdenlive>
 - Download: <https://kdenlive.org/download/>
 
-### Olive
-- Website: <https://www.olivevideoeditor.org/>
-- Source Code: <https://github.com/olive-editor/olive>
-- Download: <https://olivevideoeditor.org/download.php>
+### FilmCraft
+- Website: <https://getartcraft.com/apps/filmcraft>
+- Source Code: <https://github.com/storytold/filmcraft>
+- Download: <https://github.com/storytold/filmcraft/releases>
 
 
 ## RGB lighting control
