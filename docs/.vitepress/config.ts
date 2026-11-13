@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { appCards } from "./apps";
 import { categoryIconCss, icons, platforms } from "./icons";
+import { arrange, scrollToHash } from "./theme/arrange";
 
 export default defineConfig({
     lang: 'en-US',
@@ -19,6 +20,16 @@ export default defineConfig({
     // The app cards are rendered from this at build time; pages don't need to ship it
     transformPageData(pageData) {
         delete pageData.frontmatter.apps;
+    },
+    // Arranges the panels as soon as they're parsed. Left to the theme, the browser would paint them
+    // as a plain grid first and only rearrange them once the app is loaded and hydrated.
+    // Redistributing once the web font is in moves panels together with the font swap, not after it.
+    transformHtml(code) {
+        if (!code.includes('class="app-groups"')) return;
+        const script = `{const arrange = ${arrange}, scrollToHash = ${scrollToHash}, root = document.querySelector('.app-groups');
+arrange(root);
+document.fonts?.ready.then(() => arrange(root, true) && scrollToHash())}`;
+        return code.replace('</body>', () => `<script>${script}</script></body>`);
     },
     vue: {
         template: {
