@@ -14,18 +14,9 @@ import 'virtual:category-icons.css';
 /** Briefly rings the category panel or app card a `#hash` points to, so it's easy to spot after scrolling */
 function flash(hash: string) {
     const target = hash.length > 1 ? document.getElementById(decodeURIComponent(hash.slice(1))) : null;
-    const box = target?.closest<HTMLElement>('.app-sub, .app-card, .app-group');
-    if (!box) return;
-    // Cards have no border of their own, so they get a tinted halo around the ring
-    const ring = box.classList.contains('app-group')
-        ? '0 0 0 3px var(--accent)'
-        : '0 0 0 10px var(--accent-tint), 0 0 0 12px var(--accent)';
-    const off = box.classList.contains('app-group')
-        ? '0 0 0 3px transparent'
-        : '0 0 0 10px transparent, 0 0 0 12px transparent';
-    box.animate(
-        [{ boxShadow: ring, borderRadius: '12px' }, { boxShadow: ring, borderRadius: '12px', offset: 0.6 }, { boxShadow: off, borderRadius: '12px' }],
-        { duration: 1600, easing: 'ease-out' },
+    target?.closest('.app-sub, .app-card, .app-group')?.animate(
+        [{ opacity: 1 }, { opacity: 1, offset: 0.6 }, { opacity: 0 }],
+        { duration: 1600, easing: 'ease-out', pseudoElement: '::before' },
     );
 }
 
