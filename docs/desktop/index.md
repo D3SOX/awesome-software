@@ -141,6 +141,17 @@
 - Source Code: <https://github.com/OpenTubeX/OpenTubeX>
 - Download: <https://opentubex.org/downloads/>
 
+## Image Editor
+### GIMP
+- Website: <https://www.gimp.org/>
+- Source Code: <https://gitlab.gnome.org/GNOME/gimp>
+- Download: <https://www.gimp.org/downloads/>
+
+### PhotoCraft
+- Website: <https://getartcraft.com/apps/photocraft>
+- Source Code: <https://github.com/storytold/photocraft>
+- Download: <https://github.com/storytold/photocraft/releases>
+
 ## Image Viewer
 ### nomacs
 - Website: <https://nomacs.org/>

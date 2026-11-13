@@ -83,6 +83,7 @@ const categoryIcons: Record<string, LucideName> = {
     'Gaming Device Config': 'Mouse',
     'GIF Recorder': 'Film',
     'Git Client': 'GitBranch',
+    'Image Editor': 'ImagePlus',
     'Image Viewer': 'Image',
     'Jailbreak Tweaks': 'Puzzle',
     'Keyboard': 'Keyboard',
