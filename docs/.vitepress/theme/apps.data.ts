@@ -12,7 +12,8 @@ export interface PlatformSummary {
 
 export interface Data {
     platforms: PlatformSummary[];
-    stickers: string[];
+    /** Sticker candidates, one list per platform */
+    stickers: string[][];
 }
 
 declare const data: Data;
@@ -31,18 +32,7 @@ export default createContentLoader(platforms.map((p) => `${p.slug}/index.md`), {
         });
         // The home page shouldn't show off apps that are no longer maintained
         const showcase = (list: typeof apps[number]) => list.flatMap((a) => (a.icon && !a.discontinued ? [a.icon] : []));
-
-        // Interleave platforms so the hero mixes them
-        const seen = new Set<string>();
-        const stickers: string[] = [];
         const lists = apps.map(showcase);
-        for (let i = 0; i < Math.max(...lists.map((l) => l.length)); i++) {
-            for (const list of lists) {
-                const icon = list[i];
-                if (icon && !seen.has(icon)) stickers.push(icon);
-                if (icon) seen.add(icon);
-            }
-        }
 
         return {
             platforms: platforms.map((p, i) => ({
@@ -52,7 +42,7 @@ export default createContentLoader(platforms.map((p) => `${p.slug}/index.md`), {
                 count: apps[i].length,
                 preview: lists[i].slice(0, 4),
             })),
-            stickers: stickers.slice(0, 16),
+            stickers: lists,
         };
     },
 });
