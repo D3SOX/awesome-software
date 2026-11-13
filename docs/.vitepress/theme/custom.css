@@ -127,6 +127,12 @@
 /* Navigation
  * -------------------------------------------------------------------------- */
 
+/* Frost the page scrolling under the translucent bar */
+.VPNavBar:not(.home.top),
+.VPNavBar.screen-open {
+    backdrop-filter: blur(12px) saturate(1.5);
+}
+
 .VPNavBarTitle .title {
     font-size: 1rem;
     font-weight: 800;
