@@ -114,6 +114,7 @@ const categoryIcons: Record<string, LucideName> = {
     'Torrent Client': 'Magnet',
     'Twitch Client': 'Tv',
     'Video Editor': 'Clapperboard',
+    'Wallet': 'Wallet',
     'Wallpapers': 'Wallpaper',
     'Weather': 'CloudSun',
     'YouTube Client': 'TvMinimalPlay',

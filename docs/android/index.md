@@ -310,6 +310,21 @@
 - Source Code: <https://github.com/andOTP/andOTP>
 - Download (APK): <https://github.com/andOTP/andOTP/releases>
 
+## Wallet
+### PDF Docket
+- Website: <https://pdf-docket.d3sox.me/>
+- Source Code: <https://github.com/D3SOX/pdf-docket>
+- Download (F-Droid): <https://f-droid.org/packages/me.d3sox.pdfwallet/>
+- Download (F-Droid Repo): <https://pdf-docket.d3sox.me/repo>
+- Download (APK): <https://github.com/D3SOX/pdf-docket/releases>
+
+### FossWallet
+- Website: None
+- Source Code: <https://github.com/SeineEloquenz/fosswallet>
+- Download (F-Droid): <https://f-droid.org/packages/nz.eloque.foss_wallet/>
+- Download (APK): <https://github.com/SeineEloquenz/fosswallet/releases>
+- Download (Play Store): <https://play.google.com/store/apps/details?id=nz.eloque.foss_wallet>
+
 ## Office
 ### OnlyOffice
 - Website: <https://www.onlyoffice.com/office-for-android.aspx>
