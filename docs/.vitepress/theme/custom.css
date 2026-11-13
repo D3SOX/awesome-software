@@ -113,6 +113,7 @@
 
 .app-icon,
 .sticker,
+.pile-sticker,
 .shelf-peek img {
     --edge: 2px;
     border-radius: 22%;
@@ -1282,6 +1283,98 @@
 
     .shelf-name {
         margin-top: 0;
+    }
+}
+
+/* Introduction: a pile of spare stickers that fans out like a hand of cards
+ * -------------------------------------------------------------------------- */
+
+.sticker-pile {
+    --gap: 44px;
+    position: relative;
+    float: right;
+    width: 224px;
+    height: 104px;
+    margin: -32px 0 0 24px;
+}
+
+/* The first paragraph starts below the pile, so the text keeps an even edge */
+.vp-doc:has(.sticker-pile) h1 + p {
+    clear: right;
+}
+
+/* Wide screens: the pile sits in the empty aside column, next to the title */
+@media (min-width: 1280px) {
+    .vp-doc:has(.sticker-pile) {
+        position: relative;
+    }
+
+    .sticker-pile {
+        position: absolute;
+        top: -24px;
+        left: calc(100% + 40px);
+        float: none;
+        margin: 0;
+    }
+}
+
+/* Phones: no room beside the title, so the pile goes above it */
+@media (max-width: 639px) {
+    .sticker-pile {
+        --gap: 34px;
+        float: none;
+        margin: -12px 0 16px;
+    }
+}
+
+.pile-sticker {
+    --edge: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: var(--i);
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    translate: calc(-50% + var(--x)) calc(-50% + var(--y));
+    rotate: var(--r);
+    transition:
+        translate 0.45s calc(var(--i) * 25ms) cubic-bezier(0.3, 1.4, 0.5, 1),
+        rotate 0.45s calc(var(--i) * 25ms) cubic-bezier(0.3, 1.4, 0.5, 1),
+        scale 0.2s;
+}
+
+/* An arc: the outer stickers drop lower and tilt further */
+.sticker-pile:hover .pile-sticker {
+    translate:
+        calc(-50% + var(--k) * var(--gap))
+        calc(-50% + var(--k) * var(--k) * 3.5px - 8px);
+    rotate: calc(var(--k) * 9deg);
+}
+
+/* Picking one out of the hand */
+.sticker-pile:hover .pile-sticker:hover {
+    z-index: 10;
+    scale: 1.15;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .pile-sticker {
+        animation: pile-slap 0.4s calc(200ms + var(--i) * 70ms) cubic-bezier(0.3, 1.4, 0.5, 1) backwards;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pile-sticker {
+        transition: none;
+    }
+}
+
+@keyframes pile-slap {
+    from {
+        opacity: 0;
+        rotate: calc(var(--r) - 12deg);
+        scale: 1.35;
     }
 }
 

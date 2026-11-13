@@ -5,6 +5,7 @@ import '@fontsource-variable/archivo/wdth.css';
 import '@fontsource-variable/archivo/wdth-italic.css';
 import HeroStickers from './HeroStickers.vue';
 import PlatformShelf from './PlatformShelf.vue';
+import StickerPile from './StickerPile.vue';
 import { useMasonry } from './masonry';
 import './custom.css';
 import 'virtual:category-icons.css';
@@ -65,6 +66,7 @@ export default {
     }),
     enhanceApp({ app, router }) {
         app.component('PlatformShelf', PlatformShelf);
+        app.component('StickerPile', StickerPile);
         if (typeof window === 'undefined') return;
         document.addEventListener('click', onClick);
         // Detailed search results are the only view (toggle hidden); override a list view saved from before
