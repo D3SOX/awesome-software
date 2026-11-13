@@ -15,6 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      # lychee skips Markdown frontmatter, where the app links live, so check the pages as plain text
+      - name: Copy pages as plain text
+        run: find docs -name '*.md' -exec sh -c 'cp "$1" "${1%.md}.txt"' _ {} \;
+
       - name: Check links
         id: lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
@@ -25,7 +29,7 @@ jobs:
             --max-concurrency 8
             --accept '200..=299,403,429'
             --user-agent 'Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0'
-            'docs/**/*.md'
+            'docs/**/*.txt'
           output: lychee/out.md
           fail: false
 
