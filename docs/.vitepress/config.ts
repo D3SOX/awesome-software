@@ -16,6 +16,10 @@ export default defineConfig({
     markdown: {
         config: (md) => md.use(appCards),
     },
+    // The app cards are rendered from this at build time; pages don't need to ship it
+    transformPageData(pageData) {
+        delete pageData.frontmatter.apps;
+    },
     vue: {
         template: {
             // App icons are public files. Left as plain URLs they stay out of the module graph; as imports,

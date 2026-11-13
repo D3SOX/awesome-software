@@ -1,6 +1,5 @@
-import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { iconFile, slugify } from '../apps';
+import { createContentLoader } from 'vitepress';
+import { iconFile, parseApps, slugify } from '../apps';
 import { icons, platforms } from '../icons';
 
 export interface PlatformSummary {
@@ -19,17 +18,17 @@ export interface Data {
 declare const data: Data;
 export { data };
 
-const page = (slug: string) => fileURLToPath(new URL(`../../${slug}/index.md`, import.meta.url));
-
-export default {
-    watch: platforms.map((p) => `../../${p.slug}/index.md`),
-    load(): Data {
-        const apps = platforms.map((p) =>
-            [...readFileSync(page(p.slug), 'utf8').matchAll(/^### (.+)\n((?:- .*\n?)*)/gm)].map((m) => ({
-                icon: iconFile(slugify(m[1].trim())),
-                discontinued: /^- Tags:.*\bDiscontinued\b/im.test(m[2]),
-            })),
-        );
+export default createContentLoader(platforms.map((p) => `${p.slug}/index.md`), {
+    transform(pages): Data {
+        const apps = platforms.map((p) => {
+            const page = pages.find((x) => x.url === `/${p.slug}/`);
+            return parseApps(page?.frontmatter.apps, `${p.slug}/index.md`)
+                .flatMap((c) => c.apps)
+                .map((a) => ({
+                    icon: iconFile(slugify(a.name)),
+                    discontinued: a.tags.includes('Discontinued'),
+                }));
+        });
         // The home page shouldn't show off apps that are no longer maintained
         const showcase = (list: typeof apps[number]) => list.flatMap((a) => (a.icon && !a.discontinued ? [a.icon] : []));
 
@@ -56,4 +55,4 @@ export default {
             stickers: stickers.slice(0, 16),
         };
     },
-};
+});

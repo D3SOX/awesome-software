@@ -11,7 +11,6 @@ import {
     siLinux,
     siSourceforge,
     siTelegram,
-    siXdadevelopers,
 } from 'simple-icons';
 import * as lucide from 'lucide-static';
 
@@ -34,7 +33,6 @@ export const icons = {
     linux: filled(siLinux.path),
     sourceforge: filled(siSourceforge.path),
     telegram: filled(siTelegram.path),
-    xda: filled(siXdadevelopers.path),
     // Simple Icons no longer ships Microsoft logos
     windows: filled('M3 5.1 10.4 4v7.2H3zm8.4-1.2L21 2.5v8.7h-9.6zM3 12.2h7.4v7.3L3 18.4zm8.4 0H21v8.7l-9.6-1.4z'),
     globe: outline('Globe'),

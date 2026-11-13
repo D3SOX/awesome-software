@@ -4,6 +4,7 @@ import type { MarkdownRenderer } from 'vitepress';
 import { categoryIcon, icons, platforms, type IconName } from './icons';
 
 type Token = ReturnType<MarkdownRenderer['parse']>[number];
+type StateCore = Parameters<Parameters<MarkdownRenderer['core']['ruler']['push']>[1]>[0];
 
 const iconDir = fileURLToPath(new URL('../public/icons/', import.meta.url));
 const platformSlugs: readonly string[] = platforms.map((p) => p.slug);
@@ -22,6 +23,103 @@ export function iconFile(slug: string) {
     }
 }
 
+/** Link fields an app can have in the `apps` frontmatter, in the words used for button tooltips */
+const linkFields = {
+    website: { text: 'Website', icon: 'globe' },
+    source: { text: 'Source code', icon: 'code' },
+    'f-droid': { text: 'F-Droid', icon: 'fdroid' },
+    'f-droid repo': { text: 'F-Droid repo', icon: 'fdroid' },
+    'google play': { text: 'Google Play', icon: 'googleplay' },
+    'app store': { text: 'App Store', icon: 'appstore' },
+    apk: { text: 'APK', icon: 'android' },
+    sidestore: { text: 'SideStore', icon: 'download' },
+    telegram: { text: 'Telegram', icon: 'telegram' },
+    repo: { text: 'Jailbreak repo', icon: 'package' },
+    download: { text: 'Download', icon: 'download' },
+} satisfies Record<string, { text: string; icon: IconName }>;
+
+type LinkField = keyof typeof linkFields;
+
+export interface Link {
+    field: LinkField;
+    url: string;
+    /** Set for labeled values like `download: { install script: <url> }` */
+    label?: string;
+}
+
+export interface App {
+    name: string;
+    purpose?: string;
+    tags: string[];
+    links: Link[];
+    /** Values that aren't URLs, e.g. `source: No longer available` */
+    notes: { field: LinkField; text: string }[];
+    install?: { note?: string; commands: { lang: string; code: string }[] };
+    forks: App[];
+}
+
+export interface Category {
+    name: string;
+    apps: App[];
+}
+
+const isRecord = (x: unknown): x is Record<string, unknown> => typeof x === 'object' && x !== null && !Array.isArray(x);
+
+function str(x: unknown, where: string) {
+    if (typeof x !== 'string' || !x.trim()) throw new Error(`${where}: expected text, got ${JSON.stringify(x)}`);
+    return x.trim();
+}
+
+function parseApp(name: string, raw: unknown, where: string): App {
+    where = `${where} › ${name}`;
+    const app: App = { name, tags: [], links: [], notes: [], forks: [] };
+    if (raw == null) return app;
+    if (!isRecord(raw)) throw new Error(`${where}: expected fields, got ${JSON.stringify(raw)}`);
+
+    for (const [key, value] of Object.entries(raw)) {
+        const at = `${where} › ${key}`;
+        if (key === 'purpose') app.purpose = str(value, at);
+        else if (key === 'tags') {
+            if (!Array.isArray(value)) throw new Error(`${at}: expected a list like [Discontinued]`);
+            app.tags = value.map((tag) => str(tag, at));
+        } else if (key === 'forks') {
+            if (!isRecord(value)) throw new Error(`${at}: expected apps`);
+            app.forks = Object.entries(value).map(([fork, fields]) => parseApp(fork, fields, at));
+        } else if (key === 'install') {
+            if (!isRecord(value)) throw new Error(`${at}: expected a note and commands by language`);
+            const { note, ...commands } = value;
+            app.install = {
+                note: note === undefined ? undefined : str(note, at),
+                commands: Object.entries(commands).map(([lang, code]) => ({ lang, code: str(code, `${at} › ${lang}`) })),
+            };
+        } else if (key in linkFields) {
+            const field = key as LinkField;
+            for (const item of Array.isArray(value) ? value : [value]) {
+                const entries: [string | undefined, unknown][] = isRecord(item) ? Object.entries(item) : [[undefined, item]];
+                for (const [label, v] of entries) {
+                    const text = str(v, at);
+                    if (!/^https?:\/\//.test(text)) app.notes.push({ field, text });
+                    else if (URL.canParse(text)) app.links.push({ field, url: text, label });
+                    else throw new Error(`${at}: invalid URL ${text}`);
+                }
+            }
+        } else {
+            throw new Error(`${at}: unknown field. Use one of: purpose, tags, install, forks, ${Object.keys(linkFields).join(', ')}`);
+        }
+    }
+    return app;
+}
+
+/** Reads the `apps` frontmatter of a platform page: categories of apps, both in file order */
+export function parseApps(raw: unknown, where: string): Category[] {
+    if (raw == null) return [];
+    if (!isRecord(raw)) throw new Error(`${where}: "apps" must map category names to apps`);
+    return Object.entries(raw).map(([name, apps]) => {
+        if (apps != null && !isRecord(apps)) throw new Error(`${where} › ${name}: expected apps`);
+        return { name, apps: Object.entries(apps ?? {}).map(([app, fields]) => parseApp(app, fields, `${where} › ${name}`)) };
+    });
+}
+
 function sourceIcon(url: string): IconName {
     const host = new URL(url).hostname;
     if (host === 'github.com') return 'github';
@@ -32,72 +130,25 @@ function sourceIcon(url: string): IconName {
     return 'code';
 }
 
-/** Maps a list label like "Download (F-Droid)" to a button icon and tooltip */
-function linkMeta(label: string, url: string): { icon: IconName; text: string } {
-    const store = /\(([^)]+)\)/.exec(label)?.[1];
-    if (/^source/i.test(label)) return { icon: sourceIcon(url), text: store ? `Source code (${store.toLowerCase()})` : 'Source code' };
-    if (/^website/i.test(label)) return { icon: 'globe', text: 'Website' };
-    if (/^repo/i.test(label)) return { icon: 'package', text: 'Jailbreak repo' };
-    if (new URL(url).hostname === 'apps.microsoft.com') return { icon: 'windows', text: 'Microsoft Store' };
-    switch (store) {
-        case 'F-Droid': return { icon: 'fdroid', text: 'F-Droid' };
-        case 'F-Droid Repo': return { icon: 'fdroid', text: 'F-Droid repo' };
-        case 'Play Store': return { icon: 'googleplay', text: 'Google Play' };
-        case 'App Store': return { icon: 'appstore', text: 'App Store' };
-        case 'APK': return { icon: 'android', text: 'APK' };
-        case 'Telegram': return { icon: 'telegram', text: 'Telegram' };
-        case 'XDA Labs': return { icon: 'xda', text: 'XDA Labs' };
-        case undefined: return { icon: 'download', text: 'Download' };
-        default: return { icon: 'download', text: store };
-    }
+/** Button icon and tooltip for a link */
+function linkMeta({ field, url, label }: Link): { icon: IconName; text: string } {
+    const meta: { icon: IconName; text: string } =
+        field === 'source' ? { icon: sourceIcon(url), text: linkFields.source.text }
+        : field === 'download' && new URL(url).hostname === 'apps.microsoft.com' ? { icon: 'windows', text: 'Microsoft Store' }
+        : linkFields[field];
+    return label ? { ...meta, text: `${meta.text} (${label})` } : meta;
 }
 
 // Stable per-name hash, so monogram colors and sticker tilt don't change between builds
 const hash = (name: string) => [...name].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 3600, 7);
 
 /**
- * Turns platform pages into a gallery: every `## Category` becomes a panel,
- * and every `### App` with its link list becomes an entry with icon buttons.
- * A `#### Name` below an app (e.g. a fork) becomes a sub-entry inside its card.
- *
- * List items use `- Label: <url>`. Special labels: `Purpose` (description),
- * `Tags` (comma-separated badges). Values without a URL become notes, `None` is skipped.
+ * Turns the `apps` frontmatter of platform pages into a gallery: every category becomes a panel
+ * with an `<h2>`, and every app a card with an `<h3>` and icon buttons. Forks are `<h4>` sub-entries inside their card.
+ * The headings are real Markdown headings, so they get anchors, show up in search, and can be linked to.
  */
 export function appCards(md: MarkdownRenderer) {
     const esc = md.utils.escapeHtml;
-
-    /** Parses the bullet list at the start of `body`; `rest` is whatever follows it */
-    function parseList(body: Token[]) {
-        const listEnd = body[0]?.type === 'bullet_list_open'
-            ? body.findIndex((x) => x.type === 'bullet_list_close' && x.level === 0)
-            : -1;
-        let purpose = '';
-        let tags = '';
-        const links: string[] = [];
-        const notes: string[] = [];
-        for (const t of body.slice(0, listEnd + 1)) {
-            if (t.type !== 'inline') continue;
-            const [, label = t.content, value = ''] = /^([^:]+):\s*(.*)$/.exec(t.content) ?? [];
-            const link = /^<(https?:\/\/[^>]+)>\s*(.*)$/.exec(value);
-            if (/^purpose$/i.test(label)) purpose = value;
-            else if (/^tags$/i.test(label)) {
-                tags = value.split(',').map((tag) => tag.trim()).filter(Boolean)
-                    .map((tag) => `<span class="app-tag" data-tag="${esc(slugify(tag))}">${esc(tag)}</span>`)
-                    .join('');
-            } else if (link) {
-                const [, url, suffix] = link;
-                const meta = linkMeta(label, url);
-                const tip = suffix ? `${meta.text} ${suffix}` : meta.text;
-                links.push(`<a class="app-link" href="${esc(url)}" target="_blank" rel="noreferrer" aria-label="${esc(tip)}" data-tip="${esc(tip)}">${icons[meta.icon]}</a>`);
-            } else if (value && !/^none$/i.test(value)) notes.push(`<p class="app-note">${esc(label)}: ${esc(value)}</p>`);
-        }
-        return {
-            tags: tags ? `<span class="app-tags">${tags}</span>` : '',
-            details: (purpose ? `<p class="app-purpose">${esc(purpose)}</p>` : '') + notes.join('') +
-                (links.length ? `<div class="app-links">${links.join('')}</div>` : ''),
-            rest: body.slice(listEnd + 1),
-        };
-    }
 
     function iconHtml(name: string) {
         const icon = iconFile(slugify(name));
@@ -108,29 +159,111 @@ export function appCards(md: MarkdownRenderer) {
             : `<span class="app-icon app-icon-mono" style="${tilt}; --hue: ${h % 360}" aria-hidden="true">${esc([...name][0].toUpperCase())}</span>`;
     }
 
-    md.core.ruler.push('app_cards', (state) => {
-        const dir = String(state.env.relativePath ?? '').split('/')[0];
-        if (!platformSlugs.includes(dir)) return;
+    function detailsHtml(app: App) {
+        const tags = app.tags.map((tag) => `<span class="app-tag" data-tag="${esc(slugify(tag))}">${esc(tag)}</span>`).join('');
+        const notes = [
+            ...(app.install?.note ? [`Install: ${app.install.note}`] : []),
+            ...app.notes.map((n) => `${linkFields[n.field].text}: ${n.text}`),
+        ];
+        const links = app.links.map((link) => {
+            const { icon, text } = linkMeta(link);
+            return `<a class="app-link" href="${esc(link.url)}" target="_blank" rel="noreferrer" aria-label="${esc(text)}" data-tip="${esc(text)}">${icons[icon]}</a>`;
+        });
+        return (tags ? `<span class="app-tags">${tags}</span>` : '') +
+            (app.purpose ? `<p class="app-purpose">${esc(app.purpose)}</p>` : '') +
+            notes.map((n) => `<p class="app-note">${esc(n)}</p>`).join('') +
+            (links.length ? `<div class="app-links">${links.join('')}</div>` : '');
+    }
 
-        const src = state.tokens;
+    function tokens(state: StateCore, categories: Category[]) {
         const out: Token[] = [];
         const html = (content: string) => {
             const t = new state.Token('html_block', '', 0);
             t.content = content;
-            return t;
+            out.push(t);
         };
+        const heading = (level: number, text: string) => {
+            const tag = `h${level}`;
+            const open = new state.Token('heading_open', tag, 1);
+            open.markup = '#'.repeat(level);
+            open.block = true;
+            // The core "inline" rule parses this into children, like any heading text
+            const inline = new state.Token('inline', '', 0);
+            inline.content = text;
+            inline.children = [];
+            const close = new state.Token('heading_close', tag, -1);
+            close.markup = open.markup;
+            close.block = true;
+            out.push(open, inline, close);
+        };
+
+        categories.forEach((category, i) => {
+            // Big categories span all columns, so they don't tower over the rest
+            const wide = category.apps.length >= 6 ? ' app-group-wide' : '';
+            html(`${i ? '</section>' : '<div class="app-groups">'}<section class="app-group${wide}">`);
+            heading(2, category.name);
+            for (const app of category.apps) {
+                // Details are the heading's siblings, so search excerpts show them
+                html(`<article class="app-card">${iconHtml(app.name)}<div class="app-body">`);
+                heading(3, app.name);
+                html(detailsHtml(app));
+                for (const fork of app.forks) {
+                    html('<div class="app-sub">');
+                    heading(4, fork.name);
+                    html(`${detailsHtml(fork)}</div>`);
+                }
+                html('</div>');
+                // Install commands stay inside the card, below the links
+                for (const { lang, code } of app.install?.commands ?? []) {
+                    const fence = new state.Token('fence', 'code', 0);
+                    fence.info = lang;
+                    fence.markup = '```';
+                    fence.content = `${code}\n`;
+                    fence.block = true;
+                    out.push(fence);
+                }
+                html('</article>');
+            }
+        });
+        if (categories.length) html('</section></div>');
+        return out;
+    }
+
+    const platformOf = (state: StateCore) => {
+        const dir = String(state.env.relativePath ?? '').split('/')[0];
+        return platformSlugs.includes(dir) ? dir : undefined;
+    };
+
+    // Before "inline", so the heading texts get parsed, and before the anchor plugin, so they get ids
+    md.core.ruler.after('block', 'app_cards', (state) => {
+        const dir = platformOf(state);
+        if (!dir) return;
+        state.tokens.push(...tokens(state, parseApps(state.env.frontmatter?.apps, `${dir}/index.md`)));
+    });
+
+    md.core.ruler.push('app_headings', (state) => {
+        if (!platformOf(state)) return;
+        const src = state.tokens;
         const isHeading = (t: Token | undefined, ...tags: string[]) => t?.type === 'heading_open' && tags.includes(t.tag);
 
-        // Category index: replaces the scroll-spy outline, which can't follow a column layout
-        const groups: { id: string; name: string; apps: number }[] = [];
-        for (let i = 0; i < src.length; i++) {
-            if (isHeading(src[i], 'h2')) groups.push({ id: src[i].attrGet('id') ?? '', name: src[i + 1].content, apps: 0 });
-            else if (isHeading(src[i], 'h3') && groups.length) groups[groups.length - 1].apps++;
+        // Category index: replaces the scroll-spy outline, which can't follow a column layout.
+        // Kept out of the search index, where the chips would match nearly every query
+        if (!state.env.searchIndex) {
+            const groups: { id: string; name: string; apps: number }[] = [];
+            for (let i = 0; i < src.length; i++) {
+                if (isHeading(src[i], 'h2')) groups.push({ id: src[i].attrGet('id') ?? '', name: src[i + 1].content, apps: 0 });
+                else if (isHeading(src[i], 'h3') && groups.length) groups[groups.length - 1].apps++;
+            }
+            const total = groups.reduce((n, g) => n + g.apps, 0);
+            const index = groups
+                .map((g) => `<a class="app-index-link" href="#${esc(g.id)}">${categoryIcon(g.name)}${esc(g.name)} <span>${g.apps}</span></a>`)
+                .join('');
+            const h1 = src.findIndex((t) => t.type === 'heading_close' && t.tag === 'h1');
+            const meta = new state.Token('html_block', '', 0);
+            meta.content = `<p class="platform-meta">${total} apps in ${groups.length} categories</p>` +
+                `<nav class="app-index" aria-label="Categories">${index}</nav>`;
+            if (h1 >= 0) src.splice(h1 + 1, 0, meta);
         }
-        const total = groups.reduce((n, g) => n + g.apps, 0);
-        const index = groups
-            .map((g) => `<a class="app-index-link" href="#${esc(g.id)}">${categoryIcon(g.name)}${esc(g.name)} <span>${g.apps}</span></a>`)
-            .join('');
 
         // Keep each heading's copy-link button glued to the last word, so it can be
         // centered with flexbox (consistent across browsers) and never wraps alone.
@@ -163,57 +296,5 @@ export function appCards(md: MarkdownRenderer) {
                 kids.push(inline('html_inline', '</span>'));
             }
         }
-
-        let group = -1;
-
-        for (let i = 0; i < src.length; i++) {
-            const t = src[i];
-            if (!isHeading(t, 'h1', 'h2', 'h3')) {
-                out.push(t);
-                continue;
-            }
-            const heading = src.slice(i, i + 3);
-            i += 2;
-
-            if (t.tag === 'h1') {
-                out.push(...heading);
-                // Kept out of the search index, where the chips would match nearly every query
-                if (!state.env.searchIndex) out.push(html(
-                    `<p class="platform-meta">${total} apps in ${groups.length} categories</p>` +
-                    `<nav class="app-index" aria-label="Categories">${index}</nav>`,
-                ));
-            } else if (t.tag === 'h2') {
-                group++;
-                // Big categories span all columns, so they don't tower over the rest
-                const wide = groups[group].apps >= 6 ? ' app-group-wide' : '';
-                out.push(
-                    html(group ? '</section>' : '<div class="app-groups">'),
-                    html(`<section class="app-group${wide}">`),
-                    ...heading,
-                );
-            } else {
-                let end = i + 1;
-                while (end < src.length && !isHeading(src[end], 'h1', 'h2', 'h3')) end++;
-                const body = src.slice(i + 1, end);
-                i = end - 1;
-
-                const subs = body.flatMap((x, k) => (isHeading(x, 'h4') ? [k] : []));
-                const app = parseList(body.slice(0, subs[0] ?? body.length));
-                // Details are the heading's siblings, so search excerpts show them
-                out.push(
-                    html(`<article class="app-card">${iconHtml(heading[1].content)}<div class="app-body">`),
-                    ...heading,
-                    html(app.tags + app.details),
-                );
-                subs.forEach((start, k) => {
-                    const sub = parseList(body.slice(start + 3, subs[k + 1] ?? body.length));
-                    out.push(html('<div class="app-sub">'), ...body.slice(start, start + 3), html(`${sub.tags}${sub.details}</div>`));
-                });
-                // Anything after the list (e.g. install commands) stays inside the card
-                out.push(html('</div>'), ...app.rest, html('</article>'));
-            }
-        }
-        if (group >= 0) out.push(html('</section></div>'));
-        state.tokens = out;
     });
 }
