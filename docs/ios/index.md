@@ -86,7 +86,7 @@
 
 ## Office
 ### OnlyOffice
-- Website: <https://www.onlyoffice.com/office-for-android.aspx>
+- Website: <https://www.onlyoffice.com/office-for-ios>
 - Download (App Store): <https://apps.apple.com/app/onlyoffice-documents/id944896972>
 
 ### Collabora Office
