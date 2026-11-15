@@ -17,7 +17,7 @@
     --hover-border: var(--accent);
     --accent-tint: color-mix(in srgb, var(--accent) 14%, var(--panel));
 
-    --vp-c-brand-1: #237a37;
+    --vp-c-brand-1: #1d6a2f;
     --vp-c-brand-2: #2f9445;
     --vp-c-brand-3: #3fa652;
     --vp-c-brand-soft: rgb(63 166 82 / 0.14);
@@ -1261,6 +1261,11 @@
 
     .sticker {
         --size: calc(var(--s) * 0.75);
+    }
+
+    /* On the smaller lid, this one would hide almost entirely under its neighbour, too small to tap */
+    .sticker:nth-child(11) {
+        z-index: 1;
     }
 }
 

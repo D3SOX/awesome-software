@@ -1,3 +1,4 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitepress";
 import { appCards } from "./apps";
 import { categoryIconCss, icons, platforms } from "./icons";
@@ -43,6 +44,9 @@ document.fonts?.ready.then(() => arrange(root, true) && scrollToHash())}`;
             resolveId: (id) => (id === 'virtual:category-icons.css' ? '\0category-icons.css' : undefined),
             load: (id) => (id === '\0category-icons.css' ? categoryIconCss() : undefined),
         }],
+        resolve: {
+            alias: [{ find: /^.*\/VPHome\.vue$/, replacement: fileURLToPath(new URL('./theme/VPHome.vue', import.meta.url)) }],
+        },
     },
     cleanUrls: true,
 
