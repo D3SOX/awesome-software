@@ -92,7 +92,7 @@ function parseApp(name: string, raw: unknown, where: string): App {
         const at = `${where} › ${key}`;
         if (key === 'purpose') app.purpose = str(value, at);
         else if (key === 'tags') {
-            if (!Array.isArray(value)) throw new Error(`${at}: expected a list like [Discontinued]`);
+            if (!Array.isArray(value)) throw new Error(`${at}: expected a list like [X11]`);
             app.tags = value.map((tag) => str(tag, at));
         } else if (key === 'forks') {
             if (!isRecord(value)) throw new Error(`${at}: expected apps`);
@@ -197,7 +197,7 @@ export function appCards(md: MarkdownRenderer) {
     }
 
     function detailsHtml(app: App) {
-        const tags = app.tags.map((tag) => `<span class="app-tag" data-tag="${esc(slugify(tag))}">${esc(tag)}</span>`).join('');
+        const tags = app.tags.map((tag) => `<span class="app-tag">${esc(tag)}</span>`).join('');
         const notes = [
             ...(app.install?.note ? [`Install: ${app.install.note}`] : []),
             ...app.notes.map((n) => `${linkFields[n.field].text}: ${n.text}`),

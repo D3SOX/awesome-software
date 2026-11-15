@@ -861,11 +861,6 @@
     line-height: 1.6;
 }
 
-.app-tag[data-tag='discontinued'] {
-    background: #ffd84d;
-    color: #1c1e22;
-}
-
 .vp-doc .app-purpose,
 .vp-doc .app-note {
     margin: 0;

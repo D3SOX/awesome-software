@@ -17,10 +17,6 @@ apps:
       website: https://apps.kde.org/spectacle/
       source: https://invent.kde.org/plasma/spectacle
 
-    Peek:
-      tags: [X11, Discontinued]
-      source: https://github.com/phw/peek
-
   Remote Desktop Client:
     Remmina:
       website: https://remmina.org/

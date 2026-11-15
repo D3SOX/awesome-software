@@ -38,12 +38,10 @@ export default createContentLoader(platforms.map((p) => `${p.slug}/index.md`), {
                     name: a.name,
                     href: `/${p.slug}/#${anchors.get(a)}`,
                     icon: iconFile(slugify(a.name)),
-                    discontinued: a.tags.includes('Discontinued'),
                 }));
         });
-        // The home page shouldn't show off apps that are no longer maintained
         const showcase = (list: typeof apps[number]) =>
-            list.flatMap(({ name, href, icon, discontinued }) => (icon && !discontinued ? [{ name, href, src: icon }] : []));
+            list.flatMap(({ name, href, icon }) => (icon ? [{ name, href, src: icon }] : []));
         const lists = apps.map(showcase);
 
         return {

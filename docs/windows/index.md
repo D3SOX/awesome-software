@@ -16,14 +16,6 @@ apps:
         note: Run in PowerShell as admin
         powershell: irm https://get.activated.win | iex
 
-    vlmcsd:
-      tags: [Discontinued]
-      source:
-        - https://github.com/Wind4/vlmcsd
-        - install script: https://github.com/Airr/vlmcsd-autokms
-      download:
-        install script: https://github.com/Airr/vlmcsd-autokms/archive/refs/heads/master.zip
-
   Package Manager:
     Winget:
       website: https://docs.microsoft.com/windows/package-manager/winget/

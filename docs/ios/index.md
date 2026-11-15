@@ -120,11 +120,6 @@ apps:
       source: https://github.com/mattrubin/authenticator
       app store: https://apps.apple.com/app/authenticator/id766157276
 
-  Git Client:
-    GitTouch:
-      tags: [Discontinued]
-      source: https://github.com/git-touch/git-touch
-
   Jailbreak Tweaks:
     A-Shields:
       purpose: Lock apps or CC modules
@@ -145,11 +140,6 @@ apps:
       purpose: Advanced tweak configurator
       source: https://github.com/opa334/Choicy
       repo: BigBoss
-
-    Dragspring:
-      tags: [Discontinued]
-      purpose: Respring device from settings
-      source: https://github.com/conorthedev/Dragspring
 
     AppSync Unified:
       purpose: Install unsigned iOS apps
@@ -180,26 +170,6 @@ apps:
       purpose: A modern crash reporter for iOS
       source: https://github.com/Muirey03/Cr4shed
       repo: https://repo.packix.com/package/com.muirey03.cr4shed
-
-    PanCake:
-      tags: [Discontinued]
-      purpose: Interactive dismiss gesture on the whole screen in all apps
-      source: https://github.com/AnthoPakPak/PanCake
-
-    No3DLines:
-      tags: [Discontinued]
-      purpose: Remove separator lines from 3D Touch menus
-      source: https://github.com/MTACS/No3DLines
-
-    Evil Scheme:
-      tags: [Discontinued]
-      purpose: Change default browser, package manager, navigator, and more!
-      source: https://github.com/LorenzoPane/EvilScheme
-
-    ReProvision:
-      tags: [Discontinued]
-      purpose: On-device signing utility for iOS
-      source: https://github.com/Matchstic/ReProvision
 
     RealCC:
       purpose: Actually disable wifi from CC in iOS 11

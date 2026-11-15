@@ -27,11 +27,6 @@ apps:
       apk: https://app.adaway.org/adaway.apk
 
   AdBlocker non-root, VPN-based:
-    DNS66:
-      tags: [Discontinued]
-      website: https://jak-linux.org/projects/dns66/
-      source: https://github.com/julian-klode/dns66
-
     Blokada:
       website: https://blokada.org/
       source: https://github.com/blokadaorg/blokada
@@ -291,11 +286,6 @@ apps:
       apk: https://github.com/beemdevelopment/Aegis/releases
       google play: https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis
 
-    andOTP:
-      tags: [Discontinued]
-      source: https://github.com/andOTP/andOTP
-      apk: https://github.com/andOTP/andOTP/releases
-
   Wallet:
     PDF Docket:
       website: https://pdf-docket.d3sox.me/
@@ -355,20 +345,10 @@ apps:
       apk: https://gitlab.com/AuroraOSS/AuroraWallpapers/-/releases
 
   RSS reader:
-    Flym:
-      tags: [Discontinued]
-      source: https://github.com/FredJul/Flym
-
     Feeder:
       source: https://gitlab.com/spacecowboy/Feeder
       f-droid: https://f-droid.org/packages/com.nononsenseapps.feeder/
       google play: https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play
-
-  Git Client:
-    GitTouch:
-      tags: [Discontinued]
-      source: https://github.com/git-touch/git-touch
-      apk: https://github.com/pd4d10/git-touch/releases
 
   File sharing:
     LocalSend:
