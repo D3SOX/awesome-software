@@ -143,8 +143,8 @@ apps:
 
     AppSync Unified:
       purpose: Install unsigned iOS apps
-      source: https://github.com/angelXwind/AppSync
-      repo: https://cydia.akemi.ai/?page/net.angelxwind.appsyncunified
+      source: https://github.com/akemin-dayo/AppSync
+      download: https://github.com/akemin-dayo/AppSync/releases
 
     Folded:
       purpose: Enhance folders
@@ -163,8 +163,8 @@ apps:
 
     PreferenceOrganizer2:
       purpose: Organize the iOS Settings app
-      source: https://github.com/angelXwind/PreferenceOrganizer2
-      repo: https://cydia.akemi.ai/?page/net.angelxwind.preferenceorganizer2
+      source: https://github.com/akemin-dayo/PreferenceOrganizer2
+      repo: No longer available
 
     Cr4shed:
       purpose: A modern crash reporter for iOS

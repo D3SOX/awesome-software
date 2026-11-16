@@ -24,7 +24,7 @@ apps:
       website: https://adaway.org/
       source: https://github.com/AdAway/AdAway
       f-droid: https://f-droid.org/packages/org.adaway/
-      apk: https://app.adaway.org/adaway.apk
+      apk: https://github.com/AdAway/AdAway/releases
 
   AdBlocker non-root, VPN-based:
     Blokada:
