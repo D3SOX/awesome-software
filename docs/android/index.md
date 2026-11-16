@@ -18,6 +18,36 @@ apps:
       f-droid: https://f-droid.org/packages/com.duckduckgo.mobile.android/
       google play: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android
 
+    Tor Browser:
+      website: https://www.torproject.org/
+      source: https://gitlab.torproject.org/tpo/applications/tor-browser
+      f-droid repo: https://guardianproject.info/fdroid/
+      apk: https://download.torproject.org/tor-browser-for-android/
+      google play: https://play.google.com/store/apps/details?id=org.torproject.torbrowser
+
+  App Store:
+    F-Droid:
+      website: https://f-droid.org/
+      source: https://gitlab.com/fdroid/fdroidclient
+      apk: https://f-droid.org/F-Droid.apk
+
+    Obtainium:
+      website: https://obtainium.imranr.dev/
+      source: https://github.com/ImranR98/Obtainium
+      f-droid: https://f-droid.org/packages/dev.imranr.obtainium.fdroid/
+      apk: https://github.com/ImranR98/Obtainium/releases
+
+    Aurora Store:
+      website: https://auroraoss.com/
+      source: https://gitlab.com/AuroraOSS/AuroraStore
+      f-droid: https://f-droid.org/packages/com.aurora.store/
+      apk: https://gitlab.com/AuroraOSS/AuroraStore/-/releases
+
+    Accrescent:
+      website: https://accrescent.app/
+      source: https://github.com/accrescent/accrescent
+      apk: https://github.com/accrescent/accrescent/releases
+
   AdBlocker root & non-root (VPN-based):
     AdAway:
       website: https://adaway.org/
@@ -44,7 +74,26 @@ apps:
       f-droid: https://f-droid.org/packages/org.briarproject.briar.android/
       google play: https://play.google.com/store/apps/details?id=org.briarproject.briar.android
 
+    Session:
+      website: https://getsession.org/
+      source: https://github.com/session-foundation/session-android
+      f-droid repo: https://fdroid.getsession.org/
+      apk: https://github.com/session-foundation/session-android/releases
+      google play: https://play.google.com/store/apps/details?id=network.loki.messenger
+
+    Threema:
+      website: https://threema.com/
+      source: https://github.com/threema-ch/threema-android
+      f-droid: https://f-droid.org/packages/ch.threema.app.libre/
+      google play: https://play.google.com/store/apps/details?id=ch.threema.app
+
   Calendar and contacts sync:
+    DAVx⁵:
+      website: https://www.davx5.com/
+      source: https://github.com/bitfireAT/davx5-ose
+      f-droid: https://f-droid.org/packages/at.bitfire.davdroid/
+      google play: https://play.google.com/store/apps/details?id=at.bitfire.davdroid
+
     EteSync:
       website: https://www.etesync.com/
       source: https://github.com/etesync/android
@@ -99,6 +148,18 @@ apps:
       website: https://velamaps.org/
       source: https://github.com/PimpinPumpkin/Vela
       apk: https://github.com/PimpinPumpkin/Vela/releases
+
+  Public Transport:
+    Öffi:
+      website: https://oeffi.schildbach.de/
+      source: https://gitlab.com/oeffi/oeffi
+      f-droid: https://f-droid.org/packages/de.schildbach.oeffi/
+      google play: https://play.google.com/store/apps/details?id=de.schildbach.oeffi
+
+    Transportr:
+      website: https://transportr.app/
+      source: https://github.com/grote/Transportr
+      f-droid: https://f-droid.org/packages/de.grobox.liberario/
 
   Camera:
     Secure Camera:
@@ -230,6 +291,12 @@ apps:
       f-droid: https://f-droid.org/packages/org.kde.kdeconnect_tp/
       google play: https://play.google.com/store/apps/details?id=org.kde.kdeconnect_tp
 
+  Wearables:
+    Gadgetbridge:
+      website: https://gadgetbridge.org/
+      source: https://codeberg.org/Freeyourgadget/Gadgetbridge
+      f-droid: https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/
+
   Gallery:
     Fossify Gallery:
       website: https://qklabs.com/
@@ -243,6 +310,20 @@ apps:
       f-droid: https://f-droid.org/packages/deckers.thibault.aves.libre/
       apk: https://github.com/deckerst/aves/releases
       google play: https://play.google.com/store/apps/details?id=deckers.thibault.aves
+
+  Image and Video Tools:
+    Image Toolbox:
+      source: https://github.com/T8RIN/ImageToolbox
+      f-droid: https://f-droid.org/packages/ru.tech.imageresizershrinker/
+      apk: https://github.com/T8RIN/ImageToolbox/releases
+      google play: https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker
+
+    OSS Document Scanner:
+      website: https://ossdocumentscanner.akylas.fr/
+      source: https://github.com/ossappscollective/OSS-DocumentScanner
+      f-droid repo: https://apt.izzysoft.de/fdroid/index/apk/com.akylas.documentscanner
+      apk: https://github.com/ossappscollective/OSS-DocumentScanner/releases
+      google play: https://play.google.com/store/apps/details?id=com.akylas.documentscanner
 
   Email Client:
     FairEmail:
@@ -263,6 +344,11 @@ apps:
       source: https://github.com/tutao/tutanota
       f-droid: https://f-droid.org/packages/de.tutao.tutanota/
       google play: https://play.google.com/store/apps/details?id=de.tutao.tutanota
+
+    Proton Mail:
+      website: https://proton.me/mail
+      source: https://github.com/ProtonMail/android-mail
+      google play: https://play.google.com/store/apps/details?id=ch.protonmail.android
 
   Password Manager:
     Bitwarden:
@@ -336,6 +422,10 @@ apps:
       source: https://github.com/NeoApplications/Neo-Backup
       f-droid: https://f-droid.org/packages/com.machiav3lli.backup/
       apk: https://github.com/NeoApplications/Neo-Backup/releases
+
+    Swift Backup:
+      website: https://www.swiftbackup.app/
+      google play: https://play.google.com/store/apps/details?id=org.swiftapps.swiftbackup
 
   Wallpapers:
     Aurora Walls:

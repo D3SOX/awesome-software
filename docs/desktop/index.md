@@ -20,6 +20,11 @@ apps:
       source: https://github.com/brave/brave-browser
       download: https://brave.com/download/
 
+    Tor Browser:
+      website: https://www.torproject.org/
+      source: https://gitlab.torproject.org/tpo/applications/tor-browser
+      download: https://download.torproject.org/
+
   Control Android device:
     scrcpy:
       source: https://github.com/Genymobile/scrcpy
@@ -74,6 +79,24 @@ apps:
       source: https://invent.kde.org/kde/kdeconnect-kde
       download: https://kdeconnect.kde.org/download.html
 
+  File sharing:
+    LocalSend:
+      website: https://localsend.org/
+      source: https://github.com/localsend/localsend
+      download: https://localsend.org/download
+
+  Remote Desktop Client:
+    RustDesk:
+      website: https://rustdesk.com/
+      source: https://github.com/rustdesk/rustdesk
+      download: https://github.com/rustdesk/rustdesk/releases
+
+  Firewall:
+    Portmaster:
+      website: https://safing.io/
+      source: https://github.com/safing/portmaster
+      download: https://safing.io/download/
+
   Torrent Client:
     qBittorrent:
       website: https://www.qbittorrent.org/
@@ -90,6 +113,18 @@ apps:
       website: https://getartcraft.com/apps/filmcraft
       source: https://github.com/storytold/filmcraft
       download: https://github.com/storytold/filmcraft/releases
+
+  Gaming:
+    Prism Launcher:
+      website: https://prismlauncher.org/
+      source: https://github.com/PrismLauncher/PrismLauncher
+      download: https://prismlauncher.org/download/
+
+  Gaming Device Config:
+    OpenTabletDriver:
+      website: https://opentabletdriver.net/
+      source: https://github.com/OpenTabletDriver/OpenTabletDriver
+      download: https://github.com/OpenTabletDriver/OpenTabletDriver/releases
 
   RGB lighting control:
     OpenRGB:
@@ -148,6 +183,17 @@ apps:
       source: https://github.com/storytold/photocraft
       download: https://github.com/storytold/photocraft/releases
 
+    Krita:
+      website: https://krita.org/
+      source: https://invent.kde.org/graphics/krita
+      download: https://krita.org/en/download/
+
+  Vector Graphics Editor:
+    Inkscape:
+      website: https://inkscape.org/
+      source: https://gitlab.com/inkscape/inkscape
+      download: https://inkscape.org/release/
+
   Image Viewer:
     nomacs:
       website: https://nomacs.org/
@@ -165,6 +211,16 @@ apps:
       website: https://okular.kde.org/
       source: https://invent.kde.org/kde/okular
       download: https://okular.kde.org/download.php
+
+  PDF Tools:
+    PDF Arranger:
+      source: https://github.com/pdfarranger/pdfarranger
+      download: https://github.com/pdfarranger/pdfarranger#installation
+
+    PDF Mix Tool:
+      website: https://scarpetta.eu/pdfmixtool/
+      source: https://gitlab.com/scarpetta/pdfmixtool
+      download: https://scarpetta.eu/pdfmixtool/#download
 
   Office Suite:
     LibreOffice:
