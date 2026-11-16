@@ -16,6 +16,7 @@ apps:
       website: https://usebottles.com/
       source: https://github.com/bottlesdevs/Bottles
 
+  Gaming Tools:
     ProtonUp-Qt:
       website: https://davidotek.github.io/protonup-qt/
       source: https://github.com/DavidoTek/ProtonUp-Qt

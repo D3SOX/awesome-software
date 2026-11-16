@@ -82,6 +82,7 @@ const categoryIcons: Record<string, LucideName> = {
     'Gallery': 'Images',
     'Gaming': 'Gamepad2',
     'Gaming Device Config': 'Mouse',
+    'Gaming Tools': 'Wrench',
     'GIF Recorder': 'Film',
     'Git Client': 'GitBranch',
     'GPU Control': 'Gpu',
