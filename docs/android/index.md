@@ -2,7 +2,6 @@
 apps:
   Browser:
     Cromite:
-      website: https://www.cromite.org/
       source: https://github.com/uazo/cromite
       apk: https://github.com/uazo/cromite/releases
 
