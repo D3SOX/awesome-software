@@ -183,15 +183,20 @@ apps:
       source: https://invent.kde.org/kde/kate
       download: https://kate-editor.org/get-it/
 
-    Geany:
-      website: https://www.geany.org
-      source: https://github.com/geany/geany
-      download: https://www.geany.org/download/releases/
+    Zed:
+      website: https://zed.dev/
+      source: https://github.com/zed-industries/zed
+      download: https://zed.dev/download
 
     VSCodium:
       website: https://vscodium.com/
       source: https://github.com/VSCodium/vscodium
       download: https://github.com/VSCodium/vscodium/releases
+
+    Geany:
+      website: https://www.geany.org
+      source: https://github.com/geany/geany
+      download: https://www.geany.org/download/releases/
 ---
 
 # Cross-platform desktop
