@@ -78,6 +78,10 @@ apps:
     QMPlay2:
       source: https://github.com/zaps166/QMPlay2
       download: https://github.com/zaps166/QMPlay2/releases
+
+    Screenbox:
+      source: https://github.com/huynhsontung/Screenbox
+      download: https://apps.microsoft.com/detail/9NTSNMSVCB5L
 ---
 
 # Windows
