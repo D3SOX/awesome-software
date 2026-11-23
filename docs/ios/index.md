@@ -154,7 +154,7 @@ apps:
     dotto+:
       purpose: Customize notification dots
       source: No longer available
-      repo: https://repo.dynastic.co/package/dotto
+      repo: https://repo.dynastic.co/dotto
 
     Axon:
       purpose: Notifications Priority Hub
