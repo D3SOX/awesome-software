@@ -233,6 +233,12 @@ apps:
       source: https://github.com/ONLYOFFICE/DesktopEditors
       download: https://www.onlyoffice.com/download-desktop.aspx
 
+  Database Client:
+    HeidiSQL:
+      website: https://www.heidisql.com/
+      source: https://github.com/HeidiSQL/HeidiSQL
+      download: https://www.heidisql.com/download.php
+
   Advanced Text Editor:
     Kate:
       website: https://kate-editor.org/

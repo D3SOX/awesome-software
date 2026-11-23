@@ -56,12 +56,6 @@ apps:
       source: https://github.com/winscp/winscp
       download: https://winscp.net/download.php
 
-  Database Client:
-    HeidiSQL:
-      website: https://www.heidisql.com/
-      source: https://github.com/HeidiSQL/HeidiSQL
-      download: https://www.heidisql.com/download.php
-
   Advanced Text Editor:
     Notepad++:
       website: https://notepad-plus-plus.org/
