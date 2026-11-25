@@ -6,7 +6,7 @@
       "name": "awesome-software",
       "devDependencies": {
         "@fontsource-variable/archivo": "5.3.0",
-        "lucide-static": "1.73.0",
+        "lucide-static": "1.74.0",
         "simple-icons": "16.38.0",
         "vitepress": "^1.6.4",
         "vue": "^3.5.45",
@@ -272,7 +272,7 @@
 
     "is-what": ["is-what@5.5.0", "", {}, "sha512-oG7cgbmg5kLYae2N5IVd3jm2s+vldjxJzK1pcu9LfpGuQ93MQSzo0okvRna+7y5ifrD+20FE8FvjusyGaz14fw=="],
 
-    "lucide-static": ["lucide-static@1.73.0", "", {}, "sha512-/FfzdRThAPnDVMk643pzENqYUnxudEON/fyOdh31ZiPiw/seE9VoYeIJPRDTCLDNtnF+5pK6CNwf6IkQMfrJ5w=="],
+    "lucide-static": ["lucide-static@1.74.0", "", {}, "sha512-+USG34tDoFrWhZGLaF+KrjWPtB1yhGY1h/jRzxasEUP5v3SoE34DIBIiaCoHC4fqkJHegCoumEOF4YgV0jjZMA=="],
 
     "magic-string": ["magic-string@0.30.21", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ=="],
 
